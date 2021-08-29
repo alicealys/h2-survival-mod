@@ -309,7 +309,7 @@ game:oninterval(function()
 end, 0)
 
 game:ontimeout(function()
-    game:setdiscordstate("Playing surival on Wave 1")
+    game:setdiscordstate("Playing Survival on Wave 1")
 
     local black = game:newhudelem()
     black.sort = 1
