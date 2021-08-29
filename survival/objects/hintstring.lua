@@ -9,6 +9,8 @@ hudelems.text.horzalign = "center"
 hudelems.text.y = 300
 hudelems.text.font = "objective"
 hudelems.text.fontscale = 1
+hudelems.text.hidewheninmenu = true
+hudelems.text.hidewhendead = true
 
 hudelems.subtext = game:newhudelem()
 hudelems.subtext.alignx = "center"
@@ -17,11 +19,15 @@ hudelems.subtext.y = 315
 hudelems.subtext.color = vector:new(0.7, 0.7, 0.7)
 hudelems.subtext.font = "objective"
 hudelems.subtext.fontscale = 1
+hudelems.subtext.hidewheninmenu = true
+hudelems.subtext.hidewhendead = true
 
 hudelems.icon = game:newhudelem()
 hudelems.icon.alignx = "center"
 hudelems.icon.horzalign = "center"
 hudelems.icon.y = 320
+hudelems.icon.hidewheninmenu = true
+hudelems.icon.hidewhendead = true
 
 player:notifyonplayercommand("+activate", "+activate")
 player:onnotify("+activate", function()

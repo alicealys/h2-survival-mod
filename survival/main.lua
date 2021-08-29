@@ -1,7 +1,7 @@
 require("utils/table")
 
-local hudutils = require("utils/hud")
 local map = require("maps/" .. game:getdvar("mapname"))
+local hudutils = require("utils/hud")
 
 game:precacheshader("h2_hud_ssdd_stats_blur")
 
@@ -33,6 +33,8 @@ hud.readyup.x = 400
 hud.readyup.y = 180
 hud.readyup.alpha = 0
 hud.readyup.font = "objective"
+hud.readyup.hidewheninmenu = true
+hud.readyup.hidewhendead = true
 hud.readyup.fontscale = 1
 hud.readyup:settext("Double click ^3[{+activate}]^7 to ready up")
 
@@ -98,6 +100,8 @@ function centertext(text)
     hudelem.y = 50
     hudelem.font = "bigfixed"
     hudelem.fontscale = 1.2
+    hudelem.hidewhendead = true
+    hudelem.hidewheninmenu = true
     hudelem.glowalpha = 0.3
     hudelem.glowcolor = vector:new(0, 0, 1)
     hudelem:settext(text)
@@ -136,6 +140,7 @@ function startround()
         enemy.accuracy = 1.2 ^ round
         enemy.combatmode = "combat"
         enemy.dropweapon = false
+        enemy.goingtoruntopos = true
         enemy:setgoalentity(player)
 
         local previousweapon = enemy.weapon
@@ -146,6 +151,10 @@ function startround()
 
         currentenemys = currentenemys + 1
         spawnedenemys = spawnedenemys + 1
+
+        local listener = game:oninterval(function()
+            enemy:setgoalentity(player)
+        end, 0)
 
         local droplistener = enemy:onnotify("weapon_dropped", function(weapon)
             if (weapon.model ~= game:getweaponmodel(enemyweapon)) then
@@ -162,6 +171,7 @@ function startround()
                 droplistener:clear()
             end, 10000)
 
+            listener:clear()
             enemy:detach(game:getweaponmodel(enemyweapon), "tag_weapon_right")
 
             killedenemys = killedenemys + 1
@@ -204,6 +214,8 @@ function startrounddelay(delay)
     timer.y = 227
     timer.font = "objective"
     timer.fontscale = 2
+    timer.hidewhendead = true
+    timer.hidewheninmenu = true
 
     local keylistener = nil
     keylistener = player:onnotify("activate", function()

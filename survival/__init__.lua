@@ -1,3 +1,11 @@
+local mapfile = io.open("maps/" .. game:getdvar("mapname"), "r")
+if (mapfile == nil) then
+    print("[Survival] Map not supported")
+    return
+else
+    mapfile:close()
+end
+
 __startlistener = game:oninterval(function()
     local players = game:getentarray("player", "classname")
 

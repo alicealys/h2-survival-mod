@@ -3,47 +3,6 @@ require("objects/hintstring")
 require("objects/wallbuy")
 require("objects/ammo")
 
-local map = {
-    spawners = {},
-    shotguns = {"striker", "model1887", "striker_woodland", "striker_reflex", "aa12"},
-    smgs = {"pp2000", "mp5_silencer", "kriss_reflex", "tmp_reflex", "uzi", "ump45_eotech"},
-    rifles = {"ak47_reflex", "ak47_shotgun", "m16_acog", "fn2000_acog", "m240_reflex", "scar_h", "famas_woodland_eotech", "tavor_reflex", "aug_scope"}
-}
-
-function addspawner(origin)
-    table.insert(map.spawners, createspawner(origin))
-end
-
-addspawner(vector:new(1126.573242, 1780.502197, 9.193225))
-addspawner(vector:new(2290.340820, 6.724380, -76.226883))
-addspawner(vector:new(1048.935913, -139.416672, 12.125000))
-addspawner(vector:new(307.121582, -1350.584717, -128.297714))
-addspawner(vector:new(-636.915161, -438.174561, 73.223846))
-addspawner(vector:new(-894.372559, 421.094574, -48.787975))
-addspawner(vector:new(-394.250793, 1345.180054, -8.597933))
-addspawner(vector:new(182.042725, 1960.793823, 15.925760))
-addspawner(vector:new(-252.697083, 3165.550537, -181.242966))
-addspawner(vector:new(-449.325348, 3806.973877, -252.231354))
-addspawner(vector:new(-1277.660034, 3715.824951, -321.568146))
-addspawner(vector:new(-2300.147705, 3736.670898, -254.521179))
-addspawner(vector:new(-2688.986572, 3145.832275, -459.789612))
-addspawner(vector:new(-2029.914062, 4549.178711, -185.838455))
-addspawner(vector:new(-1676.898071, 5061.569336, -253.039474))
-addspawner(vector:new(-2660.078857, 5536.583008, -213.202301))
-addspawner(vector:new(-3730.803711, 6689.648438, 240.901901))
-addspawner(vector:new(-4893.791504, 5671.172363, 758.527161))
-addspawner(vector:new(4196.951172, 2304.112793, -143.275146))
-addspawner(vector:new(4364.206543, 1780.880249, -124.499313))
-addspawner(vector:new(4297.375488, 1043.208984, -138.940216))
-addspawner(vector:new(4106.221680, 394.945709, -119.875000))
-addspawner(vector:new(4472.529297, 366.977203, -121.561424))
-addspawner(vector:new(3816.923340, -487.869446, -102.613892))
-addspawner(vector:new(2912.891357, -1067.762817, -236.138992))
-addspawner(vector:new(2360.776123, -456.341278, -109.129791))
-addspawner(vector:new(-27.402725, 986.990662, 154.308578))
-addspawner(vector:new(861.850891, 1309.666260, 132.544754))
-addspawner(vector:new(758.679016, 652.721069, 22.682041))
-
 game:precacheshader("hud_icon_40mm_grenade")
 game:precacheshader("hud_icon_aa12")
 game:precacheshader("hud_icon_ak47")
@@ -140,25 +99,64 @@ game:precacheshader("hud_icon_usp_45_silencer")
 game:precacheshader("hud_icon_wa2000")
 game:precacheshader("hud_icon_wa2000_thermal")
 
-local spawners = game:getspawnerteamarray("axis")
+local map = {
+    spawners = {},
+    shotguns = {"striker", "model1887", "striker_woodland", "striker_reflex", "aa12"},
+    smgs = {"pp2000", "mp5_silencer", "kriss_reflex", "tmp_reflex", "uzi", "ump45_eotech"},
+    rifles = {"ak47_reflex", "ak47_shotgun", "m16_acog", "fn2000_acog", "m240_reflex", "scar_h", "famas_woodland_eotech", "tavor_reflex", "aug_scope"}
+}
 
-function findentity(field, value)
-    local ents = game:getentarray()
-    for i = 1, #ents do
-        if (ents[i][field] == value) then
-            return ents[i]
-        end
-    end
+function addspawner(origin)
+    table.insert(map.spawners, createspawner(origin))
 end
+
+addspawner(vector:new(1126.573242, 1780.502197, 9.193225))
+addspawner(vector:new(2290.340820, 6.724380, -76.226883))
+addspawner(vector:new(1048.935913, -139.416672, 12.125000))
+addspawner(vector:new(307.121582, -1350.584717, -128.297714))
+addspawner(vector:new(-636.915161, -438.174561, 73.223846))
+addspawner(vector:new(-894.372559, 421.094574, -48.787975))
+addspawner(vector:new(-394.250793, 1345.180054, -8.597933))
+addspawner(vector:new(182.042725, 1960.793823, 15.925760))
+addspawner(vector:new(-252.697083, 3165.550537, -181.242966))
+addspawner(vector:new(-449.325348, 3806.973877, -252.231354))
+addspawner(vector:new(-1277.660034, 3715.824951, -321.568146))
+addspawner(vector:new(-2300.147705, 3736.670898, -254.521179))
+addspawner(vector:new(-2688.986572, 3145.832275, -459.789612))
+addspawner(vector:new(-2029.914062, 4549.178711, -185.838455))
+addspawner(vector:new(-1676.898071, 5061.569336, -253.039474))
+addspawner(vector:new(-2660.078857, 5536.583008, -213.202301))
+addspawner(vector:new(-3730.803711, 6689.648438, 240.901901))
+addspawner(vector:new(-4893.791504, 5671.172363, 758.527161))
+addspawner(vector:new(4196.951172, 2304.112793, -143.275146))
+addspawner(vector:new(4364.206543, 1780.880249, -124.499313))
+addspawner(vector:new(4297.375488, 1043.208984, -138.940216))
+addspawner(vector:new(4106.221680, 394.945709, -119.875000))
+addspawner(vector:new(4472.529297, 366.977203, -121.561424))
+addspawner(vector:new(3816.923340, -487.869446, -102.613892))
+addspawner(vector:new(2912.891357, -1067.762817, -236.138992))
+addspawner(vector:new(2360.776123, -456.341278, -109.129791))
+addspawner(vector:new(-27.402725, 986.990662, 154.308578))
+addspawner(vector:new(861.850891, 1309.666260, 132.544754))
+addspawner(vector:new(758.679016, 652.721069, 22.682041))
+
+local spawners = game:getspawnerteamarray("axis")
+for i = 1, #spawners do
+    spawners[i].preserve = true
+end
+
+local fence = game:getent("final_area_fence", "targetname")
+fence.preserve = true
 
 local doorcollision = game:getent("breach_solid", "targetname")
 doorcollision.preserve = true
 doorcollision.origin = vector:new(1000000, 1000000, 1000000)
 doorcollision.angles = vector:new(0, 0, 0)
+player.preserve = true
 
 local ents = game:getentarray()
 for i = 1, #ents do
-    if (ents[i] ~= player and table.find(spawners, ents[i]) == nil and ents[i].preserve == nil) then
+    if (not ents[i].preserve) then
         ents[i]:delete()
     end
 end
