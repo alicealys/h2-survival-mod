@@ -323,8 +323,6 @@ game:ontimeout(function()
         player:freezecontrols(true)
     end, 0)
     
-    player:setlocalplayerprofiledata("preferedFov", 1)
-    
     player:takeweapon(player:getweaponslistprimaries()[2])
     game:ontimeout(function()
         interval:clear()
