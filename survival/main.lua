@@ -341,7 +341,7 @@ game:ontimeout(function()
     black.sort = 1
     black.x = -200
     black.y = 0
-    black.alpha = 0
+    black.alpha = 1
     black:setshader("white", 1000, 1000)
     black.color = vector:new(0, 0, 0)
     
@@ -375,7 +375,7 @@ game:ontimeout(function()
             require("hud/money")
             require("hud/xp")
             require("hud/kills")
-            --startrounddelay(0)
+            startrounddelay(0)
         end, 2000)
     end, (map and map.blackout) or 3000)
 end, 0)
