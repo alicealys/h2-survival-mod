@@ -63,7 +63,7 @@ map.main = function()
 
     local ammocache = game:getent("ammo_cache", "targetname")
     local ammocachetrigger = findentity(function(ent)
-        return ent ~= ammocache and ent.origin.x == ammocache.origin.x and ent.origin.x == ammocache.origin.x
+        return ent ~= ammocache and ent.origin.x == ammocache.origin.x and ent.origin.y == ammocache.origin.y
     end, "script_model", "classname")
     if (ammocachetrigger) then
         createammocache(ammocachetrigger.origin, 1500)
