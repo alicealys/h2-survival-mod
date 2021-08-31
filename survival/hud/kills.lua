@@ -61,12 +61,11 @@ function createprogressbar(x, y, width, height)
         progressbar.onprogress(progressbar.percentage)
     end
 
-    function progressbar.resetovertime()
+    function progressbar.resetovertime(delay)
         if (interval ~= nil) then
             interval:clear()
         end
 
-        local delay = 0.3
         local time = delay * progressbar.percentage
         bar:scaleovertime(time, minwidth, maxheight)
 
@@ -128,7 +127,7 @@ headshots.onprogress = function(percentage)
 
         headshots.timeout = game:ontimeout(function()
             if (headshots.level > 1) then
-                headshots.level = headshots.level - 1
+                headshots.level = 1
                 headshots.money:setvalue(headshots.level * 500)
             end
 
@@ -180,7 +179,7 @@ killstreak.onprogress = function(percentage)
     elseif (percentage == 0) then
         killstreak.timeout = game:ontimeout(function()
             if (killstreak.level > 1) then
-                killstreak.level = killstreak.level - 1
+                killstreak.level = 1
                 killstreak.money:setvalue(killstreak.level * 500)
                 killstreak.onprogress(0)
             end
@@ -195,5 +194,5 @@ end
 player:onnotify("killed_enemy", function()
     local step = math.ceil(100 / (killstreak.level + 4))
     killstreak.setpercentage(killstreak.percentage + step)
-    killstreak.resetovertime()
+    killstreak.resetovertime(0.2)
 end)

@@ -2,6 +2,7 @@ require("utils/table")
 
 local map = require("maps/" .. game:getdvar("mapname"))
 local hudutils = require("utils/hud")
+map.main()
 
 game:precacheshader("h2_hud_ssdd_stats_blur")
 
@@ -39,7 +40,7 @@ hud.readyup.fontscale = 1
 hud.readyup:settext("Double click ^3[{+activate}]^7 to ready up")
 
 local baseenemycount = 24
-local maxenemycount = 50
+local maxenemycount = 24
 
 function getenemyhealth(round)
     return math.ceil(150 * (1.1 ^ (round - 1)))
@@ -132,14 +133,22 @@ function startround()
     local function spawnenemy()
         local spawners = getclosestspawners()
         local spawner = spawners[math.random(#spawners)]
+
+        if (not spawner) then
+            return
+        end
         
         local enemyweapon = getenemyweapon(round)
         local enemy = spawner:spawn()
         enemy.health = health
         enemy.maxhealth = health
         enemy.accuracy = 1.2 ^ round
-        enemy.combatmode = "combat"
         enemy.dropweapon = false
+        enemy.goalradius = 50
+        -- enemy.sidearm
+        enemy.favoriteenemy = player
+        -- enemy.disableexits
+        -- enemy.disablearrivals
         enemy.goingtoruntopos = true
         enemy:setgoalentity(player)
 
@@ -293,6 +302,11 @@ function startrounddelay(delay)
     end, 1000)
 end
 
+player:notifyonplayercommand("use", "+actionslot 4")
+player:onnotify("use", function()
+    print(string.format("addspawner(vector:new(%f, %f, %f))", player.origin.x, player.origin.y, player.origin.z)--[[, string.format("vector:new(%f, %f, %f)", player.angles.x, player.angles.y, player.angles.z)]])
+end)
+
 player:notifyonplayercommand("activate", "+activate")
 player.money = 500
 
@@ -327,7 +341,7 @@ game:ontimeout(function()
     black.sort = 1
     black.x = -200
     black.y = 0
-    black.alpha = 1
+    black.alpha = 0
     black:setshader("white", 1000, 1000)
     black.color = vector:new(0, 0, 0)
     
@@ -335,12 +349,21 @@ game:ontimeout(function()
         player:freezecontrols(true)
     end, 0)
     
-    player:takeweapon(player:getweaponslistprimaries()[2])
+    local primaries = player:getweaponslistprimaries()
+    for i = 1, #primaries do
+        player:takeweapon(primaries[i])
+    end
+    require("menus/menus")
+    player:onnotify("use", function()
+        player:_openmenu("deployables")
+    end)
+
     game:ontimeout(function()
         interval:clear()
     
         player:freezecontrols(false)
-        player:switchtoweapon("beretta")
+        player:giveweapon(map.startweapon)
+        player:switchtoweapon(map.startweapon)
 
         level:notify("start")
         level.started = true
@@ -356,7 +379,7 @@ game:ontimeout(function()
             require("hud/money")
             require("hud/xp")
             require("hud/kills")
-            startrounddelay(0)
+            --startrounddelay(0)
         end, 2000)
-    end, 10000)
+    end, (map and map.blackout) or 3000)
 end, 0)
