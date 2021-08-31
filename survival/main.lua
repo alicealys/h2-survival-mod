@@ -353,10 +353,6 @@ game:ontimeout(function()
     for i = 1, #primaries do
         player:takeweapon(primaries[i])
     end
-    require("menus/menus")
-    player:onnotify("use", function()
-        player:_openmenu("deployables")
-    end)
 
     game:ontimeout(function()
         interval:clear()
