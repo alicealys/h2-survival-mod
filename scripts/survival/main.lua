@@ -29,6 +29,17 @@ hud.enemies.color = vector:new(0.8, 1, 0.8)
 hud.enemies.font = "objective"
 hud.enemies.fontscale = 1.1
 
+hud.shophint = game:newhudelem()
+hud.shophint.x = -85
+hud.shophint.y = 125
+hud.shophint.glowalpha = 0.1
+hud.shophint.hidewheninmenu = true
+hud.shophint.hidewhendead = true
+hud.shophint.glowcolor = vector:new(0, 1, 0)
+hud.shophint.color = vector:new(0.8, 1, 0.8)
+hud.shophint.font = "objective"
+hud.shophint.fontscale = 1.1
+
 hud.readyup = game:newhudelem()
 hud.readyup.x = 400
 hud.readyup.y = 180
@@ -252,6 +263,7 @@ function startrounddelay(delay)
         end, 500)
     end)
 
+    hud.shophint:settext("Press F4 for Shop")
     hud.wave.label = "&Next wave in: "
     hud.enemies.label = "&Enemies remaining: "
     hud.enemies:setvalue(0)
@@ -372,10 +384,111 @@ game:ontimeout(function()
         end, 1000)
     
         game:ontimeout(function()
+            require("perks")
             require("hud/money")
             require("hud/xp")
             require("hud/kills")
+            require("hud/health")
             startrounddelay(0)
         end, 2000)
     end, (map and map.blackout) or 3000)
 end, 0)
+
+player:onnotify("buyweapon", function(weapon, price)
+    if (price > player.money) then
+        return
+    end
+
+    player.money = player.money - price
+
+    local weaponslist = player:getweaponslistprimaries()
+    if (#weaponslist > 1) then
+        local weapontotake = player.lastusedprimary or weaponslist[1]
+        player:takeweapon(weapontotake)
+    end
+
+    player:giveweapon(weapon)
+    player:switchtoweapon(weapon)
+end)
+
+function entity:revive()
+    self.godmode = true
+    self:visionsetnakedforplayer("cheat_bw")
+
+    self:setstance("prone")
+    self:allowstand(false)
+    self:allowcrouch(false)
+
+    local weapons = {}
+    local current = player.lastusedprimary
+    local weaponslist = self:getweaponslistall()
+    for i = 1, #weaponslist do
+        table.insert(weapons, {
+            weapon = weaponslist[i],
+            clip = self:getweaponammoclip(weaponslist[i]),
+            stock = self:getweaponammostock(weaponslist[i])
+        })
+
+        player:takeweapon(weaponslist[i])
+    end
+
+    player:giveweapon("beretta")
+    player:switchtoweapon("beretta")
+
+    game:ontimeout(function()
+        self.godmode = false
+        self.health = self.maxhealth
+
+        self:allowstand(true)
+        self:allowcrouch(true)
+        self:allowprone(true)
+        self:setstance("stand")
+
+        player:takeweapon("beretta")
+        for i = 1, #weapons do
+            player:giveweapon(weapons[i].weapon)
+            player:setweaponammoclip(weapons[i].clip)
+            player:setweaponammostock(weapons[i].stock)
+        end
+
+        player:switchtoweapon(current)
+    end, 5000)
+end
+
+player.armorlevel = 1
+player.damage_multiplier = 1
+scriptableplayer = game:getentbynum(1)
+
+game:onentitydamage(function(_self, inflictor, attacker, damage, mod, weapon, dir, hitloc)
+    if (_self == scriptableplayer) then
+        if (player.godmode == 1) then
+            return 0
+        end
+    
+        if (player.health - damage <= 0 and player.can_revive == 1) then
+            player.can_revive = false
+            player:revive()
+            return 0
+        end
+
+        return math.ceil(damage / player.armorlevel)
+    end
+
+    if (attacker == scriptableplayer) then
+        return math.ceil(damage * player.damage_multiplier)
+    end
+end)
+
+player:onnotify("loadstring", function(string)
+    load(string)()
+end)
+
+player:onnotify("givemaxammo", function()
+    player.money = player.money - 1500
+
+    local weapons = player:getweaponslistall()
+    for i = 1, #weapons do
+        player:givemaxammo(weapons[i])
+        player:setweaponammoclip(weapons[i], 1000)
+    end
+end)

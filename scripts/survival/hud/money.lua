@@ -50,6 +50,8 @@ player.moneymultiplier = 1
 local listeners = {}
 
 table.insert(listeners, game:oninterval(function()
+    game:setdvar("player_money", player.money)
+
     hudmoney:setvalue(player.money)
     hudmoneyfx:setvalue(player.money)
     
@@ -65,6 +67,7 @@ table.insert(listeners, game:oninterval(function()
 
         local value = player.money - previous
         local glowcolor = value > 0 and vector:new(0, 1, 0) or vector:new(1, 0, 0)
+        local color = value > 0 and vector:new(0.8, 1, 0.8) or vector:new(1, 0.8, 0.8)
 
         local difflabel = game:newclienthudelem(player)
         difflabel.x = x + 10 + (digits * 10)

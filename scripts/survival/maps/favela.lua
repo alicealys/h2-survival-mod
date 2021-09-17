@@ -185,12 +185,9 @@ map.main = function()
 
     player:setorigin(vector:new(-1855.542236, -1334.430542, 658.118042))
     player:setplayerangles(vector:new(0, 170, 0))
-    
-    game:oninterval(function()
-        player:allowprone(true)
-        player:allowcrouch(true)
-        player:allowstand(true)
-    end, 0)
+    player:allowprone(true)
+    player:allowcrouch(true)
+    player:allowstand(true)
 
     game:musicstop()
 end

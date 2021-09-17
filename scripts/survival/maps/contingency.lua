@@ -1,9 +1,9 @@
 local map = {
     spawners = {},
     startweapon = "beretta",
-    shotguns = {"ak47"},
-    smgs = {"ak47"},
-    rifles = {"ak47"},
+    shotguns = {"spas12_arctic"},
+    smgs = {"ump45_reflex", "ump45_arctic", "kriss_reflex", "p90_acog"},
+    rifles = {"ak47", "mg4_arctic", "scar_h", "m16_acog", "masada_reflex", "m240_heartbeat_reflex_arctic", "m4_grunt", "m16_reflex", "tavor_mars", "famas_arctic_reflex"},
     blackout = 3000
 }
 

@@ -72,11 +72,6 @@ map.main = function()
     addspawner(vector:new(-4900.755371, -27547.052734, 896.125000))
     
     createammocache(vector:new(-5068.610840, -26547.687500, 1033.015503), 1500)
-
-    local brushmodel = game:getentarray("script_brushmodel", "classname")
-    for i = 1, #brushmodel do
-        print(brushmodel[i].classname, brushmodel[i].targetname)
-    end
     
     level.spawner = game:getent("hill_attack_spawner", "targetname")
     
