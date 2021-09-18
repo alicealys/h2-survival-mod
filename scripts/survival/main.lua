@@ -156,14 +156,9 @@ function startround()
         enemy.accuracy = 1.2 ^ round
         enemy.dropweapon = false
         enemy.goalradius = 50
-        -- enemy.sidearm
         enemy.favoriteenemy = player
-        -- enemy.disableexits
-        -- enemy.disablearrivals
         enemy.goingtoruntopos = true
         enemy:setgoalentity(player)
-
-        local previousweapon = enemy.weapon
         
         game:ontimeout(function()
             enemy:giveactorweapon(enemyweapon)
@@ -176,23 +171,8 @@ function startround()
             enemy:setgoalentity(player)
         end, 0)
 
-        local droplistener = enemy:onnotify("weapon_dropped", function(weapon)
-            if (weapon.model ~= game:getweaponmodel(enemyweapon)) then
-                weapon:delete()
-            end
-        end)
-
         enemy:onnotifyonce("death", function()
-            pcall(function()
-                enemy:dropweapon(enemyweapon, "right")
-            end)
-
-            game:ontimeout(function()
-                droplistener:clear()
-            end, 10000)
-
             listener:clear()
-            enemy:detach(game:getweaponmodel(enemyweapon), "tag_weapon_right")
 
             killedenemys = killedenemys + 1
             currentenemys = currentenemys - 1
@@ -201,6 +181,12 @@ function startround()
                 centertext("Wave " .. round .. " Cleared!")
                 player:playlocalsound("h1_arcademode_ending_mission_pts")
             end
+
+            enemy:detach(game:getweaponmodel(enemyweapon), "tag_weapon_right")
+            local origin = enemy:gettagorigin("tag_weapon_right")
+            local angles = enemy:gettagangles("tag_weapon_right")
+            local drop = game:spawn("weapon_" .. enemyweapon, origin)
+            drop.angles = angles
         end)
     end
 
@@ -343,6 +329,13 @@ game:oninterval(function()
 
     if (found ~= nil) then
         player.lastusedprimary = found
+    end
+end, 0)
+
+game:oninterval(function()
+    local drops = game:getweaponarray()
+    for i = 1, #drops do
+        drops[i]:delete()
     end
 end, 0)
 

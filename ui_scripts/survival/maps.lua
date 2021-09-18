@@ -13,8 +13,7 @@ local maps = {
             },
             smgs = {
                 {weapon = "uzi", name = "Uzi", cost = 1500},
-                {weapon = "mp5_reflex", name = "MP5", cost = 1500},
-                {weapon = "m1014", name = "M1014", cost = 1000}
+                {weapon = "mp5_reflex", name = "MP5", cost = 1500}
             },
             rifles = {
                 {weapon = "fal_reflex", name = "Fal", cost = 2500},
@@ -61,7 +60,6 @@ local maps = {
                 {weapon = "ak47_arctic_grenadier", name = "AK-47 Grenadier", cost = 3500}
             },
             lmgs = {
-                {weapon = "rpd", name = "RPD", cost = 5000}
             },
             snipers = {
                 {weapon = "dragunov_arctic", name = "Dragunov", cost = 4000},
