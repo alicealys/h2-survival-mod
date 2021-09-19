@@ -182,6 +182,18 @@ function startround()
                 player:playlocalsound("h1_arcademode_ending_mission_pts")
             end
 
+            local ents = game:getentarray()
+            local weapons = {}
+            for i = 1, #ents do
+                if (ents[i].classname and ents[i].classname:match("weapon_")) then
+                    table.insert(weapons, ents[i])
+                end
+            end
+
+            if (#weapons > 20) then
+                weapons[#weapons]:delete()
+            end
+
             enemy:detach(game:getweaponmodel(enemyweapon), "tag_weapon_right")
             local origin = enemy:gettagorigin("tag_weapon_right")
             local angles = enemy:gettagangles("tag_weapon_right")
