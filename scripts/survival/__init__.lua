@@ -9,13 +9,6 @@ end
 local map = require("maps/" .. game:getdvar("mapname"))
 map.premain()
 
-local listener = nil
-listener = game:oninterval(function()
-    local players = game:getentarray("player", "classname")
-
-    if (#players > 0) then
-        player = players[1]
-        listener:clear()
-        require("main")
-    end
+game:ontimeout(function()
+    require("main")
 end, 0)

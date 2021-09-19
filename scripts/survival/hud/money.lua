@@ -1,4 +1,4 @@
-player.money = 500
+player.money = player.money or 500
 
 local x = -85
 local y = 395

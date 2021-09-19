@@ -124,7 +124,8 @@ function centertext(text)
     end, 5000)
 end
 
-local round = 0
+local round = game:getdvarint("survival_start_wave")
+round = round > 0 and round - 1 or 0
 function startround()
     round = round + 1
 
@@ -314,11 +315,11 @@ end
 
 player:notifyonplayercommand("use", "+actionslot 4")
 player:onnotify("use", function()
-    print(string.format("addspawner(vector:new(%f, %f, %f))", player.origin.x, player.origin.y, player.origin.z)--[[, string.format("vector:new(%f, %f, %f)", player.angles.x, player.angles.y, player.angles.z)]])
+    --print(string.format("addspawner(vector:new(%f, %f, %f))", player.origin.x, player.origin.y, player.origin.z)--[[, string.format("vector:new(%f, %f, %f)", player.angles.x, player.angles.y, player.angles.z)]])
 end)
 
 player:notifyonplayercommand("activate", "+activate")
-player.money = 500
+player.money = 500 * (  round + 1)
 
 player:onnotify("killed_enemy", function()
     player.money = player.money + 100
