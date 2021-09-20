@@ -8,6 +8,8 @@ local map = {
 }
 
 map.premain = function()
+    game:setdvar("beautiful_corner", 1)
+
     -- Don't delete axis spawners
     game:detour("_ID43797", "_ID44261", function() end)
 end

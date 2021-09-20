@@ -8,18 +8,10 @@ local map = {
 }
 
 map.premain = function()
-
+    game:setdvar("beautiful_corner", 0)
 end
 
 map.main = function()
-    if (game:getdvar("beautiful_corner") == "1") then
-        print("'beautiful_corner 1' cannot be used on this map. restarting...")
-        game:say("'beautiful_corner 1' cannot be used on this map. restarting...")
-        game:setdvar("beautiful_corner", 0)
-        game:executecommand("map estate")
-        return
-    end
-    
     require("spawner")
     require("objects/hintstring")
     require("objects/wallbuy")

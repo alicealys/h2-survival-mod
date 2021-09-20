@@ -126,7 +126,7 @@ function addtab(name, callback)
     end
 
     tab.text:onnotify("click", function()
-        tab.focus()
+        tab.focus(true)
     end)
 
     local tabindex = #tabs

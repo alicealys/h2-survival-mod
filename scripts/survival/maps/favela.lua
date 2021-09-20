@@ -8,19 +8,13 @@ local map = {
 }
 
 map.premain = function()
+    game:setdvar("beautiful_corner", 1)
+
     -- Don't delete axis spawners
     game:detour("_ID43797", "_ID44261", function() end)
 end
 
 map.main = function()
-    if (game:getdvar("beautiful_corner") == "" or game:getdvar("beautiful_corner") == "0") then
-        print("'beautiful_corner' must be enabled on this map. restarting...")
-        game:say("'beautiful_corner' must be enabled on this map. restarting...")
-        game:setdvar("beautiful_corner", 1)
-        game:executecommand("map favela")
-        return
-    end
-    
     require("spawner")
     require("objects/hintstring")
     require("objects/wallbuy")

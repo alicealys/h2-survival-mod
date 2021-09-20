@@ -281,10 +281,6 @@ local waves = {
     "100"
 }
 
-local beautifulcornerdisabled = {
-    "estate"
-}
-
 addbutton("start", function()
     if (selecteddifficulty == 1) then
         game:executecommand("difficultyeasy")
@@ -298,7 +294,6 @@ addbutton("start", function()
 
     local map = maps[selectedmap] or maps[1]
     game:setdvar("survival_start_wave", waves[selectedwavestart])
-    game:setdvar("beautiful_corner", beautifulcornerdisabled[map] and 0 or 1)
     game:executecommand("map " .. map)
 end, function()
     hintbox:settext("Start a Survival game.")
