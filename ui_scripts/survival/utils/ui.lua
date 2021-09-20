@@ -73,6 +73,8 @@ ui.createbutton = function(menu, text, x, y, w)
     end)
 
     button.unfocusimmediate = function()
+        elements.text:setcolor(0.6, 0.6, 0.6, 1)
+
         game:ontimeout(function()
             focused.dotpattern:setbackcolor(0, 0, 0, 0)
         end, 0)
