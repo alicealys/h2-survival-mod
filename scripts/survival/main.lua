@@ -155,11 +155,11 @@ function startround()
         enemy.health = health
         enemy.maxhealth = health
         enemy.accuracy = 1.2 ^ round
-        enemy.dropweapon = false
         enemy.goalradius = 50
         enemy.favoriteenemy = player
         enemy.goingtoruntopos = true
         enemy:setgoalentity(player)
+        enemy:set("dropweapon", 0)
         
         game:ontimeout(function()
             enemy:giveactorweapon(enemyweapon)
@@ -183,23 +183,8 @@ function startround()
                 player:playlocalsound("h1_arcademode_ending_mission_pts")
             end
 
-            local ents = game:getentarray()
-            local weapons = {}
-            for i = 1, #ents do
-                if (ents[i].classname and ents[i].classname:match("weapon_")) then
-                    table.insert(weapons, ents[i])
-                end
-            end
-
-            if (#weapons > 20) then
-                weapons[#weapons]:delete()
-            end
-
             enemy:detach(game:getweaponmodel(enemyweapon), "tag_weapon_right")
-            local origin = enemy:gettagorigin("tag_weapon_right")
-            local angles = enemy:gettagangles("tag_weapon_right")
-            local drop = game:spawn("weapon_" .. enemyweapon, origin)
-            drop.angles = angles
+            enemy:dropweapon(enemyweapon, "right")
         end)
     end
 
@@ -313,10 +298,10 @@ function startrounddelay(delay)
     end, 1000)
 end
 
-player:notifyonplayercommand("use", "+actionslot 4")
-player:onnotify("use", function()
+--player:notifyonplayercommand("use", "+actionslot 4")
+--player:onnotify("use", function()
     --print(string.format("addspawner(vector:new(%f, %f, %f))", player.origin.x, player.origin.y, player.origin.z)--[[, string.format("vector:new(%f, %f, %f)", player.angles.x, player.angles.y, player.angles.z)]])
-end)
+--end)
 
 player:notifyonplayercommand("activate", "+activate")
 player.money = 500 * (  round + 1)
@@ -342,13 +327,6 @@ game:oninterval(function()
 
     if (found ~= nil) then
         player.lastusedprimary = found
-    end
-end, 0)
-
-game:oninterval(function()
-    local drops = game:getweaponarray()
-    for i = 1, #drops do
-        drops[i]:delete()
     end
 end, 0)
 
