@@ -121,11 +121,32 @@ end
 function addmainelements()
 
     local title = element:new()
-    title:setrect(100, 80, 100, 100)
-    title:setfont("bank", 60)
-    title:setcolor(1, 1, 0.55, 1)
-    title:setglowcolor(1, 1, 0.5, 0.1)
+    title:setrect(100, 81.5, 100, 100)
+    title:setfont("bank", 56)
+    title.style = 0x800
+    title:setcolor(1, 1, 1, 1)
+    title:setsecondcolor(0.85, 0.81, 0.33, 1)
     title:settext("SURVIVAL")
+
+    local dotpattern = element:new()
+    dotpattern:setrect(0, 42, 915, 132)
+    dotpattern:setmaterial("h2_title_pattern_dot")
+    dotpattern:setbackcolor(1, 1, 1, 1)
+
+    local backglowlight = element:new()
+    backglowlight:setrect(75, 82.5, 500, 48)
+    backglowlight:setmaterial("h2_title_backglow_light")
+    backglowlight:setbackcolor(1, 1, 1, 1)
+
+    local backglow = element:new()
+    backglow:setrect(-112, 41, 512, 128)
+    backglow:setmaterial("h2_title_backglow_pc")
+    backglow:setbackcolor(1, 1, 1, 1)
+
+    local arrow = element:new()
+    arrow:setrect(70.5, 91.5, 20, 36)
+    arrow:setmaterial("h2_title_arrow")
+    arrow:setbackcolor(1, 1, 1, 0.1)
     
     local deco1 = element:new()
     deco1:setrect(101, 141, 27, 1.5)
@@ -217,6 +238,10 @@ function addmainelements()
     footer:setrect(0, 1080 - 108, 1920, 108)
     footer:setbackcolor(0, 0, 0, 0.4)
 
+    survivalmenu:addchild(dotpattern)
+    survivalmenu:addchild(backglowlight)
+    survivalmenu:addchild(backglow)
+    survivalmenu:addchild(arrow)
     survivalmenu:addchild(title)
     survivalmenu:addchild(deco1)
     survivalmenu:addchild(deco2)

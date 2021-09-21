@@ -200,9 +200,8 @@ function menu:addcursor()
     cursor:setmaterial("ui_cursor")
     cursor:setbackcolor(1, 1, 1, 1)
 
-    game:onframe(function()
-        local mouse = game:getmouseposition()
-        cursor:setrect(mouse.x - 45, mouse.y - 38, 98, 98)
+    game:onnotify("mousemove", function(x, y)
+        cursor:setrect(x - 46, y - 40, 98, 98)
     end)
 
     self:addchild(cursor)
