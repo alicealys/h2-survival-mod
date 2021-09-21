@@ -185,7 +185,9 @@ function startround()
             end
 
             enemy:detach(game:getweaponmodel(enemyweapon), "tag_weapon_right")
-            enemy:dropweapon(enemyweapon, "right")
+            pcall(function()
+                enemy:dropweapon(enemyweapon, "right")
+            end)
         end)
     end
 
@@ -319,7 +321,7 @@ player:onnotify("damaged_enemy", function()
 end)
 
 player:onnotify("death", function()
-    database.addmatch({
+    --[[database.addmatch({
         kills = player.kills,
         score = player.totalscore,
         wave = round
@@ -331,7 +333,7 @@ player:onnotify("death", function()
     database.increase("deaths", 1)
     database.trysetrecord("wave", round)
     database.trysetrecord("kills", player.kills)
-    database.trysetrecord("score", player.totalscore)
+    database.trysetrecord("score", player.totalscore)--]]
 
     game:ontimeout(function()
         game:executecommand("fast_restart") 
