@@ -4,14 +4,19 @@ local map = {
     shotguns = {"striker", "model1887", "striker_woodland", "striker_reflex", "aa12"},
     smgs = {"pp2000", "mp5_silencer", "kriss_reflex", "tmp_reflex", "uzi", "ump45_eotech"},
     rifles = {"ak47_reflex", "ak47_shotgun", "m16_acog", "fn2000_acog", "m240_reflex", "scar_h", "famas_woodland_eotech", "tavor_reflex", "aug_scope"},
-    blackout = 10000
+    blackout = 3000
 }
 
 map.premain = function()
-    game:setdvar("beautiful_corner", 0)
+    game:setdvar("beautiful_corner", 1)
+
+    -- Don't delete axis spawners
+    game:detour("_ID43797", "_ID44261", function() end)
 end
 
 map.main = function()
+    game:scriptcall("maps/estate_code", "_ID49840")
+
     require("spawner")
     require("objects/hintstring")
     require("objects/wallbuy")
@@ -247,21 +252,13 @@ map.main = function()
     level.spawner = game:getent("pf1_auto182", "targetname")
     
     player:setorigin(vector:new(276, 270, 168))
-    
-    local interval = nil
-    interval = game:oninterval(function()
-        if (level.started == 1) then
-            interval:clear()
-            return
-        end
-    
-        player:setstance("stand")
-        player:setplayerangles(vector:new(0, 65, 0))
+    player:setplayerangles(vector:new(0, 65, 0))
+
+    game:ontimeout(function()
+        player:allowprone(true)
+        player:allowcrouch(true)
+        player:allowstand(true)
     end, 0)
-    
-    level:onnotify("start", function()
-        interval:clear()
-    end)
 end
 
 return map
