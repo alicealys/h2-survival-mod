@@ -1,4 +1,5 @@
 player.money = player.money or 500
+player.totalscore = player.totalscore or 0
 
 local x = -85
 local y = 395
@@ -54,6 +55,10 @@ table.insert(listeners, game:oninterval(function()
 
     hudmoney:setvalue(player.money)
     hudmoneyfx:setvalue(player.money)
+
+    if (player.money > previous) then
+        player.totalscore = player.totalscore + player.money - previous
+    end
     
     if (previous ~= player.money) then
         hudmoney.alpha = 0

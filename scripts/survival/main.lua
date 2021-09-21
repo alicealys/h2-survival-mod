@@ -1,4 +1,5 @@
 require("utils/table")
+local database = require("database")
 
 local map = require("maps/" .. game:getdvar("mapname"))
 local hudutils = require("utils/hud")
@@ -304,9 +305,12 @@ end
 --end)
 
 player:notifyonplayercommand("activate", "+activate")
-player.money = 500 * (  round + 1)
+player.money = 500 * (round + 1)
+player.totalscore = 0
+player.kills = 0
 
 player:onnotify("killed_enemy", function()
+    player.kills = player.kills + 1
     player.money = player.money + 100
 end)
 
@@ -315,6 +319,20 @@ player:onnotify("damaged_enemy", function()
 end)
 
 player:onnotify("death", function()
+    database.addmatch({
+        kills = player.kills,
+        score = player.totalscore,
+        wave = round
+    })
+
+    database.increase("kills", player.kills)
+    database.increase("score", player.totalscore)
+    database.increase("matches", 1)
+    database.increase("deaths", 1)
+    database.trysetrecord("wave", round)
+    database.trysetrecord("kills", player.kills)
+    database.trysetrecord("score", player.totalscore)
+
     game:ontimeout(function()
         game:executecommand("fast_restart") 
     end, 5000)
