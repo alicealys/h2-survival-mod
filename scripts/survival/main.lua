@@ -49,7 +49,7 @@ hud.readyup.font = "objective"
 hud.readyup.hidewheninmenu = true
 hud.readyup.hidewhendead = true
 hud.readyup.fontscale = 1
-hud.readyup:settext("Double click ^3[{+activate}]^7 to ready up")
+hud.readyup.label = "&Double click ^3[{+activate}]^7 to ready up"
 
 local baseenemycount = 24
 local maxenemycount = 24
@@ -153,6 +153,11 @@ function startround()
         
         local enemyweapon = getenemyweapon(round)
         local enemy = spawner:spawn()
+
+        if (not enemy) then
+            return
+        end
+
         enemy.health = health
         enemy.maxhealth = health
         enemy.accuracy = 1.2 ^ round
@@ -250,7 +255,7 @@ function startrounddelay(delay)
         end, 500)
     end)
 
-    hud.shophint:settext("Press F4 for Shop")
+    hud.shophint.label = "&Press F4 for Shop"
     hud.wave.label = "&Next wave in: "
     hud.enemies.label = "&Enemies remaining: "
     hud.enemies:setvalue(0)
@@ -301,10 +306,10 @@ function startrounddelay(delay)
     end, 1000)
 end
 
---player:notifyonplayercommand("use", "+actionslot 4")
---player:onnotify("use", function()
-    --print(string.format("addspawner(vector:new(%f, %f, %f))", player.origin.x, player.origin.y, player.origin.z)--[[, string.format("vector:new(%f, %f, %f)", player.angles.x, player.angles.y, player.angles.z)]])
---end)
+player:notifyonplayercommand("use", "+actionslot 4")
+player:onnotify("use", function()
+    print(string.format("addspawner(vector:new(%f, %f, %f))", player.origin.x, player.origin.y, player.origin.z)--[[, string.format("vector:new(%f, %f, %f)", player.angles.x, player.angles.y, player.angles.z)]])
+end)
 
 player:notifyonplayercommand("activate", "+activate")
 player.money = 500 * (round + 1)

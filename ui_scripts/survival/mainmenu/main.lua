@@ -280,11 +280,20 @@ end
 addmainelements()
 
 local selectedmap = 1
+local mapnames = {
+    "favela",
+    "estate",
+    "cliffhanger",
+    "contingency",
+    "airport"
+}
+
 local maps = {
     "Favela",
     "Estate",
     "Cliffhanger",
-    "Contingency"
+    "Contingency",
+    "Terminal"
 }
 
 local selecteddifficulty = 1
@@ -317,7 +326,7 @@ addbutton("start", function()
         game:executecommand("difficultyfu")
     end
 
-    local map = maps[selectedmap] or maps[1]
+    local map = mapnames[selectedmap] or mapnames[1]
     game:setdvar("survival_start_wave", waves[selectedwavestart])
     game:executecommand("map " .. map)
 end, function()
@@ -334,7 +343,7 @@ end)
 
 addsetting("map", maps, function(index)
     if (selectedmap ~= index) then
-        changebackground(maps[index])
+        changebackground(mapnames[index])
     end
     selectedmap = index
 end, function()
@@ -372,7 +381,7 @@ game:onframe(function()
             }, 200)
         end, 200)
 
-        changebackground(maps[selectedmap])
+        changebackground(mapnames[selectedmap])
     elseif (not survivalmenu:isopen()) then
         wasvisible = false
     end

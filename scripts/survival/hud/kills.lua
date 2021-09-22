@@ -98,7 +98,7 @@ headshots.title.hidewheninmenu = true
 headshots.title.glowcolor = vector:new(0, 1, 0)
 headshots.title.color = vector:new(0.8, 1, 0.8)
 headshots.title.glowalpha = 0.1
-headshots.title:settext("Headshots")
+headshots.title.label = "&Headshots"
 
 headshots.money = game:newhudelem()
 headshots.money.x = 20
@@ -154,7 +154,7 @@ killstreak.title.color = vector:new(0.8, 1, 0.8)
 killstreak.title.hidewhendead = true
 killstreak.title.hidewheninmenu = true
 killstreak.title.glowalpha = 0.1
-killstreak.title:settext("Rampage")
+killstreak.title.label = "&Rampage"
 
 killstreak.money = game:newhudelem()
 killstreak.money.x = 20

@@ -18,6 +18,10 @@ function createspawner(origin)
     function spawner.spawn()
         local enemy = spawnenemy(origin)
 
+        if (not enemy) then
+            return
+        end
+
         local listener = nil
         local lasthit = nil
 

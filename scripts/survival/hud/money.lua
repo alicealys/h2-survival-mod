@@ -17,7 +17,7 @@ icon.hidewheninmenu = true
 icon.hidewhendead = true
 icon.font = "objective"
 icon.fontscale = fontscale
-icon:settext("$")
+icon.label = "&$"
 
 local hudmoney = game:newclienthudelem(player)
 hudmoney.x = x + 10

@@ -10,5 +10,7 @@ local map = require("maps/" .. game:getdvar("mapname"))
 map.premain()
 
 game:ontimeout(function()
-    require("main")
+    game:ontimeout(function()
+        require("main")
+    end, 0)
 end, 0)
