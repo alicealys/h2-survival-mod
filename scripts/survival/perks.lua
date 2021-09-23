@@ -18,7 +18,7 @@ perks.extrahealth = {
         perks.extrahealth.cost = 1000 + perks.extrahealth.level * 1000
         player.armorlevel = player.armorlevel + 0.3
 
-        if (perks.extrahealth.level >= 5) then
+        if (perks.extrahealth.level >= 10) then
             perks.extrahealth.enabled = false
         end
     end 
@@ -30,7 +30,7 @@ perks.extradamage = {
     enabled = true,
     callback = function()
         perks.extradamage.level = perks.extradamage.level + 1
-        perks.extradamage.cost = 1000 * 2 ^ perks.extradamage.level
+        perks.extradamage.cost = math.min(1000 * 2 ^ perks.extradamage.level, 50000)
         player.damage_multiplier = player.damage_multiplier + 0.3
     end 
 }

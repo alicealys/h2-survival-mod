@@ -14,9 +14,11 @@ map.premain = function()
     game:detour("_ID43797", "_ID44261", function() end)
 end
 
-map.main = function()
+game:ontimeout(function()
     game:scriptcall("maps/estate_code", "_ID49840")
+end, 0)
 
+map.main = function()
     require("spawner")
     require("objects/hintstring")
     require("objects/wallbuy")

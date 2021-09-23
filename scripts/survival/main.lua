@@ -326,23 +326,26 @@ player:onnotify("damaged_enemy", function()
 end)
 
 player:onnotify("death", function()
-    --[[database.addmatch({
-        kills = player.kills,
-        score = player.totalscore,
-        wave = round
-    })
-
-    database.increase("kills", player.kills)
-    database.increase("score", player.totalscore)
-    database.increase("matches", 1)
-    database.increase("deaths", 1)
-    database.trysetrecord("wave", round)
-    database.trysetrecord("kills", player.kills)
-    database.trysetrecord("score", player.totalscore)--]]
-
     game:ontimeout(function()
         game:executecommand("fast_restart") 
     end, 5000)
+
+    pcall(function()
+        database.addmatch({
+            map = game:getdvar("mapname"),
+            kills = player.kills,
+            score = player.totalscore,
+            wave = round
+        })
+    
+        database.increase("kills", player.kills)
+        database.increase("score", player.totalscore)
+        database.increase("matches", 1)
+        database.increase("deaths", 1)
+        database.trysetrecord("wave", round)
+        database.trysetrecord("kills", player.kills)
+        database.trysetrecord("score", player.totalscore)
+    end)
 end)
 
 game:oninterval(function()
