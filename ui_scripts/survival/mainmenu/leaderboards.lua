@@ -138,9 +138,9 @@ function addtab(name, callback)
     for i = 1, #tabs do
         local _tabx = header.x + tabwidth * (i - 1)
         tabs[i].text:setrect(_tabx, header.y, tabwidth, header.h)
-        tabs[i].focusright:setrect(_tabx - 1, header.y, 30, header.h + 2)
-        tabs[i].focusleft:setrect(_tabx + tabs[i].text.w - 26, header.y, 30, header.h + 2)
-        tabs[i].focuscenter:setrect(_tabx + 29, header.y, tabs[i].text.w - 55, header.h + 2)
+        tabs[i].focusright:setrect(_tabx - 3, header.y, 30, header.h)
+        tabs[i].focusleft:setrect(_tabx + tabs[i].text.w - 28, header.y, 30, header.h)
+        tabs[i].focuscenter:setrect(_tabx + 27, header.y, tabs[i].text.w - 55, header.h)
 
         if (i == #tabs) then
             tabs[i].text:setborderwidth(0, 0, 0, 0)
