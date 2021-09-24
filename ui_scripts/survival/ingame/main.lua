@@ -17,6 +17,7 @@ menu.addcursor()
 
 game:onnotify("keydown", function(key)
     if (key == 170 and game:getdvarint("cl_paused") == 0 and game:isingame()) then
+        game:playsound("h1_ui_menu_accept")
         menu.menu:open()
     end
 end)

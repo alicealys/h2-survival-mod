@@ -488,7 +488,10 @@ return function(name, titletext)
     
     game:onnotify("keydown", function(key)
         if (key == 27 and shopmenu:isopen()) then
-            menu.close()
+            game:ontimeout(function()
+                game:playsound("h1_ui_menu_back")
+                menu.close()
+            end, 0)
         end
     end)
 
