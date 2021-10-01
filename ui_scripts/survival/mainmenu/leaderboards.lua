@@ -260,7 +260,7 @@ addtab("Recent games", function()
         return a.time > b.time
     end)
 
-    for i = start, start - 1 + math.min(#data.matches, #items) do
+    for i = start, start - 1 + math.min(#data.matches, #items - 1) do
         itemindex = itemindex + 1
         items[itemindex].elements.name:settext(maps[data.matches[i].map] or data.matches[i].map)
         items[itemindex].elements.value1:settext(data.matches[i].wave .. "")

@@ -183,7 +183,7 @@ function addmainelements()
     deco6:setbackcolor(1, 1, 1, 0.5)
 
     local deco7 = element:new()
-    deco7:setrect(101, 500, 27, 1)
+    deco7:setrect(101, 500, 27, 0.5)
     deco7:setbackcolor(1, 1, 1, 0.2)
 
     hintbox = element:new()
@@ -193,7 +193,7 @@ function addmainelements()
     hintbox:setvertalign("center")
     hintbox:settext("Start a Survival game.")
     hintbox:setcolor(1, 1, 1, 0.6)
-    hintbox.fontsize = 16
+    hintbox.fontsize = 15
 
     esc = element:new()
     esc:setrect(101, 1080 - 85, 50, 27)

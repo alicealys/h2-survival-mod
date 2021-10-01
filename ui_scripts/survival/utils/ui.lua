@@ -67,6 +67,24 @@ ui.createbutton = function(menu, text, x, y, w)
             return
         end
 
+        if (focused.dotpattern.backcolor.a == 0) then
+            focused.dotpattern:setmaterial("h2_btn_dot_pattern")
+            focused.dotpattern:setbackcolor(1, 1, 1, 1)
+            elements.text:setcolor(1, 1, 1, 1)
+            game:playsound("h1_ui_menu_scroll")
+    
+            for i = 1, #buttons do
+                for k, v in pairs(buttons[i].focused) do
+                    v:cancelanimations("hover_focus")
+                    v:setbackcolor(0, 0, 0, 0)
+                end
+            end
+    
+            for k, v in pairs(focused) do
+                v:setbackcolor(1, 1, 1, 1)
+            end
+        end
+
         if (type(button.onmouseover) == "function") then
             button.onmouseover()
         end
@@ -196,12 +214,12 @@ function menu:addcursor()
     self.cursor = true
 
     local cursor = element:new()
-    cursor:setrect(10, 10, 128, 128)
+    cursor:setrect(-100, -100, 98, 98)
     cursor:setmaterial("ui_cursor")
     cursor:setbackcolor(1, 1, 1, 1)
 
     game:onnotify("mousemove", function(x, y)
-        cursor:setrect(x - 46, y - 40, 98, 98)
+        cursor:setrect(x - 47, y - 39, 98, 98)
     end)
 
     self:addchild(cursor)
