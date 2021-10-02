@@ -46,24 +46,30 @@ game:onframe(function()
     end
 end)
 
-local area = element:new()
-area:setrect(100, 437, 361, 48)
-overlay:addchild(area)
-
-area:onnotify("click", function()
-    game:luiopen("menu_xenon_install_complete")
-end)
-
-area:onnotify("mouseenter", function()
-    local maincampaign = findelement("main_campaign_container")
-    local hintbox = maincampaign:getlastchild():getprevioussibling()
-    local text = hintbox:getfirstchild()
-end)
-
 overlay:onnotify("open", function()
-    local intel = findelement("main_campaign_button_4")
-    local intelbutton = intel:getfirstchild()
-    intel.m_eventHandlers.button_action = nil
-    intel.properties.desc_text = "Play Survival."
-    intel:findelement("text_label"):settextinc("SURVIVAL")
+    local maincampaign = findelement("main_campaign_container")
+    local buttonlist = maincampaign:getChildById("main_campaign_list")
+    local button = maincampaign:AddButton("Survival", function()
+        game:luiopen("menu_xenon_install_complete")
+    end, nil, false, nil, {
+        desc_text = "Play Survival."
+    })
+
+    buttonlist:removeElement(button)
+    buttonlist:insertElement(button, 4)
+
+    local hintbox = maincampaign.optionTextInfo
+    local firstbutton = buttonlist:getfirstchild()
+    hintbox:dispatchEventToRoot({
+        name = "set_button_info_text",
+        text = firstbutton.properties.desc_text,
+        immediate = true
+    })
+
+    maincampaign:CreateBottomDivider()
+    maincampaign:AddBottomDividerToList(buttonlist:getlastchild())
+
+    maincampaign.list.listHeight = 375
+    maincampaign:removeElement(maincampaign.optionTextInfo)
+    maincampaign.optionTextInfo = LUI.Options.AddOptionTextInfo(maincampaign)
 end)
