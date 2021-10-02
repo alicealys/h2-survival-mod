@@ -49,9 +49,9 @@ end)
 overlay:onnotify("open", function()
     local maincampaign = findelement("main_campaign_container")
     local buttonlist = maincampaign:getChildById("main_campaign_list")
-    local button = maincampaign:AddButton("Survival", function()
+    local button = maincampaign:AddButton("@MENU_SP_SURVIVAL_MODE_CAPS", function()
         game:luiopen("menu_xenon_install_complete")
-    end, nil, false, nil, {
+    end, nil, true, nil, {
         desc_text = "Play Survival."
     })
 
