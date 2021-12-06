@@ -10,7 +10,7 @@ LUI.MenuBuilder.m_types_build["main_campaign"] = function(a1, a2)
     end, nil, true, nil, {
         desc_text = "Play Survival."
     })
-
+    
     buttonlist:removeElement(button)
     buttonlist:insertElement(button, 4)
     button.id = "survival_menu_button"
@@ -34,19 +34,19 @@ LUI.MenuBuilder.m_types_build["main_campaign"] = function(a1, a2)
 end
 
 function survivalmenu(a1)
-	local menu = LUI.MenuTemplate.new(a1, {
-		menu_title = Engine.Localize("@MENU_SP_SURVIVAL_MODE_CAPS"),
-		exclusiveController = 0,
+    local menu = LUI.MenuTemplate.new(a1, {
+        menu_title = Engine.Localize("@MENU_SP_SURVIVAL_MODE_CAPS"),
+        exclusiveController = 0,
         menu_width = 400,
-		menu_top_indent = LUI.MenuTemplate.spMenuOffset,
-		showTopRightSmallBar = true
-	})
+        menu_top_indent = LUI.MenuTemplate.spMenuOffset,
+        showTopRightSmallBar = true
+    })
 
     local black_state = CoD.CreateState(nil, nil, nil, nil, CoD.AnchorTypes.All)
-	black_state.red = 0
-	black_state.blue = 0
-	black_state.green = 0
-	black_state.alpha = 0
+    black_state.red = 0
+    black_state.blue = 0
+    black_state.green = 0
+    black_state.alpha = 0
     black_state.left = -100
     black_state.right = 100
     black_state.top = -100
@@ -55,15 +55,15 @@ function survivalmenu(a1)
     local black = LUI.UIImage.new(black_state)
     black:setPriority(-1000)
 
-	black:registerAnimationState("BlackScreen", {
-		alpha = 1
-	})
+    black:registerAnimationState("BlackScreen", {
+        alpha = 1
+    })
 
-	black:registerAnimationState("Faded", {
-		alpha = 0
-	})
+    black:registerAnimationState("Faded", {
+        alpha = 0
+    })
 
-	menu:addElement(black)
+    menu:addElement(black)
 
     local changebackground = function(background)
         PersistentBackground.ChangeBackground(nil, background)
@@ -87,7 +87,7 @@ function survivalmenu(a1)
         "airport"
     }
 
-	local maps = {
+    local maps = {
         {
             value = "1",
             text = "Favela"
@@ -109,8 +109,8 @@ function survivalmenu(a1)
             text = "Terminal"
         }
     }
-	
-	local difficulties = {
+    
+    local difficulties = {
         {
             value = "0",
             text = Engine.Localize("@MENU_RECRUIT")
@@ -210,11 +210,11 @@ function survivalmenu(a1)
 
     changebackground("mission_select_bg_" .. getmap(0))
 
-	menu.id = "main_campaign_container"
+    menu.id = "main_campaign_container"
 
     menu:AddBackButton(function(a1)
-	    Engine.PlaySound(CoD.SFX.MenuBack)
-	    LUI.FlowManager.RequestLeaveMenu(a1)
+        Engine.PlaySound(CoD.SFX.MenuBack)
+        LUI.FlowManager.RequestLeaveMenu(a1)
     end)
 
     LUI.Options.CreateOptionButton(menu, "survival_dummy", "@LUA_MENU_MAP_CAPS", "@MENU_SP_CHANGE_MAP_DESC", maps, nil, nil, function(value)
