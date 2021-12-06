@@ -20,8 +20,12 @@ Currently supports these maps:
 |:-:|
 | Pre-game Lobby |
 
-| <img src="assets/github/survival2.png?raw=true" /> | <img src="assets/github/survival1.png?raw=true" /> |
-|:-:|:-:|
-| In-game | In-game weapon/perk shop |
+| <img src="assets/github/survival2.png?raw=true" /> |
+|:-:|
+| In-game |
+
+| <img src="assets/github/survival1.png?raw=true" /> |
+|:-:|
+In-game weapon/perk shop |
 
 <br/>
