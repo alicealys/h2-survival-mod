@@ -16,7 +16,7 @@ Currently supports these maps:
 
 ## Showcase
 
-| <img src="assets/github/survival3.png?raw=true" /> |
+| <img src="assets/github/menu.png?raw=true" /> |
 |:-:|
 | Pre-game Lobby |
 
