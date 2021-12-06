@@ -3,6 +3,8 @@ function createprogressbar(x, y, width, height)
     background.x = x
     background.y = y
     background.alpha = 0.5
+    background.hidewhendead = true
+    background.hidewheninmenu = true
     background.color = vector:new(1, 1, 1)
     background:setshader("h1_hud_tutorial_blur", width, height)
 
@@ -16,6 +18,8 @@ function createprogressbar(x, y, width, height)
     topborder.y = y - 1
     topborder.alpha = 0.3
     topborder.color = vector:new(0, 0, 0)
+    topborder.hidewhendead = true
+    topborder.hidewheninmenu = true
     topborder:setshader("h1_hud_tutorial_blur", width, 1)
 
     local bottomborder = game:newhudelem()
@@ -23,6 +27,8 @@ function createprogressbar(x, y, width, height)
     bottomborder.y = y + height
     bottomborder.alpha = 0.3
     bottomborder.color = vector:new(0, 0, 0)
+    bottomborder.hidewhendead = true
+    bottomborder.hidewheninmenu = true
     bottomborder:setshader("h1_hud_tutorial_blur", width, 1)
 
     local bar = game:newhudelem()
@@ -31,6 +37,8 @@ function createprogressbar(x, y, width, height)
     bar.sort = 10
     bar.alpha = 0.8
     bar.color = vector:new(0, 0.8, 0)
+    bar.hidewhendead = true
+    bar.hidewheninmenu = true
     bar:setshader("h1_hud_tutorial_blur", minwidth, maxheight)
 
     local progressbar = {

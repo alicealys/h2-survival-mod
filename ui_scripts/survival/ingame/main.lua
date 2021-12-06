@@ -1,3 +1,6 @@
+require("ingame/weapons")
+require("ingame/perks")
+
 local shop = require("ingame/shop")
 local menu = shop("shop_menu", "Shop")
 

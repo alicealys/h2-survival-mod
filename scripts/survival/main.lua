@@ -1,5 +1,4 @@
 require("utils/table")
-local database = require("database")
 
 local map = require("maps/" .. game:getdvar("mapname"))
 local hudutils = require("utils/hud")
@@ -329,23 +328,6 @@ player:onnotify("death", function()
     game:ontimeout(function()
         game:executecommand("fast_restart") 
     end, 5000)
-
-    pcall(function()
-        database.addmatch({
-            map = game:getdvar("mapname"),
-            kills = player.kills,
-            score = player.totalscore,
-            wave = round
-        })
-    
-        database.increase("kills", player.kills)
-        database.increase("score", player.totalscore)
-        database.increase("matches", 1)
-        database.increase("deaths", 1)
-        database.trysetrecord("wave", round)
-        database.trysetrecord("kills", player.kills)
-        database.trysetrecord("score", player.totalscore)
-    end)
 end)
 
 game:oninterval(function()

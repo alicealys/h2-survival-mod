@@ -1,6 +1,4 @@
-require("mainmenu/overlay")
-require("mainmenu/main")
-require("mainmenu/leaderboards")
+require("mainmenu/survivalmenu")
 
 require("ingame/main")
 require("ingame/perks")
