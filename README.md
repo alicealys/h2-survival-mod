@@ -7,6 +7,7 @@ Currently supports these maps:
 * Estate
 * Cliffhanger
 * Contingency
+* Terminal
 
 # How
 * Install [h2-mod](https://github.com/fedddddd/h2-mod#download)
