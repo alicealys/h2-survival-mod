@@ -11,7 +11,7 @@ Currently supports these maps:
 
 # How
 * Install [h2-mod](https://github.com/fedddddd/h2-mod#download)
-* Download & copy the `scripts` and `ui_scripts` folder your **Call of Duty Modern Warfare 2 Campaign Remastered** folder
+* [Download](https://github.com/fedddddd/h2-survival-mod/releases) & copy the `scripts` and `ui_scripts` folders your **Call of Duty Modern Warfare 2 Campaign Remastered** folder
 * Launch the game and press on the **Survival** button
 
 ## Showcase
