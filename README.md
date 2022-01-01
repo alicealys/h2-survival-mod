@@ -16,6 +16,8 @@ Currently supports these maps:
 
 ## Showcase
 
+[Preview Gameplay](https://youtu.be/r67j72Iyfzo)
+
 | <img src="assets/github/menu.png?raw=true" /> |
 |:-:|
 | Pre-game Lobby |
