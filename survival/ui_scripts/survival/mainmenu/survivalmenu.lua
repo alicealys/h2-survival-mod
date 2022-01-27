@@ -10,7 +10,7 @@ LUI.MenuBuilder.m_types_build["main_campaign"] = function(a1, a2)
     end, nil, true, nil, {
         desc_text = "Play Survival."
     })
-    
+
     buttonlist:removeElement(button)
     buttonlist:insertElement(button, 4)
     button.id = "survival_menu_button"
@@ -24,10 +24,11 @@ LUI.MenuBuilder.m_types_build["main_campaign"] = function(a1, a2)
     })
 
     menu:CreateBottomDivider()
-    menu:AddBottomDividerToList(buttonlist:getlastchild())
-
-    menu.list.listHeight = 375
+    menu:AddBottomDividerToList(buttonlist:getLastChild())
     menu:removeElement(menu.optionTextInfo)
+
+    LUI.Options.InitScrollingList(menu.list, nil)
+    menu:CreateBottomDivider()
     menu.optionTextInfo = LUI.Options.AddOptionTextInfo(menu)
 
     return menu
@@ -84,7 +85,7 @@ function survivalmenu(a1)
         "estate",
         "cliffhanger",
         "contingency",
-        "airport"
+        "airport",
     }
 
     local maps = {
@@ -237,6 +238,10 @@ function survivalmenu(a1)
 end
 
 LUI.MenuBuilder.m_types_build["survival_menu"] = survivalmenu
+
+LUI.MenuBuilder.m_types_build["empty_menu"] = function(a1)
+    return a1
+end
 
 setmetatable(_G, {
     __index = function(t, k)
