@@ -51,7 +51,7 @@ player.moneymultiplier = 1
 local listeners = {}
 
 table.insert(listeners, game:oninterval(function()
-    game:setdvar("player_money", player.money .. "")
+    game:sharedset("player_money", player.money .. "")
 
     hudmoney:setvalue(player.money)
     hudmoneyfx:setvalue(player.money)

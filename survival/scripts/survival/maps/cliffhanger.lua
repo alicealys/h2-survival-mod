@@ -14,6 +14,121 @@ map.premain = function()
     game:detour("_ID43797", "_ID44261", function() end)
 end
 
+function initbreachabledoor()
+    local door = game:getent("hanger_entrance_door", "targetname")
+    local doorcollision = game:getent("hangar_door", "targetname")
+    local doorcost = 2000
+
+    local hintstring = createhintstring({
+        text = string.format("Press ^3[{+activate}]^7 to breach Door (Cost: %i)", doorcost),
+        entity = door,
+        height = 100,
+        radius = 50
+    })
+
+    local listener = nil
+    listener = door:onnotify("trigger", function()
+        if (player.money < doorcost) then
+            player:playlocalsound("ui_tk_click_error")
+            return
+        end
+
+        listener:clear()
+        hintstring.enabled = false
+
+        player.money = player.money - doorcost
+
+        local c4origin = game:spawn("script_origin", door.origin)
+
+        local c4 = game:spawn("script_model", c4origin.origin + vector:new(-1.5, 1.5, 50))
+        c4.angles = vector:new(90, 135, 0)
+        c4:setmodel("h2_weapon_c4")
+        c4:playsound("wpn_semtex_warn_beep")
+        c4:playsound("c4_bounce_metal")
+
+        local c4_2 = game:spawn("script_model", c4origin.origin + vector:new(1.5, -1.5, 50))
+        c4_2:setmodel("h2_weapon_c4")
+        c4_2.angles = vector:new(90, -45, 0)
+
+        game:ontimeout(function()
+            local fx = game:loadfx("fx/explosions/c4exp_default")
+            game:playfx(fx, c4.origin)
+            c4origin:playsound("h1_c4_explosion_main")
+
+            game:radiusdamage(c4.origin, 100, 10, 30, player)
+            game:radiusdamage(c4_2.origin, 100, 10, 30, player)
+
+            c4:delete()
+            c4_2:delete()
+            door:delete()
+            doorcollision:delete()
+
+            game:ontimeout(function()
+                c4origin:delete()
+            end, 0)
+        end, 2000)
+    end)
+end
+
+function inithangardoors()
+    local doors = {}
+
+    local function create(origin)
+        local originent = game:spawn("script_origin", origin)
+        local doorcost = 3000
+    
+        local hintstring = createhintstring({
+            text = string.format("Press ^3[{+activate}]^7 to open Hangar Doors (Cost: %i)", doorcost),
+            entity = originent,
+            height = 200,
+            radius = 50
+        })
+    
+        local listener = originent:onnotify("trigger", function()
+            if (player.money < doorcost) then
+                player:playlocalsound("ui_tk_click_error")
+                return
+            end
+    
+            for i = 1, #doors do
+                doors[i].hintstring.enabled = false
+                doors[i].listener:clear()
+            end
+    
+            player.money = player.money - doorcost
+    
+            game:scriptcall("maps/cliffhanger_code", "_ID49460")
+        end)
+
+        table.insert(doors, {
+            hintstring = hintstring,
+            listener = listener
+        })
+    end
+
+    create(vector:new(-8756.822266, -26180.500000, 896.125000))
+    create(vector:new(-8803.828125, -26134.041016, 898.125000))
+end
+
+function initcollisions()
+    local function createcollision(origin)
+        for i = 0, 4 do
+            local collision = game:getentbynum(1324 + i)
+            local ent = game:spawn("script_model", origin + vector:new(0, 0, 40))
+            ent.angles = vector:new(0, 35, 0)
+            ent:clonebrushmodeltoscriptmodel(collision)
+        end
+    end
+
+    createcollision(vector:new(-9280.500000, -27395.246094, 896.125000))
+    createcollision(vector:new(-9283.166016, -27535.556641, 896.125000))
+    createcollision(vector:new(-9285.351563, -27673.646484, 896.125000))
+    createcollision(vector:new(-9290.045898, -27818.257813, 896.125000))
+    createcollision(vector:new(-9293.863281, -27957.257813, 896.125000))
+    createcollision(vector:new(-9297.341797, -28104.677734, 896.125000))
+    createcollision(vector:new(-9297.714844, -28255.900391, 896.125000))
+end
+
 map.main = function()
     if (game:getdvar("beautiful_corner") == "" or game:getdvar("beautiful_corner") == "0") then
         print("'beautiful_corner' must be enabled on this map. restarting...")
@@ -62,19 +177,17 @@ map.main = function()
     addspawner(vector:new(-9130.098633, -26436.830078, 910.134460))
     addspawner(vector:new(-9371.647461, -27003.015625, 896.625000))
     addspawner(vector:new(-9006.476562, -27196.257812, 899.966553))
-    addspawner(vector:new(-9620.810547, -28189.687500, 896.782104))
-    addspawner(vector:new(-11057.276367, -28032.574219, 896.125000))
-    addspawner(vector:new(-11119.989258, -27874.591797, 898.873901))
-    addspawner(vector:new(-11264.573242, -27572.777344, 915.681396))
-    addspawner(vector:new(-11402.050781, -27656.171875, 915.851074))
-    addspawner(vector:new(-10949.571289, -29679.375000, 925.235168))
     addspawner(vector:new(-5036.784180, -27733.611328, 896.125000))
     addspawner(vector:new(-5067.337891, -27550.847656, 896.125000))
     addspawner(vector:new(-4948.454102, -27317.238281, 896.125000))
     addspawner(vector:new(-4900.755371, -27547.052734, 896.125000))
     
     createammocache(vector:new(-5068.610840, -26547.687500, 1033.015503), 1500)
-    
+
+    inithangardoors()
+    initbreachabledoor()
+    initcollisions()
+
     level.spawner = game:getent("hill_attack_spawner", "targetname")
     
     player:setorigin(vector:new(-4867.337891, -24972.884766, 1007.124939))
@@ -84,7 +197,7 @@ map.main = function()
         player:allowprone(true)
         player:allowcrouch(true)
         player:allowstand(true)
-    end, 0)    
+    end, 0)
 end
 
 return map

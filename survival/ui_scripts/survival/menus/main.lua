@@ -1,40 +1,15 @@
 local ui = require("utils/ui")
 
-local maincampaign = LUI.MenuBuilder.m_types_build["main_campaign"]
-LUI.MenuBuilder.m_types_build["main_campaign"] = function(a1, a2)
-    local menu = maincampaign(a1, a2)
-    local buttonlist = menu:getChildById("main_campaign_list")
-    
-    local button = menu:AddButton("@MENU_SP_SURVIVAL_MODE_CAPS", function()
+LUI.addmenubutton("main_campaign", {
+    index = 4,
+    text = "@MENU_SP_SURVIVAL_MODE_CAPS",
+    description = "Play Survival.",
+    callback = function()
         LUI.FlowManager.RequestAddMenu(nil, "survival_menu")
-    end, nil, true, nil, {
-        desc_text = "Play Survival."
-    })
+    end
+})
 
-    buttonlist:removeElement(button)
-    buttonlist:insertElement(button, 4)
-    button.id = "survival_menu_button"
-
-    local hintbox = menu.optionTextInfo
-    local firstbutton = buttonlist:getfirstchild()
-    hintbox:dispatchEventToRoot({
-        name = "set_button_info_text",
-        text = firstbutton.properties.desc_text,
-        immediate = true
-    })
-
-    menu:CreateBottomDivider()
-    menu:AddBottomDividerToList(buttonlist:getLastChild())
-    menu:removeElement(menu.optionTextInfo)
-
-    LUI.Options.InitScrollingList(menu.list, nil)
-    menu:CreateBottomDivider()
-    menu.optionTextInfo = LUI.Options.AddOptionTextInfo(menu)
-
-    return menu
-end
-
-function survivalmenu(a1)
+LUI.MenuBuilder.registerType("survival_menu", function(a1)
     local menu = LUI.MenuTemplate.new(a1, {
         menu_title = Engine.Localize("@MENU_SP_SURVIVAL_MODE_CAPS"),
         exclusiveController = 0,
@@ -67,7 +42,7 @@ function survivalmenu(a1)
     menu:addElement(black)
 
     local changebackground = function(background)
-        PersistentBackground.ChangeBackground(nil, background)
+        luiglobals.PersistentBackground.ChangeBackground(nil, background)
         black:animateInSequence( {
             {
                 "BlackScreen",
@@ -235,18 +210,6 @@ function survivalmenu(a1)
     menu.optionTextInfo = LUI.Options.AddOptionTextInfo(menu)
 
     return menu
-end
-
-LUI.MenuBuilder.m_types_build["survival_menu"] = survivalmenu
-
-LUI.MenuBuilder.m_types_build["empty_menu"] = function(a1)
-    return a1
-end
-
-setmetatable(_G, {
-    __index = function(t, k)
-        return rawget(_G, k) or luiglobals[k]
-    end
-})
+end)
 
 game:setdvar("survival_dummy", "")

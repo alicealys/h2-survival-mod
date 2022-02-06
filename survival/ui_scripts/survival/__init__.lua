@@ -1,5 +1,2 @@
-require("mainmenu/survivalmenu")
-
-require("ingame/main")
-require("ingame/perks")
-require("ingame/weapons")
+require("menus/main")
+require("menus/mainshop")

@@ -140,6 +140,10 @@ local maps = {
             explosives = {
             }
         }
+    },
+    estate = {
+        weapons = {
+        }
     }
 }
 

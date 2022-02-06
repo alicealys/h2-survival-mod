@@ -37,11 +37,11 @@ perks.extradamage = {
 
 game:oninterval(function()
     for k, v in pairs(perks) do
-        game:setdvar("perks_" .. k .. "_enabled", v.enabled)
-        game:setdvar("perks_" .. k .. "_cost", v.cost)
+        game:sharedset("perks_" .. k .. "_enabled", v.enabled and "1" or "0")
+        game:sharedset("perks_" .. k .. "_cost", v.cost .. "")
 
         if (v.level ~= nil) then
-            game:setdvar("perks_" .. k .. "_level", v.level)
+            game:sharedset("perks_" .. k .. "_level", v.level .. "")
         end
     end
 end, 0)
