@@ -55,7 +55,7 @@ LUI.MenuBuilder.registerType("survival_weapon_shop_menu", function(a1)
 
     local order = {"pistols", "shotguns", "smgs", "rifles", "lmgs", "snipers", "explosives"}
     for _, class in pairs(order) do
-        if (maps[mapname].weapons[class]) then
+        if (maps[mapname].weapons[class] and #maps[mapname].weapons[class] > 0) then
             menu:AddButton(classnames[class], function()
                 LUI.FlowManager.RequestAddMenu(nil, classmenuname(class))
             end)
@@ -76,6 +76,7 @@ if (maps[mapname] ~= nil) then
             for i = 1, #weapons do
                 local name = weapons[i].weapon
                 local displayname = game:getweapondisplayname(name)
+                displayname = #displayname > 0 and displayname or weapons[i].name
                 local cost = weapons[i].cost
 
                 local button = nil
