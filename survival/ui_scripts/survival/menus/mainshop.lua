@@ -1,6 +1,6 @@
 local maps = require("maps")
 local mapname = Engine.GetDvarString("mapname")
-print(mapname)
+
 if (not maps[mapname]) then
     return
 end
@@ -14,7 +14,7 @@ LUI.UIGenericButton.ButtonLabelFactory = function(...)
 end
 
 function addbuybutton(menu, data)
-    local button = menu:AddButton("$_" .. data.text, function()
+    local button = menu:AddButton(data.text, function()
         data.callback()
     end, data.disabled)
     
