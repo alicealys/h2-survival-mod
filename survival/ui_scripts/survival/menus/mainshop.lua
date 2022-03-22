@@ -1,3 +1,7 @@
+if (Engine.InFrontend()) then
+    return
+end
+
 local maps = require("maps")
 local mapname = Engine.GetDvarString("mapname")
 
@@ -135,9 +139,30 @@ LUI.MenuBuilder.registerType("survival_main_shop_menu", function(a1)
     return menu
 end)
 
-game:onnotify("keydown", function(key)
-    if (key == 170 and game:getdvarint("cl_paused") == 0 and not Engine.InFrontend()) then
+local keybinds = {}
+
+keybinds["F4"] = function()
+    if (Engine.GetDvarBool("cl_paused")) then
+        return
+    end
+
+    if (LUI.FlowManager.IsMenuOpenAndVisible(Engine.GetLuiRoot(), "survival_main_shop_menu")) then
+        LUI.FlowManager.RequestLeaveMenu(nil, "survival_main_shop_menu")
+    else
         Engine.PlaySound("h1_ui_menu_accept")
         LUI.FlowManager.RequestAddMenu(nil, "survival_main_shop_menu")
     end
+end
+
+local keys = {}
+
+LUI.roots.UIRoot0:registerEventHandler("keydown", function(element, event)
+    if (keybinds[event.key] and not keys[event.key]) then
+        keys[event.key] = true
+        keybinds[event.key]()
+    end
+end)
+
+LUI.roots.UIRoot0:registerEventHandler("keyup", function(element, event)
+    keys[event.key] = false
 end)

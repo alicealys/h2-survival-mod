@@ -15,6 +15,8 @@ function classmenuname(class)
     return "survival_weapon_shop_" .. class .. "_menu"
 end
 
+local money = sharedvalue("player_money")
+
 function addcategory(class, title, callback)
     LUI.MenuBuilder.registerType(classmenuname(class), function(a1)
         local InitInGameBkg = LUI.MenuTemplate.InitInGameBkg
@@ -39,6 +41,39 @@ function addcategory(class, title, callback)
     end)
 end
 
+function addmaxammobutton(menu, cost)
+    local button = nil
+    local update = function()
+        if (money.int < cost and not button.disabled) then
+            disablebutton(button, true)
+        elseif (money.int >= cost and button.disabled) then
+            disablebutton(button, false)
+        end
+    end
+
+    button = addbuybutton(menu, {
+        text = "MAX AMMO",
+        cost = cost,
+        disabled = money.int < cost,
+        callback = function()
+            if (money.int - cost < cost and not button.disabled) then
+                disablebutton(button, true)
+            elseif (money.int - cost >= cost and button.disabled) then
+                disablebutton(button, false)
+            end
+
+            player:notify("givemaxammo")
+            update()
+        end
+    })
+
+    button:registerEventHandler("update_money", function()
+        update()
+    end)
+
+    button:addElement(LUI.UITimer.new(50, "update_money"))
+end
+
 LUI.MenuBuilder.registerType("survival_weapon_shop_menu", function(a1)
     local InitInGameBkg = LUI.MenuTemplate.InitInGameBkg
     LUI.MenuTemplate.InitInGameBkg = function() end
@@ -52,6 +87,8 @@ LUI.MenuBuilder.registerType("survival_weapon_shop_menu", function(a1)
     })
 
     LUI.MenuTemplate.InitInGameBkg = InitInGameBkg
+
+    addmaxammobutton(menu, 1500)
 
     local order = {"pistols", "shotguns", "smgs", "rifles", "lmgs", "snipers", "explosives"}
     for _, class in pairs(order) do
@@ -67,8 +104,6 @@ LUI.MenuBuilder.registerType("survival_weapon_shop_menu", function(a1)
 
     return menu
 end)
-
-local money = sharedvalue("player_money")
 
 if (maps[mapname] ~= nil) then
     for class, weapons in pairs(maps[mapname].weapons) do
