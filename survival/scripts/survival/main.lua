@@ -389,6 +389,7 @@ game:ontimeout(function()
 end, 0)
 
 player:onnotify("buyweapon", function(weapon, price)
+    price = tonumber(price)
     if (price > player.money) then
         return
     end
