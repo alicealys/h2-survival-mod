@@ -17,7 +17,7 @@ Engine.Localize = function(...)
 		return "SURVIVAL"
 	end
 
-	return localize(table.unpack(args))
+	return localize(unpack(args))
 end
 
 game:addlocalizedstring("LUA_MENU_SURVIVAL_DESC", "Play Survival.")
@@ -40,18 +40,6 @@ LUI.addmenubutton("main_campaign", {
 		LUI.FlowManager.RequestAddMenu(nil, "survival_menu")
 	end
 })
-
-function userdata_:getchildren()
-	local children = {}
-	local first = self:getFirstChild()
-
-	while (first) do
-		table.insert(children, first)
-		first = first:getNextSibling()
-	end
-
-	return children
-end
 
 LUI.MenuBuilder.registerType("survival_menu", function(a1)
 	local menu = LUI.MenuTemplate.new(a1, {
@@ -86,7 +74,7 @@ LUI.MenuBuilder.registerType("survival_menu", function(a1)
 	menu:addElement(black)
 
 	local changebackground = function(background)
-		luiglobals.PersistentBackground.ChangeBackground(nil, background)
+		PersistentBackground.ChangeBackground(nil, background)
 		black:animateInSequence( {
 			{
 				"BlackScreen",
@@ -176,7 +164,7 @@ LUI.MenuBuilder.registerType("survival_menu", function(a1)
 		}
 	}
 
-	game:setdvar("survival_dummy", "")
+	Engine.SetDvarFromString("survival_dummy", "")
 
 	local getmap = function(index)
 		return mapnames[index] or mapnames[1]
@@ -197,7 +185,7 @@ LUI.MenuBuilder.registerType("survival_menu", function(a1)
 			Engine.Exec("difficultyEasy")
 		end
 
-		game:setdvar("survival_start_wave", wave)
+		Engine.SetDvarFromString("survival_start_wave", wave)
 		Engine.Exec("map " .. mapname)
 	end, nil, true, nil, {
 		desc_text = Engine.Localize("@MENU_DESC_START_MATCH")
@@ -253,5 +241,3 @@ LUI.MenuBuilder.registerType("survival_menu", function(a1)
 
 	return menu
 end)
-
-game:setdvar("survival_dummy", "")

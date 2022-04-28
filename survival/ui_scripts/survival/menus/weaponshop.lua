@@ -1,5 +1,5 @@
-local mapname = game:getdvar("mapname")
-local maps = require("maps")
+local mapname = Engine.GetDvarString("mapname")
+require("maps")
 
 local classnames = {
     pistols = "Pistols",

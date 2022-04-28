@@ -2,7 +2,7 @@ if (Engine.InFrontend()) then
     return
 end
 
-local maps = require("maps")
+require("maps")
 local mapname = Engine.GetDvarString("mapname")
 
 if (not maps[mapname]) then
@@ -14,7 +14,7 @@ local buttonlabelstate = nil
 LUI.UIGenericButton.ButtonLabelFactory = function(...)
     local args = {...}
     buttonlabelstate = args[1]
-    return buttonlabelfactory(table.unpack(args))
+    return buttonlabelfactory(unpack(args))
 end
 
 function addbuybutton(menu, data)
@@ -99,8 +99,8 @@ function addmoneytext(menu)
     text:setTextStyle(CoD.TextStyle.MW2Title)
     text:setText("$" .. money.int)
 
-    text:addEventHandler("update_money", function()
-        text:setText("$" .. money.int)
+    text:addEventHandler("update_money", function(element)
+        element:setText("$" .. money.int)
     end)
 
     text:addElement(LUI.UITimer.new(50, "update_money"))

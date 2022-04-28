@@ -1,4 +1,4 @@
-local maps = {
+maps = {
     favela = {
         weapons = {
             pistols = {
@@ -146,5 +146,3 @@ local maps = {
         }
     }
 }
-
-return maps
