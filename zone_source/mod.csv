@@ -1,0 +1,5 @@
+techset,,2d
+material,loadscreen_so_survival_estate
+sound,mus_so_main_menu
+localize,english
+stringtable,sp/survival_maps.csv
