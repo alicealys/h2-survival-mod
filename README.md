@@ -3,11 +3,8 @@
 Survival mod for H2 (MW2CR), requires [h2-mod](https://github.com/fedddddd/h2-mod#download)
 
 Currently supports these maps:
-* Favela
+* Upper Favela
 * Estate
-* Cliffhanger
-* Contingency
-* Terminal
 
 # How
 * Install [h2-mod](https://github.com/fedddddd/h2-mod#download)
@@ -17,18 +14,3 @@ Currently supports these maps:
 
 ## Showcase
 
-[Preview Gameplay](https://youtu.be/r67j72Iyfzo)
-
-| <img src="assets/github/menu.png?raw=true" /> |
-|:-:|
-| Pre-game Lobby |
-
-| <img src="assets/github/survival2.png?raw=true" /> |
-|:-:|
-| In-game |
-
-| <img src="assets/github/survival1.png?raw=true" /> |
-|:-:|
-In-game weapon/perk shop |
-
-<br/>

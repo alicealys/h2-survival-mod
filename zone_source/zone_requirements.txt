@@ -1,0 +1,25 @@
+// zones to dump & copy assets to the zonetool/ folder
+ending
+estate
+contingency
+oilrig
+cliffhanger
+boneyard
+
+techsets_ending
+techsets_estate
+techsets_oilrig
+techsets_contingency
+techsets_cliffhanger
+techsets_boneyard
+
+eng_contingency
+eng_estate
+patch_contingency
+eng_patch_contingency
+
+// zones to build
+common_survival
+mod
+so_survival_estate
+so_survival_favela_escape

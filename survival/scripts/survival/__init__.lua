@@ -1,16 +1,8 @@
-local mapfile = io.open(scriptdir() .. "/maps/" .. game:getdvar("mapname") .. ".lua", "r")
-if (mapfile == nil) then
-    print("[Survival] Map not supported")
-    return
-else
-    mapfile:close()
+require("utils")
+require("survival_utils")
+require("symbols")
+local res, err = require("main")
+
+if (game:getdvar("so_debug") == "1") then
+    print(res, err)
 end
-
-local map = require("maps/" .. game:getdvar("mapname"))
-map.premain()
-
-game:ontimeout(function()
-    game:ontimeout(function()
-        require("main")
-    end, 0)
-end, 0)

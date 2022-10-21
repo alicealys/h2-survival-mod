@@ -1,0 +1,2351 @@
+{
+"classname" "info_player_start_so"
+"angles" "0 90 0"
+"origin" "-90 -1445 815"
+}
+{
+"classname" "info_map_center"
+"origin" "2420 -6 918"
+"radius" "6000"
+"height" "6000"
+}
+{
+31241 "1"
+"targetname" "uav_spawner"
+"origin" "0 0 0"
+"angles" "0 0 0"
+"spawnflags" "2"
+"vehicletype" "ucav"
+"model" "vehicle_ucav"
+"classname" "script_vehicle_ucav"
+"script_specialops" "1"
+}
+{
+"targetname" "jug_land_zone"
+"origin" "4938 443 2350"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_land_zone"
+"origin" "2079 -1379 1837"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_land_zone"
+"origin" "-1725 1568 2245"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_explosive_heli_spawner"
+"spawnflags" "2"
+"script_vehicle_selfremove" "1"
+"target" "jug_explosive_spawner"
+"origin" "0 0 0"
+"angles" "0 31 0"
+"export" "448"
+"model" "vehicle_mi17_woodland_fly_cheap"
+"vehicletype" "mi17"
+"script_team" "axis"
+"classname" "script_vehicle_mi17_woodland_fly_cheap"
+"script_specialops" "1"
+}
+{
+"target" "jug_explosive_spawner_end"
+"script_noteworthy" "jug_explosive_unload_pos"
+"targetname" "jug_explosive_spawner"
+"script_unload" "both"
+"script_stopnode" "1"
+"origin" "0 0 0"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_explosive_spawner_end"
+"script_noteworthy" "jug_explosive_end_pos"
+"origin" "0 0 0"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_riotshield_heli_spawner"
+"spawnflags" "2"
+"script_vehicle_selfremove" "1"
+"target" "jug_riotshield_spawner"
+"origin" "0 0 0"
+"angles" "0 31 0"
+"export" "448"
+"model" "vehicle_mi17_woodland_fly_cheap"
+"vehicletype" "mi17"
+"script_team" "axis"
+"classname" "script_vehicle_mi17_woodland_fly_cheap"
+"script_specialops" "1"
+}
+{
+"target" "jug_riotshield_spawner_end"
+"script_noteworthy" "jug_riotshield_unload_pos"
+"targetname" "jug_riotshield_spawner"
+"script_unload" "both"
+"script_stopnode" "1"
+"origin" "0 0 0"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_riotshield_spawner_end"
+"script_noteworthy" "jug_riotshield_end_pos"
+"origin" "0 0 0"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_regular_heli_spawner"
+"spawnflags" "2"
+"script_vehicle_selfremove" "1"
+"target" "jug_regular_spawner"
+"origin" "0 0 0"
+"angles" "0 31 0"
+"export" "448"
+"model" "vehicle_mi17_woodland_fly_cheap"
+"vehicletype" "mi17"
+"script_team" "axis"
+"classname" "script_vehicle_mi17_woodland_fly_cheap"
+"script_specialops" "1"
+}
+{
+"target" "jug_regular_spawner_end"
+"script_noteworthy" "jug_regular_unload_pos"
+"targetname" "jug_regular_spawner"
+"script_unload" "both"
+"script_stopnode" "1"
+"origin" "0 0 0"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_regular_spawner_end"
+"script_noteworthy" "jug_regular_end_pos"
+"origin" "0 0 0"
+"classname" "script_origin"
+}
+{
+"target" "airdrop_origin"
+"script_mp_style_helicopter" "1"
+"script_vehicleride" "3"
+"script_ai_invulnerable" "1"
+"spawnflags" "2"
+"targetname" "airdrop_heli_spawner"
+"script_startinghealth" "350"
+"origin" "0 0 0"
+"script_team" "allies"
+"script_airspeed" "1"
+"script_missiles" "1"
+"script_airspeed" "200"
+"angles" "0 90 0"
+"model" "vehicle_little_bird_armed"
+"vehicletype" "littlebird"
+"classname" "script_vehicle_littlebird_armed"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"script_stopnode" "1"
+"targetname" "airdrop_origin"
+"classname" "script_origin"
+}
+{
+"target" "little_bird_target"
+"script_mp_style_helicopter" "1"
+"script_vehicleride" "3"
+"script_ai_invulnerable" "1"
+"spawnflags" "2"
+"targetname" "chopper_spawner"
+"script_startinghealth" "350"
+"origin" "0 0 0"
+"script_team" "axis"
+"script_airspeed" "1"
+"script_missiles" "1"
+"script_airspeed" "200"
+"angles" "0 90 0"
+"model" "vehicle_little_bird_armed"
+"vehicletype" "littlebird"
+"classname" "script_vehicle_littlebird_armed"
+"script_specialops" "1"
+}
+{
+"origin" "-1452.3 4696.4 1000"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "little_bird_target"
+"classname" "script_origin"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_easy"
+"angles" "0 0 0"
+"targetname" "easy_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_regular"
+"angles" "0 0 0"
+"targetname" "regular_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_hardened"
+"angles" "0 0 0"
+"targetname" "hardened_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_veteran"
+"angles" "0 0 0"
+"targetname" "veteran_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_elite"
+"angles" "0 0 0"
+"targetname" "elite_spawner"
+"script_specialops" "1"
+}
+{
+"script_startingposition" "2"
+"origin" "0 0 0"
+"spawnflags" "7"
+"model" "body_riot_op_airborne"
+"animation" "h2_museum_wolverines_attacker"
+"classname" "actor_enemy_juggernaut_so_survival"
+"angles" "0 0 0"
+"targetname" "jug_regular_spawner"
+"script_specialops" "1"
+}
+{
+"script_startingposition" "2"
+"origin" "0 0 0"
+"spawnflags" "7"
+"model" "body_riot_op_airborne"
+"animation" "h2_museum_wolverines_attacker"
+"classname" "actor_enemy_juggernaut_riotshield"
+"angles" "0 0 0"
+"targetname" "jug_riotshield_spawner"
+"script_specialops" "1"
+}
+{
+"script_startingposition" "2"
+"origin" "0 0 0"
+"spawnflags" "7"
+"model" "body_riot_op_airborne"
+"animation" "h2_museum_wolverines_attacker"
+"classname" "actor_enemy_juggernaut_explosive"
+"angles" "0 0 0"
+"targetname" "jug_explosive_spawner"
+"script_specialops" "1"
+}
+{
+"classname" "actor_enemy_dog"
+"model" "german_sheperd_dog"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"spawnflags" "1"
+"targetname" "dog_reg_spawner"
+"animation" "german_shepherd_attackidle"
+"script_specialops" "1"
+}
+{
+"classname" "actor_enemy_dog"
+"model" "german_sheperd_dog"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"spawnflags" "1"
+"targetname" "dog_splode_spawner"
+"animation" "german_shepherd_attackidle"
+"script_specialops" "1"
+}
+{
+"classname" "actor_enemy_so_martyrdom"
+"model" "body_work_civ_male_a_bomb"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"spawnflags" "1"
+"targetname" "martyrdom_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "2224.207764 -1110.650635 708.104980"
+"angles" "0 -90 0"
+"targetname" "armory_weapon_origin"
+"classname" "script_origin"
+}
+{
+"origin" "-802.251831 1847.057739 1096.412598"
+"angles" "0 90 0"
+"targetname" "armory_airsupport_origin"
+"classname" "script_origin"
+}
+{
+"origin" "5280.951660 536.078613 1110.019043"
+"angles" "0 -180 0"
+"targetname" "armory_equipment_origin"
+"classname" "script_origin"
+}
+{
+"origin" "2712.000000 -620.000000 792.728333"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5716.000000 -384.000000 1052.861328"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5716.000000 -344.000000 1051.761963"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5668.000000 -352.000000 1051.985840"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5652.000000 -288.000000 1051.992798"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2346.000000 310.000000 942.191345"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4206.000000 1202.000000 1048.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2311.000000 251.000000 935.529236"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2504.000000 368.000000 951.792969"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2236.000000 -544.000000 857.948425"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2092.000000 -1288.000000 698.041382"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2116.000000 -1240.000000 699.761597"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2084.000000 -1344.000000 697.739502"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "8.000000 -1392.000000 818.423523"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-492.000000 -1112.000000 971.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2734.000000 -676.000000 779.536560"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "58.000000 -758.000000 825.535034"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1584.000000 -1012.000000 706.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1156.000000 -820.000000 828.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-404.000000 16.000000 928.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-408.500000 -21.000000 928.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "204.000000 336.000000 1027.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-388.000000 -18.000000 928.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-348.000000 -18.000000 928.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-428.000000 -18.000000 928.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-336.000000 512.000000 1009.173218"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-376.000000 512.000000 1007.592529"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-416.000000 512.000000 1006.245911"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-456.000000 512.000000 1006.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "486.000000 -414.000000 826.777771"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "398.000000 -390.000000 828.818237"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-170.000000 -834.000000 823.406250"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-74.000000 -878.000000 815.932983"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-296.000000 512.000000 1010.381409"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3958.000000 1066.000000 1049.130005"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1416.000000 1880.000000 1093.203125"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1416.000000 1968.000000 1091.615112"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1288.000000 1600.000000 1099.801880"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1792.000000 976.000000 1068.338135"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1792.000000 936.000000 1064.299438"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1792.000000 1016.000000 1072.896606"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1720.000000 800.000000 1061.986572"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1720.000000 840.000000 1063.060181"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1352.000000 1928.000000 1097.225342"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1352.000000 2016.000000 1094.454712"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1288.000000 1664.000000 1098.531372"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-800.000000 1064.000000 1067.984375"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-760.000000 1064.000000 1067.924438"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-720.000000 1064.000000 1068.095703"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-760.000000 1432.000000 1102.619141"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1128.000000 1432.000000 1102.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2304.000000 424.000000 1056.833496"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2336.000000 424.000000 1056.442749"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2272.000000 424.000000 1056.585205"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2240.000000 424.000000 1058.198364"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1636.000000 408.000000 1076.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1630.000000 542.000000 1092.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1628.000000 620.000000 1124.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1900.000000 232.000000 1060.483521"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1792.000000 896.000000 1062.031616"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1700.000000 1036.000000 1080.058472"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1700.000000 1000.000000 1078.293823"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1700.000000 964.000000 1075.451172"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2336.000000 380.000000 1056.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2336.000000 344.000000 1056.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2304.000000 380.000000 1056.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2268.000000 -232.000000 1061.241821"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2204.000000 100.000000 1062.113892"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2268.000000 -200.000000 1061.369019"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2268.000000 -168.000000 1061.460815"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2268.000000 -136.000000 1061.500732"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1952.000000 232.000000 1062.242798"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1816.000000 -80.000000 1057.239380"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1976.000000 -280.000000 1063.024170"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2072.000000 -124.000000 1060.961914"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2140.000000 -276.000000 1063.335449"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2192.000000 -276.000000 1064.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1700.000000 924.000000 1071.339966"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2274.000000 618.000000 1070.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "656.500000 -832.500000 817.972290"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "656.500000 -896.500000 816.640564"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "656.500000 -960.500000 815.813110"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "656.500000 -1016.500000 815.473511"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1680.000000 -1081.000000 706.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1728.000000 -1068.000000 706.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1536.000000 -988.000000 706.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1215.500000 -1798.000000 709.191650"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1284.000000 -1862.000000 704.659302"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1276.000000 -1902.000000 703.758057"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1236.000000 -1870.000000 705.221741"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-318.000000 -829.000000 971.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-518.000000 -725.000000 971.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-482.000000 -476.000000 968.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "202.000000 -186.000000 1018.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "510.000000 -174.000000 1018.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "174.000000 38.000000 1018.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "372.000000 -228.000000 1018.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "182.000000 92.000000 850.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-5964.000000 -904.000000 782.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1968.000000 188.000000 1061.595215"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1968.000000 152.000000 1061.524780"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5880.507812 260.659698 1108.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5939.769531 451.907379 1110.424316"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5829.295410 703.411438 1109.885254"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5654.155273 739.706787 1109.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5377.827148 751.505859 1109.797852"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5156.284180 545.156494 1108.388428"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5221.260742 210.057251 1109.710449"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5415.987305 90.980209 1108.073853"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5764.556152 114.565933 1108.125000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "6107.297363 -165.311584 1055.092651"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "6094.639160 342.919464 1054.572388"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "6089.221191 560.910889 1049.239380"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "6019.851074 793.783264 1057.303955"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5822.161621 871.853210 1053.355957"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5548.827148 1143.234619 1051.886353"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5262.046875 850.400391 1050.556519"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "5071.615723 842.925781 1052.549072"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4904.960449 1171.612549 1045.860840"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4789.331055 844.517578 1055.203613"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4485.523926 1109.812744 1056.183350"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4333.318848 898.675659 1058.933105"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4326.595215 793.958191 1056.345825"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4682.940918 482.635284 1063.106567"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4532.928711 460.727417 1046.100708"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4582.414551 -88.478340 1054.596313"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4324.203125 -144.643219 1052.623169"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3962.735596 731.957153 1033.050903"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3937.400146 929.946716 1036.666504"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3907.535400 381.316711 1032.068726"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4286.368164 640.474670 1035.113892"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "4279.098145 566.281128 1035.103882"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3816.127930 -151.572769 1039.684814"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3511.879639 218.645737 1019.625000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "3182.959473 -38.128586 966.470947"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2895.655029 -74.497276 937.023071"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2665.529541 86.049278 929.466003"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2717.404541 -130.889603 922.785889"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "239.358124 -1524.242676 1822.294556"
+"target" "node_0"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "239.358124 -1524.242676 1822.294556"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_0"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5678.832520 954.212708 1909.000000"
+"target" "node_1"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5678.832520 954.212708 1909.000000"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_1"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2004.625488 -1938.340698 1701.153564"
+"target" "node_2"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2004.625488 -1938.340698 1701.153564"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_2"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2320.924561 609.576416 2204.962158"
+"target" "node_3"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2320.924561 609.576416 2204.962158"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_3"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2429.305664 -1323.907593 1751.031128"
+"target" "node_4"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2429.305664 -1323.907593 1751.031128"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_4"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-208.415344 -38.816795 1900.595947"
+"target" "node_5"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-208.415344 -38.816795 1900.595947"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_5"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2319.576172 -20.636841 2076.962158"
+"target" "node_6"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2319.576172 -20.636841 2076.962158"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_6"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1860.964233 130.978455 2172.600098"
+"target" "node_7"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1860.964233 130.978455 2172.600098"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_7"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6422.693848 1562.358154 1923.699951"
+"target" "node_8"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6422.693848 1562.358154 1923.699951"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_8"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3172.456543 -1435.854980 1880.900024"
+"target" "node_9"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3172.456543 -1435.854980 1880.900024"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_9"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4680.614258 192.589142 2068.392822"
+"target" "node_10"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4680.614258 192.589142 2068.392822"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_10"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1960.490234 -394.630249 2037.335449"
+"target" "node_11"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1960.490234 -394.630249 2037.335449"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_11"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1030.895630 -790.024902 2074.161621"
+"target" "node_12"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1030.895630 -790.024902 2074.161621"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_12"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3229.200439 388.711884 2256.666748"
+"target" "node_13"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3229.200439 388.711884 2256.666748"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_13"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "663.717407 -1268.016113 1882.484985"
+"target" "node_14"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "663.717407 -1268.016113 1882.484985"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_14"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "745.231445 -86.263123 1917.069336"
+"target" "node_15"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "745.231445 -86.263123 1917.069336"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_15"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2460.275635 -1300.701294 2034.316772"
+"target" "node_16"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2460.275635 -1300.701294 2034.316772"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_16"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3402.482422 2.362732 1985.208496"
+"target" "node_17"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3402.482422 2.362732 1985.208496"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_17"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2796.973145 -1788.877930 2060.368896"
+"target" "node_18"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2796.973145 -1788.877930 2060.368896"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_18"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-138.836121 1036.378296 2109.114014"
+"target" "node_19"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-138.836121 1036.378296 2109.114014"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_19"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2591.431396 -672.356445 1776.914062"
+"target" "node_20"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2591.431396 -672.356445 1776.914062"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_20"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2230.761230 -1598.544434 2188.368896"
+"target" "node_21"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2230.761230 -1598.544434 2188.368896"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_21"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1148.750488 135.876343 1660.211182"
+"target" "node_22"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1148.750488 135.876343 1660.211182"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_22"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2056.973145 -945.236206 2039.228271"
+"target" "node_23"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2056.973145 -945.236206 2039.228271"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_23"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2354.890625 -227.989929 1919.572021"
+"target" "node_24"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2354.890625 -227.989929 1919.572021"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_24"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "254.259216 -814.639160 2015.265381"
+"target" "node_25"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "254.259216 -814.639160 2015.265381"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_25"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2461.293945 465.462677 1979.002197"
+"target" "node_26"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2461.293945 465.462677 1979.002197"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_26"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6169.022461 862.286499 2055.885010"
+"target" "node_27"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6169.022461 862.286499 2055.885010"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_27"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2732.888916 -1083.239014 1713.127197"
+"target" "node_28"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2732.888916 -1083.239014 1713.127197"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_28"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2408.107910 -390.945618 2178.022217"
+"target" "node_29"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-2408.107910 -390.945618 2178.022217"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_29"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "336.852173 17.875885 2207.265137"
+"target" "node_30"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "336.852173 17.875885 2207.265137"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_30"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6240.753906 432.749207 2051.164551"
+"target" "node_31"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6240.753906 432.749207 2051.164551"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_31"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1835.288208 889.922729 2024.597290"
+"target" "node_32"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1835.288208 889.922729 2024.597290"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_32"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6120.988770 -18.874084 2054.972412"
+"target" "node_33"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "6120.988770 -18.874084 2054.972412"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_33"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-746.117615 439.168945 2162.541992"
+"target" "node_34"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-746.117615 439.168945 2162.541992"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_34"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1659.530884 592.491272 2002.523926"
+"target" "node_35"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1659.530884 592.491272 2002.523926"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_35"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "21.995911 2037.246460 2037.275513"
+"target" "node_36"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "21.995911 2037.246460 2037.275513"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_36"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-561.187500 1826.059814 2096.886230"
+"target" "node_37"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-561.187500 1826.059814 2096.886230"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_37"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5543.990234 -167.666306 2048.832520"
+"target" "node_38"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5543.990234 -167.666306 2048.832520"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_38"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-646.361694 -177.996216 1961.499023"
+"target" "node_39"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-646.361694 -177.996216 1961.499023"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_39"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1399.394775 2050.162109 2092.810059"
+"target" "node_40"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1399.394775 2050.162109 2092.810059"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_40"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1293.417603 -334.023743 1830.286377"
+"target" "node_41"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1293.417603 -334.023743 1830.286377"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_41"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1003.815308 1549.772461 2101.335205"
+"target" "node_42"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1003.815308 1549.772461 2101.335205"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_42"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4962.870605 -73.608429 2044.538574"
+"target" "node_43"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4962.870605 -73.608429 2044.538574"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_43"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1374.865479 1535.219360 2100.567383"
+"target" "node_44"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1374.865479 1535.219360 2100.567383"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_44"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1740.299316 1950.449463 2096.779785"
+"target" "node_45"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1740.299316 1950.449463 2096.779785"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_45"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4932.404297 493.478058 2094.483154"
+"target" "node_46"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4932.404297 493.478058 2094.483154"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_46"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-410.503967 -570.201782 1979.647217"
+"target" "node_47"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-410.503967 -570.201782 1979.647217"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_47"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-370.645752 -1090.166626 1979.647339"
+"target" "node_48"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-370.645752 -1090.166626 1979.647339"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_48"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-493.511749 1497.347656 2151.730957"
+"target" "node_49"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-493.511749 1497.347656 2151.730957"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_49"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-537.351074 1301.987915 2327.244629"
+"target" "node_50"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-537.351074 1301.987915 2327.244629"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_50"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-194.882874 1630.712891 2095.421875"
+"target" "node_51"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-194.882874 1630.712891 2095.421875"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_51"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1278.318726 -2006.445068 1703.655029"
+"target" "node_52"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1278.318726 -2006.445068 1703.655029"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_52"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2249.297607 -988.585693 2127.012939"
+"target" "node_53"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2249.297607 -988.585693 2127.012939"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_53"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1102.414062 1876.090210 2096.890137"
+"target" "node_54"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1102.414062 1876.090210 2096.890137"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_54"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4107.914551 -625.870972 2200.820801"
+"target" "node_55"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4107.914551 -625.870972 2200.820801"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_55"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2329.544922 -1772.741943 1462.958740"
+"target" "node_56"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2329.544922 -1772.741943 1462.958740"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_56"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5148.186523 1093.508667 2047.523804"
+"target" "node_57"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5148.186523 1093.508667 2047.523804"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_57"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1865.633545 -2257.893066 1768.530273"
+"target" "node_58"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1865.633545 -2257.893066 1768.530273"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_58"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4448.574219 969.806152 2057.465820"
+"target" "node_59"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4448.574219 969.806152 2057.465820"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_59"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1348.243042 -2378.560791 1687.322754"
+"target" "node_60"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1348.243042 -2378.560791 1687.322754"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_60"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1630.347778 105.430679 1926.570801"
+"target" "node_61"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1630.347778 105.430679 1926.570801"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_61"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4287.935547 225.950867 2048.715820"
+"target" "node_62"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4287.935547 225.950867 2048.715820"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_62"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1643.322754 -1671.538696 1696.553223"
+"target" "node_63"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1643.322754 -1671.538696 1696.553223"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_63"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1702.926758 -437.717407 2078.163330"
+"target" "node_64"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1702.926758 -437.717407 2078.163330"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_64"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3836.899902 -36.641052 2038.854370"
+"target" "node_65"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3836.899902 -36.641052 2038.854370"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_65"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1201.752808 -1318.572998 2116.483398"
+"target" "node_66"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1201.752808 -1318.572998 2116.483398"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_66"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "688.434631 -572.581055 1675.932861"
+"target" "node_67"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "688.434631 -572.581055 1675.932861"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_67"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1410.507935 -707.300415 1964.286621"
+"target" "node_68"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1410.507935 -707.300415 1964.286621"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_68"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4504.933594 -324.228882 2061.338867"
+"target" "node_69"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4504.933594 -324.228882 2061.338867"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_69"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1627.294189 1531.350830 2095.876709"
+"target" "node_70"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1627.294189 1531.350830 2095.876709"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_70"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1973.765625 -1095.090332 1912.103516"
+"target" "node_71"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1973.765625 -1095.090332 1912.103516"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_71"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1736.303711 979.007568 2166.800293"
+"target" "node_72"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1736.303711 979.007568 2166.800293"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_72"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2025.294922 67.206909 1927.236938"
+"target" "node_73"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2025.294922 67.206909 1927.236938"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_73"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-77.306396 -480.396210 1863.564209"
+"target" "node_74"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-77.306396 -480.396210 1863.564209"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_74"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1884.757812 -664.585083 1728.187256"
+"target" "node_75"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1884.757812 -664.585083 1728.187256"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_75"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3975.346436 822.494446 2030.221191"
+"target" "node_76"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3975.346436 822.494446 2030.221191"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_76"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1735.039673 512.645142 2060.877441"
+"target" "node_77"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-1735.039673 512.645142 2060.877441"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_77"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-64.985596 555.558105 2028.134888"
+"target" "node_78"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-64.985596 555.558105 2028.134888"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_78"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3823.487061 518.588440 2209.066406"
+"target" "node_79"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3823.487061 518.588440 2209.066406"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_79"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3120.837402 -831.313904 2075.040527"
+"target" "node_80"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3120.837402 -831.313904 2075.040527"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_80"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-178.050476 267.963440 1964.765991"
+"target" "node_81"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-178.050476 267.963440 1964.765991"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_81"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2053.795410 -1494.315308 1710.102295"
+"target" "node_82"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2053.795410 -1494.315308 1710.102295"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_82"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5183.514160 -697.656616 2069.500000"
+"target" "node_83"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5183.514160 -697.656616 2069.500000"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_83"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5933.839844 -595.859619 2037.295898"
+"target" "node_84"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "5933.839844 -595.859619 2037.295898"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_84"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1475.769897 -1084.366455 2075.395996"
+"target" "node_85"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "1475.769897 -1084.366455 2075.395996"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_85"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-95.581314 -1111.912598 1814.172241"
+"target" "node_86"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-95.581314 -1111.912598 1814.172241"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_86"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3266.675293 -325.055847 2278.164551"
+"target" "node_87"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "3266.675293 -325.055847 2278.164551"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_87"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2820.066895 71.815231 1935.319336"
+"target" "node_88"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "2820.066895 71.815231 1935.319336"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_88"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4452.251953 561.790833 2068.393066"
+"target" "node_89"
+"targetname" "attack_heli_circle_node"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "4452.251953 561.790833 2068.393066"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "node_89"
+"classname" "script_struct"
+"script_specialops" "1"
+}
+{
+"origin" "-6795 3159 400"
+"targetname" "helicopter_crash_location"
+"classname" "script_origin"
+}
+{
+"origin" "-5045 -4891 768"
+"targetname" "helicopter_crash_location"
+"classname" "script_origin"
+}
+{
+"origin" "3503 4306 657"
+"targetname" "helicopter_crash_location"
+"classname" "script_origin"
+}
