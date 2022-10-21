@@ -61,7 +61,6 @@ function flyingintro()
         player:playsound("survival_slamzoom_out")
         game:ontimeout(function()
             game:visionsetnaked("end_game2", 0.25)
-
             ent:rotateto(vector:new(ent.angles.x - 89, ent.angles.y, 0), 0.5, 0.3, 0.2)
             game:ontimeout(function()
                 game:visionsetnaked("estate", 1.0)
@@ -107,7 +106,11 @@ function playerloadout()
         if (weapons[i]) then
             player:giveweapon(weapons[i].item)
             player:switchtoweapon(weapons[i].item)
-            player:setweaponammostock(weapons[i].item, weapons[i].stock)
+            if (weapons[i].stock == "max") then
+                player:givemaxammo(weapons[i].item)
+            else
+                player:setweaponammostock(weapons[i].item, weapons[i].stock)
+            end
         end
     end
 
@@ -148,7 +151,7 @@ end
 survivaltable = "sp/survival_waves.csv"
 survivalwavetable = survivaltable
 survivalarmorytable = "sp/survival_armories.csv"
-if (game:tableexists("sp/custom_waves.csv")) then
+if (game:tableexists("sp/custom_waves.csv") == 1) then
     survivalwavetable = "sp/custom_waves.csv"
 end
 
@@ -182,6 +185,8 @@ function getwavedata()
     wavedata.endrepeating = wavedata.startrepeating + wavedata.repeatingwaves - 1
     return wavedata
 end
+
+getwavedata()
 
 function getrelativewave()
     local wavedata = getwavedata()
@@ -330,8 +335,6 @@ function starttimer()
     interval:endon(player, "survival_player_ready")
 end
 
-game:precachestring("&lol_event")
-
 currentscore = 0
 local totalstats = {
     starttime = 0,
@@ -437,7 +440,7 @@ function waveend()
             countdown.aligny = "middle"
             countdown.horzalign = "center"
             countdown.vertalign = "middle"
-            countdown.font = "bank"
+            countdown.font = "bankshadow"
             countdown.fontscale = 2
             countdown.hidewhendead = true
             countdown.hidewheninmenu = true
@@ -501,8 +504,9 @@ function addscore(score)
     scorebuffer = scorebuffer + score
     currentscore = currentscore + score
     game:setdvar("ui_current_score", currentscore)
-    wavestats.score = wavestats.score + currentscore
-    totalstats.score = totalstats.score + currentscore
+    wavestats.score = wavestats.score + score
+    totalstats.score = totalstats.score + score
+    print(totalstats.score)
 end
 
 game:oninterval(function()
@@ -512,8 +516,20 @@ game:oninterval(function()
     end
 end, 0):endon(level, "special_op_terminated")
 
+local srcspawners = game:getentarray("info_enemy_spawnpoint", "classname")
+
 function getspawnpoints(mindist)
-    local spawners = game:getentarray("info_enemy_spawnpoint", "classname")
+    local srcspawners = game:getentarray("info_enemy_spawnpoint", "classname")
+    local spawners = nil
+    print(#srcspawners)
+    useclosestspawnpoints = true
+    if (useclosestspawnpoints) then
+        mindist = nil
+        spawners = game:scriptcall("common_scripts/utility", "get_array_of_closest", player.origin, srcspawners, nil, nil, 3000, 1500)
+    else
+        spawners = srcspawners
+    end
+
     local filtered = array:new()
     for i = 1, #spawners do
         if (mindist == nil or game:distance(spawners[i].origin, player.origin) > mindist) then
@@ -523,8 +539,6 @@ function getspawnpoints(mindist)
 
     return filtered
 end
-
-game:precachemodel("hat_opforce_merc_b")
 
 local endflags = {}
 
@@ -600,8 +614,9 @@ function spawnguys(enemycount, target, difficulty)
 
     local spawn = nil
     spawn = function()
-        local spawnpoints = getspawnpoints(1500)
+        local spawnpoints = getspawnpoints(800)
         if (#spawnpoints == 0) then
+            game:ontimeout(spawn, ms(game:randomfloatrange(0.1, 0.5)))
             return
         end
 
@@ -641,12 +656,11 @@ function spawnguys(enemycount, target, difficulty)
 
                     killedcount = killedcount + 1
                     enemydeath(guy)
+                    addscore(guy.xp)
 
                     if (killedcount == target) then
                         setflag(guysflag)
                     end
-
-                    addscore(guy.xp)
                 end, "death", "pain_death")
 
                 guy:onnotify("damage", function(damage, attacker, a3, a4, a5, a6, a7, bone)
@@ -666,12 +680,15 @@ function spawnguys(enemycount, target, difficulty)
                 end):endon(guy, "death")
 
                 guy:onnotifyonce("weapon_dropped", function(weapon)
+                    if (weapon == nil or not defined(weapon)) then
+                        return
+                    end
+
                     local name = weapon.classname:sub(#"weapon_" + 1)
                     weapon:itemweaponsetammo(getweaponclipcount(name), 0)
                 end)
 
-                guy:setgoalentity(player)
-                guy.goalradius = 256
+                guy:followplayer()
             end
 
             if (#spawners > 0) then
@@ -733,6 +750,26 @@ function getrandomhelispawnpos()
     return origin
 end
 
+game:precacheshader("javelin_hud_target")
+
+local objectiveindex = 2
+function addobjectiveonentity(ent, icon)
+    ent.objectiveindex = objectiveindex
+    objectiveindex = objectiveindex + 1
+
+    game:objective_add(ent.objectiveindex, "none")
+    game:objective_state_nomessage(ent.objectiveindex, "current")
+    game:objective_onentity(ent.objectiveindex, ent)
+
+    ent:onnotifyonce("death", function()
+        game:objective_delete(ent.objectiveindex)
+    end)
+
+    if (icon) then
+        game:objective_icon(ent.objectiveindex, icon)
+    end
+end
+
 function spawnchopper()
     local heliendflag = addflag()
     level._ID3644 = game:cos(180) -- set heli fov
@@ -751,7 +788,8 @@ function spawnchopper()
             return
         end
 
-        setenemyproperties(heli, "chopper")
+        addobjectiveonentity(heli)
+
         local helitarget = game:getent("little_bird_target", "targetname")
         helitarget.origin = heli.origin
 
@@ -765,18 +803,16 @@ function spawnchopper()
         end
     
         heli._ID11585 = true
-
-        heli:scriptcall("_ID48289", "_ID53152")
-
         game:ontimeout(function()
             game:scriptcall("_ID42508", "_ID4977", heli)
+            setenemyproperties(heli, "chopper")
         end, 100)
 
         heli:onnotifyonce("death", function()
             local points = getpointsforenemytype("chopper")
             addscore(points)
-            setflag(heliendflag)
             enemydeath(heli)
+            setflag(heliendflag)
         end)
         
         heli:onnotify("damage", function(damage, attacker)
@@ -814,8 +850,33 @@ function enemydeath(guy)
     totalstats.shotshit = totalstats.shotshit + 1
 end
 
+function entity:followplayer()
+    if (not findbestnodeinterval) then
+        findbestnodeinterval = game:oninterval(function()
+            local radius = 128
+            local nodes = game:getnodesinradiussorted(game:getgroundposition(player.origin), 2000)
+            if (#nodes > 0) then
+                local dist = game:distance2d(nodes[1].origin, player.origin)
+                player.farawayfromnodes = dist > 128
+                player.bestnode = nodes[1]
+            end
+
+        end, 1000)
+    end
+
+    game:oninterval(function()
+        self.goalradius = 256
+        --if (player.farawayfromnodes == 1 and player.bestnode ~= nil) then
+            --print("going to closest node")
+            --self:setgoalnode(player.bestnode)
+        --else
+            --print("going to player")
+            self:setgoalpos(player.origin)
+        --end
+    end, 0):endon(self, "death")
+end
+
 function spawnjuggernaut(enemytype, landingpos)
-    print("spawnjugg", landingpos)
     local juggendflag = addflag()
 
     local count = 0
@@ -844,8 +905,8 @@ function spawnjuggernaut(enemytype, landingpos)
         rider.invulnerable = true
         heli:onnotifyonce("unloaded", function()
             rider.invulnerable = false
-            rider:setgoalentity(player)
-            rider.goalradius = 256
+            rider:followplayer()
+            setenemyproperties(rider, enemytype)
         end)
 
         heli:onnotifyonce("unloading", function()
@@ -853,11 +914,10 @@ function spawnjuggernaut(enemytype, landingpos)
             game:playfx(fx["smoke"], trace)
         end)
 
-        setenemyproperties(rider, enemytype)
-
         rider:onnotifyonce("death", function()
             local points = getpointsforenemytype(enemytype)
             addscore(points)
+            enemydeath(rider)
             setflag(juggendflag)
         end)
 
@@ -1038,6 +1098,60 @@ function uav()
     end)
 end
 
+function ac130()
+    local ac130model = game:spawn("script_model", vector:new(0, 0, 0))
+    ac130model:setmodel("vehicle_ac130_low")
+
+    local center = game:getent("info_map_center", "classname")
+    local radius = center.radius + 400
+    local speed = 4
+    local points = {}
+
+    for angle = 360, 0, -1 do
+        local x = center.origin.x + radius * game:cos(angle)
+        local y = center.origin.y + radius * game:sin(angle)
+        table.insert(points, vector:new(x, y, center.height + 5000))
+    end
+
+    ac130model.origin = points[1]
+    ac130model.angles = vector:new(0, -90, 25)
+    local index = 2
+
+    local movetonode = nil
+    movetonode = function()
+        if (index > #points) then
+            index = 2
+        end
+
+        ac130model:moveto(points[index], 0.1 * speed)
+        game:ontimeout(function()
+            movetonode()
+        end, 50 * speed)
+
+        index = index + 1
+    end
+
+    game:oninterval(function()
+        if (ac130target) then
+            local origin = ac130model:gettagorigin("tag_40mm")
+            local missile = game:magicbullet("ac130_40mm", origin, ac130target)
+        end
+    end, 300)
+
+    game:oninterval(function()
+        local rotateindex = index + 1
+        if (rotateindex > #points) then
+            rotateindex = 1 
+        end
+
+        local angles = game:vectortoangles(points[rotateindex] - ac130model.origin)
+        angles.z = 30
+        ac130model:rotateto(angles, 0.5)
+    end, 0)
+
+    movetonode()
+end
+
 function uavrigaiming()
     if (defined(level._ID45535)) then
         return
@@ -1045,8 +1159,10 @@ function uavrigaiming()
 
     local center = game:getent("info_map_center", "classname")
     local radius = center.radius
+    local speed = 2
     local points = {}
-    for angle = 0, 360, 4 do
+
+    for angle = 0, 360, 1 do
         local x = center.origin.x + radius * game:cos(angle)
         local y = center.origin.y + radius * game:sin(angle)
         table.insert(points, vector:new(x, y, center.height))
@@ -1059,11 +1175,10 @@ function uavrigaiming()
 
     local index = 2
 
-    local focuspoints = game:getentarray("uav_focus_point", "targetname")
     local interval = game:oninterval(function()
         local pointindex = index + 1
         if (pointindex > #points) then
-            pointindex = 1
+            pointindex = 2
         end
 
         local angles = game:vectortoangles(center.origin - level._ID39406.origin)
@@ -1074,13 +1189,13 @@ function uavrigaiming()
     local movetonode = nil
     movetonode = function()
         if (index > #points) then
-            index = 1
+            index = 2
         end
 
-        uavmodel:moveto(points[index], 2)
-        uavmodel:onnotifyonce("movedone", function()
+        uavmodel:moveto(points[index], 0.1 * speed)
+        game:ontimeout(function()
             movetonode()
-        end)
+        end, 50 * speed)
 
         index = index + 1
     end
@@ -1255,6 +1370,8 @@ function loadfx()
     fx["martyrdom_red_blink"] = game:loadfx("vfx/lights/aircraft_light_red_blink")
     fx["smoke"] = game:loadfx("fx/smoke/smoke_grenade")
 
+    game:precachemodel("vehicle_ac130_low")
+
     level.smokefx = game:loadfx("fx/smoke/signal_smoke_airdrop")
 end
 
@@ -1330,13 +1447,6 @@ function spawnarmories()
 end
 
 function startsurvival()
-    game:precacheshader("dpad_killstreak_sentry_gun_static_frontend")
-    game:precacheshader("hud_icon_rpg_dpad")
-    game:precachemodel("sentry_minigun")
-    game:precachemodel("sentry_grenade_launcher")
-    game:precacheturret("sentry_grenade_launcher")
-    game:precacheturret("sentry_gun")
-
     loadfx()
 
     --level._ID20913 = false
@@ -1379,7 +1489,8 @@ function startsurvival()
 
     flagwait("slamzoom_finished", function()
         uav()
-        
+        ac130()
+
         game:objective_add(1, "current", "&SO_SURVIVAL_SURVIVAL_OBJECTIVE")
 
         intromusic()

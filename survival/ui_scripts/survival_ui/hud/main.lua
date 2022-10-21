@@ -9,6 +9,113 @@ LUI.MenuBuilder.m_definitions["actionSlotDef"] = function()
     return actionslot
 end
 
+local objectivesframe = package.loaded["LUI.sp_hud.ObjectivesFrame"]
+
+f0_local0 = 0.58
+f0_local1 = 0.6
+f0_local2 = 23
+local f0_local3 = 0
+local f0_local4 = 4
+local f0_local5 = nil
+local f0_local6 = PauseMenuAnimationSettings.MapGlitch.DurationIn / 7
+local f0_local7 = {
+	Styles = {
+		Minimap = {
+			Top = 155.66 - DesignGridDims.vert_gutter + f0_local3,
+			Right = DesignGridDims.horz_gutter - 54.66,
+			BackgroundWidth = 206,
+			BackgroundHeight = 206,
+			Width = 178,
+			Height = 178
+		},
+		MapInfos = {
+			Top = 6 + f0_local3,
+			Right = DesignGridDims.horz_gutter - 71,
+			Spacing = 20
+		},
+		ObjectiveBox = {
+			Top = 118.66 - DesignGridDims.vert_gutter + f0_local3,
+			Left = GenericMenuDims.menu_width_standard + 122
+		},
+		ObjectiveTitle = {
+			Top = 7 + f0_local3,
+			Left = 0,
+			Width = 500
+		},
+		ObjectiveList = {
+			Top = 38.16 + f0_local2 + f0_local3,
+			Left = 19,
+			Width = 500
+		}
+	}
+}
+
+objectivesframe.RefreshMinimapObjectives = function(root, f22_arg1 )
+	if objectivesframe.updateMinimapVisibility() then
+        local objectives = Engine.GetPauseMenuObjectives()
+        for i = 1, #objectives do
+            for k, v in pairs(objectives[i]) do
+                --print(k, v)
+            end
+        end
+		local f22_local0 = Engine.GetPlayerObjectivePositions( f0_local7.Styles.Minimap.Width / 1.5, f0_local7.Styles.Minimap.Height / 1.5 )
+		if f22_local0 then
+			for f22_local1 = 1, #f22_local0, 1 do
+				local posx = f22_local0[f22_local1].x * 1.5
+				local posy = f22_local0[f22_local1].y * 1.5
+
+				if root.objectiveCount < f22_local1 then
+					root.mapBlipPulse:addPulse({
+						name = "objective_" .. f22_local1,
+						posX = posx,
+						posY = posy,
+						anchor = CoD.AnchorTypes.None,
+						useContainer = f22_arg1,
+                        material = "compass_objpoint_helicopter",
+                        pulseCount = 0,
+                        initialSize = 50,
+                        finalSize = 50,
+					})
+
+                    local icon = root.mapBlipPulse:getLastChild()
+                    icon:registerEventHandler("blip_timer", function(element, event)
+                        local v1 = event.props.posX - event.props.initialSize / 2
+                        local v2 = event.props.posY - event.props.initialSize / 2
+                        local v3 = event.props.posX - event.props.finalSize / 2
+                        local v4 = event.props.posY - event.props.finalSize / 2
+
+                        local state = CoD.CreateState(v1, v2, v1 + event.props.initialSize, v2 + event.props.initialSize, event.props.anchor)
+                        state.material = RegisterMaterial(event.props.material)
+                        state.alpha = 1
+
+                        if (not element.image) then
+                            element.image = LUI.UIImage.new(state)
+                            element.image.name = event.props.name .. "_blip_icon_" .. event.tag
+                            element.image.id = nil
+                            element:addElement(element.image)
+                        end
+                    end)
+				end
+				local found = false
+				local icon = root.mapBlipPulse:getFirstChild()
+				while (icon ~= nil and not found) do
+					if string.find(icon.id, f22_local1 .. "_container" ) then
+						icon:setLeftRight( false, false, posx, posx + 1 )
+						icon:setTopBottom( false, false, posy, posy + 1 )
+						found = true
+					else
+						icon = icon:getNextSibling()
+					end
+				end
+			end
+			root.objectiveCount = #f22_local0
+		else
+			root.mapBlipPulse:clearAll()
+			root.objectiveCount = 0
+		end
+	end
+end
+
 local oncreate = function(menu)
     local createstate = CoD.CreateState
     CoD.CreateState = function(...)
@@ -21,7 +128,18 @@ local oncreate = function(menu)
         return createstate(...)
     end
 
-    LUI.sp_hud.ObjectivesFrame.AddMiniMap(menu)
+    local refresh = LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives
+    LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives = function(a1, a2)
+        local count = Engine.GetPlayerObjectivePositions(0, 0)
+        if (count and menu.miniMapContainer and menu.miniMapContainer.miniMapIcons and #count < menu.miniMapContainer.miniMapIcons.objectiveCount) then
+            menu.miniMapContainer.miniMapIcons.mapBlipPulse:clearAll()
+            menu.miniMapContainer.miniMapIcons.objectiveCount = 0
+        end
+
+        refresh(a1, a2)
+    end
+
+    LUI.sp_hud.ObjectivesFrame.AddMiniMap(menu, true)
     local minimap = menu.miniMapContainer:getFirstChild()
 
     minimap:registerAnimationState("hud_off", {

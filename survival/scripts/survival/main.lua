@@ -46,11 +46,6 @@ black.alpha = 0
 
 game:overridedvarint("g_gameskill", 1)
 
--- set_custom_gameskill_func
-level._ID9544 = function()
-    game:scriptcall("_ID42298", "_ID34935")
-end
-
 gameskill = game:getdvarint("g_gameskill")
 
 map.premain()

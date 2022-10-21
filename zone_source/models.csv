@@ -7,3 +7,6 @@ xmodel,sentry_grenade_launcher_obj
 xmodel,sentry_grenade_launcher_destroyed
 xmodel,sentry_grenade_launcher_upgrade_destroyed
 xmodel,sentry_gun_obj_red
+xmodel,com_laptop_open
+xmodel,com_laptop_close
+xmodel,com_plasticcase_green_big

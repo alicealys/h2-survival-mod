@@ -11,6 +11,6 @@ main()
     maps\dc_whitehouse_anim::main();
     maps\dc_whitehouse_aud::main();
 
-    //_id_D2A4::main(); // sentry
+    _id_D2A4::main(); // sentry
     _id_C630::init(); // predator
 }

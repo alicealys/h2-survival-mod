@@ -61,11 +61,9 @@ function ingame()
     end
 
     local mapname = Engine.GetDvarString("mapname")
-    local basemap = mapname:sub(#"so_survival_" + 1)
     local mapnamestr = "@SPECIAL_OPS_" .. Engine.ToUpperCase(mapname)
     local discordstatus = cleanstr(Engine.Localize("@PRESENCE_PLAYINGSO_SURVIVAL", mapnamestr))
     Engine.Exec("setdiscorddetails " .. discordstatus)
-    Engine.Exec("setdiscordimage " .. basemap)
 
     Engine.SetDvarBool("bg_compassShowEnemies", true)
 

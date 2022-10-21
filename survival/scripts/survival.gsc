@@ -13,6 +13,42 @@ main()
         getent(i.target, "targetname") delete();
         i delete();
     }
+
+    replacefunc(maps\_gameskill::should_show_cover_warning, ::ret_false);
+    replacefunc(maps\_load::_id_B3AD, ::_id_B3AD);
+    level.custom_gameskill_func = maps\_gameskill::solo_player_in_special_ops;
+}
+
+init()
+{
+    vehicle_scripts\_littlebird::main( "vehicle_little_bird_armed", undefined, "script_vehicle_littlebird_armed" );
+    vehicle_scripts\_littlebird::main( "vehicle_little_bird_bench", undefined, "script_vehicle_littlebird_bench" );
+    vehicle_scripts\_mi17::main( "vehicle_mi17_woodland_fly_cheap", undefined, "script_vehicle_mi17_woodland_fly_cheap" );
+}
+
+_id_B3AD()
+{
+    ents = getentarray();
+
+    if (!isdefined(ents))
+    {
+        return;
+    }
+
+    foreach (ent in ents)
+    {
+        if (ent maps\_load::_id_B92E(true))
+        {
+            ent delete();
+        }
+    }
+
+    maps\_load::_id_B29C();
+}
+
+ret_false()
+{
+    return false;
 }
 
 nullsub()

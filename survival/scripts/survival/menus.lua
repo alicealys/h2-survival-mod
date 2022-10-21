@@ -109,7 +109,7 @@ game:oninterval(function()
         end
 
         game:sharedset("can_buy_remote_missile", "1")
-        game:sharedset("can_buy_precision_airstrike", "0") -- unimplemented
+        game:sharedset("can_buy_precision_airstrike", "1") -- unimplemented
         game:sharedset("can_buy_friendly_support_delta", "0") -- unimplemented
         game:sharedset("can_buy_friendly_support_riotshield", "0") -- unimplemented
     end
@@ -403,6 +403,17 @@ addairsupport("remote_missile", function()
     end
 end)
 
+addairsupport("precision_airstrike", function()
+    if (player.supportitem ~= nil) then
+        return false
+    end
+
+    player.supportitem = "precision_airstrike"
+    player:giveweapon("airdrop_marker_purple")
+    player:setactionslot(4, "weapon", "airdrop_marker_purple")
+    player:setweaponhudiconoverride("actionslot4", "hud_us_smokegrenade")
+end)
+
 game:detour("_ID50736", "_ID46425", function()
     player._ID29480 = 4
 end)
@@ -482,8 +493,22 @@ local airdropfx = game:loadfx("fx/smoke/signal_smoke_red_estate")
 game:precachemodel("wpn_h1_grenade_smoke_burnt")
 
 player:onnotify("grenade_fire", function(grenade, name)
-    if (name == "airdrop_marker") then
+    if (name == "airdrop_marker_purple") then
+        if (player.supportitem == "precision_airstrike") then
+            player.supportitem = nil
+            player:setactionslot(4, "")
+            player:setweaponhudiconoverride("actionslot4", "")
+        end
+
         grenade:onnotifyonce("explode", function(origin)
+            game:ontimeout(function()
+                ac130target = origin
+                game:ontimeout(function()
+                    ac130target = origin
+                    ac130target = nil
+                end, 5000)
+            end, 3000)
+
             --[[local helispawner = game:getent("airdrop_heli_spawner", "targetname")
             local spawnpoint = getrandomhelispawnpos()
             helispawner.origin = spawnpoint

@@ -295,6 +295,391 @@
 "classname" "script_origin"
 }
 {
+"origin" "1226.911255 -3532.387207 -244.442322"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1440.259644 -3115.443115 -250.632126"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1136.526489 -2892.798584 -145.691437"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "742.872070 -2435.664795 -158.036942"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-135.937332 -2489.413330 -157.875000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-662.919006 -2174.664551 -173.352554"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-835.835266 -2433.664062 -199.674194"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-680.888184 -2715.418457 -257.901154"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-488.436890 -2171.026123 -155.153625"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-492.846283 -1938.518799 -146.431198"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-434.688538 -1443.321899 -157.951065"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-112.027016 -1542.702515 -154.318893"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "276.820801 -1582.859253 -139.585663"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "530.099854 -1732.711060 -173.910217"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "919.476135 -1530.186890 -238.599136"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1282.013672 -1278.880981 -275.353607"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1586.408081 -1133.174683 -275.963104"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1977.590576 -1022.834045 -275.875000"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2510.022705 -289.445862 -86.438347"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "2526.417969 230.294174 -117.381287"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-3255.462158 6781.974609 124.397041"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-3590.263428 6625.594727 202.821762"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-3669.487061 6420.252441 215.613342"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-3371.091064 6390.054688 159.088882"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-3090.867920 6713.237305 76.289986"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2827.583740 6675.787109 14.124353"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2894.545654 6436.564453 18.960135"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2963.722656 6132.333984 -64.929184"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-3101.622070 6020.141602 -91.821503"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2919.874756 5848.323242 -118.907303"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2776.811523 5687.323242 -185.243515"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2519.285400 5736.636230 -174.236511"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2114.980713 6003.833496 -131.322479"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2154.562744 6391.132324 -126.913132"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2249.017090 6375.690430 -119.530380"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2416.504639 6276.160645 -82.493523"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1695.167847 5160.694336 -242.889618"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1626.189209 4963.236816 -252.078812"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2183.379395 5025.980469 -244.107178"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2219.784424 5101.171387 -249.481476"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2393.629150 5275.624512 -233.237091"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1793.736084 4733.743164 -268.414948"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1660.014404 4644.426270 -274.573212"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1558.620361 4622.223145 -278.678619"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1416.529907 4639.586426 -281.909576"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1326.881836 4734.707520 -250.631012"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1280.320435 4511.584473 -267.642517"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1029.132080 4353.144043 -211.908005"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-819.388733 4287.590332 -247.930069"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-671.212952 4461.337891 -332.155426"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-493.724548 4515.802734 -348.340027"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-419.869019 4331.782227 -342.694580"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-411.856812 4068.849121 -299.267090"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-568.557312 3599.065918 -250.754272"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-665.032532 3262.089111 -256.691315"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-623.087463 3068.371826 -245.031097"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-753.977356 2788.453125 -224.418045"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1227.963623 2822.271729 -126.979309"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1081.789917 2494.918945 -172.296661"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1431.703369 2405.944092 -201.403549"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2184.420410 2385.110840 -282.322266"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2375.091797 1929.256226 -251.157959"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2385.149658 1596.346069 -247.875198"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2226.167969 1222.768433 -260.921692"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "927.579529 2834.422607 29.942379"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1216.512085 4086.172363 -190.072983"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "925.472168 3997.290039 -207.366699"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1746.205200 3031.287354 25.860674"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "1955.182373 2789.353271 -5.392255"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-971.718384 3757.556396 -316.252686"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1202.741455 3680.656006 -316.883057"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-1672.302002 3508.863037 -342.434845"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2269.048340 3215.045166 -389.328583"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2269.274414 4183.098633 -171.029221"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2408.952881 4408.191406 -154.884766"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2514.791504 4043.956543 -203.308533"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
+"origin" "-2062.466797 5190.153809 -256.188934"
+"classname" "info_enemy_spawnpoint"
+"script_specialops" "1"
+}
+{
 "origin" "615.3 522.4 196"
 "classname" "info_enemy_spawnpoint"
 "script_specialops" "1"

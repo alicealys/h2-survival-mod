@@ -37,7 +37,7 @@ a0,b1,c2,d3,e4,f5,g6,h7,i8,j9,k10,
 114,dog_splode,Martydom Dogs,Dogs strapped with C4 that explode on death,,,,100,1,150,,
 115,friendly_support_delta,Delta Allies,Delta Infantry with M16s,,m16_basic,fraggrenade,500,1,100,,1.3
 116,friendly_support_riotshield,Riotshield Allies,GIGN Riotshield Infantry with MP5Ks,,mp5_survival,fraggrenade,500,1,100,,1.3
-1000,weapon_1,iw5_fnfiveseven_mp,max,,,,,,,,
+1000,weapon_1,beretta,max,,,,,,,,
 1001,weapon_2,,,,,,,,,,
 1002,weapon_3,,,,,,,,,,
 1003,grenade_1,fraggrenade,3,,,,,,,,

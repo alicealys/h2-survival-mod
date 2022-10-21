@@ -75,7 +75,7 @@ function createhuditem(line, xoffset, message, alwaysdraw)
 	hudelem.horzalign = "right"
 	hudelem.vertalign = "middle"
 	hudelem.x = xoffset
-    hudelem.font = "bank"
+    hudelem.font = "bankshadow"
 	hudelem.y = -92 + (15 * line)
 	hudelem.foreground = 1
 	hudelem.fontscale = 1.3

@@ -199,33 +199,16 @@
                         ],
                         "subtype": null
                     },
-                    {
-                        "bytes": [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "subtype": null
-                    },
-                    {
-                        "bytes": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "subtype": null
-                    }
+                    null,
+                    null
                 ],
                 "u1": 4,
-                "u4": 0,
-                "u6": 0.0010000000474974513
-            }
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
         },
         {
             "aliasName": "so_hq_enemy_intel_transport_02",
@@ -424,33 +407,16 @@
                         ],
                         "subtype": null
                     },
-                    {
-                        "bytes": [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "subtype": null
-                    },
-                    {
-                        "bytes": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "subtype": null
-                    }
+                    null,
+                    null
                 ],
                 "u1": 4,
-                "u4": 0,
-                "u6": 0.0010000000474974513
-            }
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
         }
     ]
 }
