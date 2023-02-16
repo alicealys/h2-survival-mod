@@ -1,6 +1,6 @@
 {
     "name": "Survival",
     "author": "fed",
-    "version": "1.0.4",
-    "description": "Custom survival gamemode for MW2CR"
+    "version": "2.0.0",
+    "description": "MW3 survival ported to MW2CR"
 }
