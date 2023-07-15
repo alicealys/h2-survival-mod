@@ -23,3 +23,13 @@ common_survival
 mod
 so_survival_estate
 so_survival_favela_escape
+
+// h1 zones (dump with Joelrau/h1-zonetool@h2)
+
+eng_patch_code_post_gfx_mp
+patch_common_mp
+techsets_common_mp
+common_mp
+// all weapon zones
+mp_wm_*_base*.ff
+mp_vm_*_base*.ff

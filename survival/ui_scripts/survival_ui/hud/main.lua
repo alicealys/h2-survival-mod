@@ -1,6 +1,7 @@
 require("hud/score")
 require("hud/wavesummary")
 require("hud/perks")
+require("hud/laststand")
 
 local actionslotdef = LUI.MenuBuilder.m_definitions["actionSlotDef"]
 LUI.MenuBuilder.m_definitions["actionSlotDef"] = function()
@@ -52,12 +53,6 @@ local f0_local7 = {
 
 objectivesframe.RefreshMinimapObjectives = function(root, f22_arg1 )
 	if objectivesframe.updateMinimapVisibility() then
-        local objectives = Engine.GetPauseMenuObjectives()
-        for i = 1, #objectives do
-            for k, v in pairs(objectives[i]) do
-                --print(k, v)
-            end
-        end
 		local f22_local0 = Engine.GetPlayerObjectivePositions( f0_local7.Styles.Minimap.Width / 1.5, f0_local7.Styles.Minimap.Height / 1.5 )
 		if f22_local0 then
 			for f22_local1 = 1, #f22_local0, 1 do
@@ -116,7 +111,84 @@ objectivesframe.RefreshMinimapObjectives = function(root, f22_arg1 )
 	end
 end
 
+local function hud_()
+    local menucontainer = LUI.UIElement.new({
+        leftAnchor = true,
+        topAnchor = true,
+        width = 1280,
+        height = 720
+    })
+    
+    menucontainer:registerAnimationState("hud_on", {
+        alpha = 1
+    })
+    
+    menucontainer:registerAnimationState("hud_off", {
+        alpha = 0
+    })
+
+    menucontainer:registerAnimationState("on", {
+        alpha = 1
+    })
+
+    menucontainer:registerAnimationState("off", {
+        alpha = 0
+    })
+
+    menucontainer:registerEventHandler("show_survival_hud", function(element, event)
+        if (event.data == "1") then
+            menucontainer:animateToState("on", 100)
+        else
+            menucontainer:animateToState("off", 100)
+        end
+    end)
+
+    addscorehud(menucontainer)
+    addwavesummaryhud(menucontainer)
+    addperkshud(menucontainer)
+    addlaststandhud(menucontainer)
+
+    return menucontainer
+end
+
+LUI.MenuBuilder.registerType("hud_survival", hud_)
+
+local weaponinfo = LUI.MenuBuilder.m_definitions["WeaponInfoHudDef"]
+LUI.MenuBuilder.m_definitions["WeaponInfoHudDef"] = function ()
+    local def = weaponinfo()
+    table.insert(def.children, {
+        type = "hud_survival"
+    })
+    
+    return def
+end
+
+--[[
+LUI.roots.UIRoot0:registerEventHandler("_gc__", function()
+    collectgarbage()
+    collectgarbage()
+    printmemoryusage()
+
+end)
+LUI.roots.UIRoot0:addElement(LUI.UITimer.new(400, "_gc__"))--]]
+
+local minimapmenu = nil
+do
+    local refresh = LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives
+    LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives = function(a1, a2)
+        local count = Engine.GetPlayerObjectivePositions(0, 0)
+        if (count and minimapmenu.miniMapContainer and minimapmenu.miniMapContainer.miniMapIcons and #count < minimapmenu.miniMapContainer.miniMapIcons.objectiveCount) then
+            minimapmenu.miniMapContainer.miniMapIcons.mapBlipPulse:clearAll()
+            minimapmenu.miniMapContainer.miniMapIcons.objectiveCount = 0
+        end
+    
+        refresh(a1, a2)
+    end
+end
+
 local oncreate = function(menu)
+    minimapmenu = menu
+
     local createstate = CoD.CreateState
     CoD.CreateState = function(...)
         local args = {...}
@@ -128,18 +200,8 @@ local oncreate = function(menu)
         return createstate(...)
     end
 
-    local refresh = LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives
-    LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives = function(a1, a2)
-        local count = Engine.GetPlayerObjectivePositions(0, 0)
-        if (count and menu.miniMapContainer and menu.miniMapContainer.miniMapIcons and #count < menu.miniMapContainer.miniMapIcons.objectiveCount) then
-            menu.miniMapContainer.miniMapIcons.mapBlipPulse:clearAll()
-            menu.miniMapContainer.miniMapIcons.objectiveCount = 0
-        end
-
-        refresh(a1, a2)
-    end
-
     LUI.sp_hud.ObjectivesFrame.AddMiniMap(menu, true)
+    CoD.CreateState = createstate
     local minimap = menu.miniMapContainer:getFirstChild()
 
     minimap:registerAnimationState("hud_off", {
@@ -150,7 +212,6 @@ local oncreate = function(menu)
         alpha = 1
     })
 
-    local hudoff = menu.m_eventHandlers["hud_off"]
     minimap.hud_off = false
     minimap.showing_message = false
 
@@ -170,10 +231,6 @@ local oncreate = function(menu)
             minimap.showing_message = true
         end
     end)
-
-    addscorehud(menu)
-    addwavesummaryhud(menu)
-    addperkshud(menu)
 end
 
 local compassdef = LUI.MenuBuilder.m_definitions["CompassHudDef"]

@@ -12,8 +12,8 @@ main()
     self.health = 3600;
     self.grenadeweapon = "fraggrenade";
     self.grenadeammo = 0;
-    self.secondaryweapon = "beretta";
-    self.sidearm = "beretta";
+    self.secondaryweapon = "h2_berretta_mp";
+    self.sidearm = "h2_berretta_mp";
 
     if (isai(self))
     {
@@ -21,7 +21,7 @@ main()
         self setengagementmaxdist(256.0, 1024.0);
     }
 
-    self.weapon = "m240";
+    self.weapon = "h2_m240_mp";
     character\character_sp_juggernaut_h2::main();
 }
 
@@ -33,8 +33,5 @@ spawner()
 precache()
 {
     character\character_sp_juggernaut_h2::precache();
-    precacheitem("m240");
-    precacheitem("beretta");
-    precacheitem("fraggrenade");
     maps\_juggernaut::main();
 }

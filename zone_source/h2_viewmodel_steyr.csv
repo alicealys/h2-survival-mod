@@ -1,0 +1,4 @@
+name,h2_viewmodel_steyr
+base,h2_viewmodel_steyr_base
+attachment,attach_h2_steyr_rail_vm
+attachment,attach_h2_steyr_foregrip_vm

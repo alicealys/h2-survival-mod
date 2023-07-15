@@ -1,0 +1,232 @@
+{
+	menuDef
+	{
+		name "override/briefing"
+		rect 0 0 640 480 0 0
+		style 1
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		onOpen
+		{
+			setLocalVarInt "loading_open_time" milliseconds( );
+			setLocalVarString "loadscreen_mat" tablelookup( "sp/survival_maps.csv" , 1, dvarstring( "mapname" ), 4 );
+			setLocalVarString "map_name_str" tablelookup( "sp/survival_maps.csv" , 1, dvarstring( "mapname" ), 2 );
+			setLocalVarString "map_desc_str" tablelookup( "sp/survival_maps.csv" , 1, dvarstring( "mapname" ), 3 );
+			setdvar cl_disableMapMovies 1;
+		}
+		itemDef
+		{
+			rect -107 0 854 480 0 0
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( ( localvarstring( "loadscreen_mat" ) ) )
+		}
+		itemDef
+		{
+			rect -107 0 854 480 0 0
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "h1_ui_load_vignette"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -236.667 145.5 154 17 3 2
+			decoration
+			visible 1
+			style 1
+			border 1
+			borderSize 0.5
+			forecolor 1 1 1 1
+			backcolor 1 1 1 0.25
+			bordercolor 0.85 0.81 0.33 0.1
+			background "black"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -236.667 145.5 1 0.5 3 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.85 0.81 0.33 0.3
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -83.6667 145.5 1 0.5 3 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.85 0.81 0.33 0.3
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -236.667 162 1 0.5 3 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.85 0.81 0.33 0.3
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -83.6667 162 1 0.5 3 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.85 0.81 0.33 0.3
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -229.667 151.75 140 4.5 3 2
+			decoration
+			visible 1
+			style 1
+			border 1
+			borderSize 0.5
+			forecolor 1 1 1 1
+			backcolor 0.22 0.21 0.21 1
+			bordercolor 0.85 0.81 0.33 1
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "loadbar"
+			rect -229.667 152 139.75 4 3 2
+			decoration
+			visible 1
+			style 7
+			forecolor 0.85 0.81 0.33 1
+			background "h1_ui_loadscreen_progress_highlight"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -184.667 94 50 50 3 2
+			decoration
+			visible 1
+			style 3
+			ownerdraw 391
+			forecolor 1 1 1 1
+			background "loading_animation"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -3.33333 -70.5 351 247 1 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "h1_ui_load_title"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 640 69 4 4
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "h1_ui_header_glitch"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 44.006 143.284 8 8 1 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "h1_ui_deco_green_triangle"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 66.6104 92.3077 853.333 480 1 2
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 12
+			textalign 4
+			textstyle 2080
+			textscale 0.575
+			exp text ( locstring( "@" + localvarstring( "map_name_str" ) ) )
+		}
+		itemDef
+		{
+			rect 248.667 111.628 3 3 1 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.85 0.81 0.33 1
+			background "white"
+			textscale 0.55
+			visible when ( ( sin( milliseconds( ) / 200 ) > 0.5 ) )
+		}
+		itemDef
+		{
+			rect 68.4167 129.73 15 1 1 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.85 0.81 0.33 1
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 67.1667 144 250 480 1 2
+			decoration
+			autowrapped
+			visible 1
+			forecolor 0.85 0.81 0.33 1
+			textfont 1
+			textalign 4
+			textstyle 2
+			textscale 0.18
+			exp text ( locstring( "@" + localvarstring("map_desc_str") ) )
+		}
+		itemDef
+		{
+			rect 25 20 853.333 480 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.25
+			textfont 1
+			textalign 4
+			textstyle 2
+			textscale 0.2
+			visible when ( ( milliseconds( ) > ( localvarint( "loading_open_time" ) + 50 ) ) )
+			exp text ( getwaitpopupstatus( ) )
+		}
+		itemDef
+		{
+			rect 0 426 640 54 4 4
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "h1_ui_footer_glitch"
+			textscale 0.55
+		}
+	}
+}

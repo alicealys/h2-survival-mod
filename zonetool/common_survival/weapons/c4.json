@@ -36,7 +36,7 @@
         "MELEE_MISS": "",
         "MELEE_VICTIM_CROUCHING_HIT": "",
         "MELEE_VICTIM_CROUCHING_FATAL": "",
-        "VICTIM_CROUCHING_MISS": "",
+        "MELEE_VICTIM_CROUCHING_MISS": "",
         "MELEE_ALT_STANDING": "",
         "MELEE_ALT_CROUCHING": "",
         "MELEE_ALT_PRONE": "",
@@ -240,7 +240,7 @@
         "MELEE_MISS": "",
         "MELEE_VICTIM_CROUCHING_HIT": "",
         "MELEE_VICTIM_CROUCHING_FATAL": "",
-        "VICTIM_CROUCHING_MISS": "",
+        "MELEE_VICTIM_CROUCHING_MISS": "",
         "MELEE_ALT_STANDING": "",
         "MELEE_ALT_CROUCHING": "",
         "MELEE_ALT_PRONE": "",
@@ -444,7 +444,7 @@
         "MELEE_MISS": "",
         "MELEE_VICTIM_CROUCHING_HIT": "",
         "MELEE_VICTIM_CROUCHING_FATAL": "h2_wpn_knife_melee_stab",
-        "VICTIM_CROUCHING_MISS": "",
+        "MELEE_VICTIM_CROUCHING_MISS": "",
         "MELEE_ALT_STANDING": "",
         "MELEE_ALT_CROUCHING": "",
         "MELEE_ALT_PRONE": "",
@@ -1262,12 +1262,10 @@
         "heightSplitscreen": 0.0
     },
     "accuracy_graph": {
-        "accuracyGraphKnots": null,
         "accuracyGraphName": [
             "",
             ""
-        ],
-        "originalAccuracyGraphKnots": null
+        ]
     },
     "stowTag": "tag_stowed_back",
     "altWeapon": 0,

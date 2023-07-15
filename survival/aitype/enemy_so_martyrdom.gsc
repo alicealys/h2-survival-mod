@@ -40,7 +40,4 @@ precache()
     precachemodel("h2_weapon_c4");
     precachemodel("mp_body_fso_vest_d_dirty");
     precachemodel("head_spetsnaz_assault_vlad_facemask");
-    precacheitem("aa12");
-    precacheitem("c4");
-    precacheitem("fraggrenade");
 }

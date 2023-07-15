@@ -105,9 +105,6 @@ function eogsummary()
 
         num = num + 1
     end
-
-    local msec = tonumber(Engine.GetDvarString("so_mission_time"))
-    local formattedtime = formattime(msec)
     
     local extradata = game:sharedget("eog_extra_data")
     if (extradata ~= "") then

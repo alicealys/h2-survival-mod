@@ -4,16 +4,16 @@
 main()
 {
     self.animtree = "";
-    self.additionalassets = "juggernaut.csv";
+    self.additionalassets = "riotshield.csv";
     self.team = "axis";
     self.type = "human";
-    self.subclass = "juggernaut";
+    self.subclass = "riotshield";
     self.accuracy = 0.2;
     self.health = 3600;
     self.grenadeweapon = "fraggrenade";
     self.grenadeammo = 0;
-    self.secondaryweapon = "beretta";
-    self.sidearm = "beretta";
+    self.secondaryweapon = "riotshield_so";
+    self.sidearm = "h2_beretta_mp";
 
     if (isai(self))
     {
@@ -21,7 +21,7 @@ main()
         self setengagementmaxdist(256.0, 1024.0);
     }
 
-    self.weapon = "m240";
+    self.weapon = "h1_feblmg_mp";
     character\character_sp_juggernaut_h2::main();
 }
 
@@ -33,9 +33,6 @@ spawner()
 precache()
 {
     character\character_sp_juggernaut_h2::precache();
-    precacheitem("m240");
-    precacheitem("riotshield");
-    precacheitem("beretta");
-    precacheitem("fraggrenade");
+    maps\_riotshield::init_riotshield();
     maps\_juggernaut::main();
 }

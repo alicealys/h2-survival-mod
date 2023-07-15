@@ -1,0 +1,14 @@
+xmodel,,attach_h2_eotech_2_vm
+
+attachment,acog
+attachment,eotech
+attachment,reflex
+attachment,gl
+attachment,glpre
+attachment,shotgun
+attachment,shotgunpre
+attachment,m203
+attachment,m203pre
+attachment,m14scope
+
+iterate,xanim

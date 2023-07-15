@@ -3,17 +3,17 @@
 
 main()
 {
-    self._id_3AA1 = "";
-    self._id_3AA2 = "";
+    self.animtree = "";
+    self.additionalassets = "riotshield.csv";
     self.team = "allies";
     self.type = "human";
-    self._id_218D = "riotshield";
+    self.subclass = "riotshield";
     self.accuracy = 0.2;
     self.health = 100;
-    self.secondaryweapon = "iw5_riotshield_so";
-    self._id_20A3 = "";
     self.grenadeweapon = "";
     self.grenadeammo = 0;
+    self.secondaryweapon = "riotshield_so";
+    self.sidearm = "h2_usp_mp";
 
     if ( isai( self ) )
     {
@@ -21,15 +21,15 @@ main()
         self setengagementmaxdist( 768.0, 1024.0 );
     }
 
-    self.weapon = "none";
+    self.weapon = "h2_mp5k_mp";
 
     switch ( codescripts\character::get_random_character( 2 ) )
     {
         case 0:
-            _id_0609::main();
+            _id_B434::main();
             break;
         case 1:
-            _id_060A::main();
+            _id_BFDC::main();
             break;
     }
 }
@@ -41,8 +41,7 @@ spawner()
 
 precache()
 {
-    _id_0609::precache();
-    _id_060A::precache();
-    precacheitem( "iw5_riotshield_so" );
-    _id_05C8::_id_3AD6();
+    _id_B434::precache();
+    _id_BFDC::precache();
+    maps\_riotshield::init_riotshield();
 }

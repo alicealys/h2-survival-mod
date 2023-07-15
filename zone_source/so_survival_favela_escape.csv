@@ -1,4 +1,4 @@
 addon_map_ents,maps/so_survival_favela_escape.mapents
 stringtable,maps/createart/so_survival_favela_escape_lightsets_hdr.csv
 stringtable,soundtables/so_survival_favela_escape.csv
-stringtable,sp/custom_waves.csv
+xmodel,attach_h2_eotech_2_vm

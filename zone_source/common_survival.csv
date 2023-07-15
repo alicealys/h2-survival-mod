@@ -1,8 +1,5 @@
-require,techsets_common
 require,common
-require,techsets_ending
-require,ending
-include,stringtables
+addpath,zonetool_paths_h2
 include,ui_sounds
 include,music
 include,radio
@@ -17,3 +14,8 @@ include,factions
 include,remotemissile
 include,dog
 include,ac130
+include,anims
+include,rawfiles
+include,misc
+include,attachments
+localize,english

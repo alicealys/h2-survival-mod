@@ -36,7 +36,7 @@
         "MELEE_MISS": "",
         "MELEE_VICTIM_CROUCHING_HIT": "",
         "MELEE_VICTIM_CROUCHING_FATAL": "",
-        "VICTIM_CROUCHING_MISS": "",
+        "MELEE_VICTIM_CROUCHING_MISS": "",
         "MELEE_ALT_STANDING": "",
         "MELEE_ALT_CROUCHING": "",
         "MELEE_ALT_PRONE": "",
@@ -240,7 +240,7 @@
         "MELEE_MISS": "",
         "MELEE_VICTIM_CROUCHING_HIT": "",
         "MELEE_VICTIM_CROUCHING_FATAL": "",
-        "VICTIM_CROUCHING_MISS": "",
+        "MELEE_VICTIM_CROUCHING_MISS": "",
         "MELEE_ALT_STANDING": "",
         "MELEE_ALT_CROUCHING": "",
         "MELEE_ALT_PRONE": "",
@@ -444,7 +444,7 @@
         "MELEE_MISS": "",
         "MELEE_VICTIM_CROUCHING_HIT": "",
         "MELEE_VICTIM_CROUCHING_FATAL": "",
-        "VICTIM_CROUCHING_MISS": "",
+        "MELEE_VICTIM_CROUCHING_MISS": "",
         "MELEE_ALT_STANDING": "",
         "MELEE_ALT_CROUCHING": "",
         "MELEE_ALT_PRONE": "",
@@ -1208,12 +1208,10 @@
         "heightSplitscreen": 480.0
     },
     "accuracy_graph": {
-        "accuracyGraphKnots": null,
         "accuracyGraphName": [
             "",
             ""
-        ],
-        "originalAccuracyGraphKnots": null
+        ]
     },
     "stowTag": "",
     "altWeapon": 0,
@@ -1307,8 +1305,8 @@
     "shotCount": 0,
     "sharedAmmoCapIndex": 0,
     "sharedAmmoCap": 0,
-    "damage": 10,
-    "playerDamage": 10,
+    "damage": 20,
+    "playerDamage": 20,
     "meleeDamage": 0,
     "damageType": 0,
     "autoAimRange": 8000.0,
@@ -1604,10 +1602,10 @@
     "scanSpeed": 0.0,
     "scanAccel": 0.0,
     "scanPauseTime": 1056964608,
-    "minDamage": 5,
-    "midDamage": 7,
-    "minPlayerDamage": 5,
-    "midPlayerDamage": 7,
+    "minDamage": 10,
+    "midDamage": 10,
+    "minPlayerDamage": 10,
+    "midPlayerDamage": 10,
     "maxDamageRange": 500.0,
     "minDamageRange": 560.0,
     "__pad": [

@@ -149,6 +149,7 @@ local function addscorechallenges(hud)
         local isstagger = false
 
         local function setpercentanimate(value)
+            isstagger = true
             local width = math.floor(barwidthint * value)
             challenge.progressbar.bar:registerAnimationState("current_width", {
                 topAnchor = true,
@@ -173,6 +174,7 @@ local function addscorechallenges(hud)
         end
 
         hud:registerEventHandler(name .. "unpaused", function(element, event)
+            print("unpaused", isstagger)
             if (isstagger) then
                 local value = tonumber(Engine.GetDvarString("sur_ch_stagger_progress"))
                 setpercentanimate(value)
@@ -182,11 +184,6 @@ local function addscorechallenges(hud)
         hud:registerEventHandler(name .. "set_percent_animate", function(element, event)
             local value = tonumber(event.data)
             setpercentanimate(value)
-        end)
-    
-        hud:registerEventHandler(name .. "set_stagger", function(element, event)
-            isstagger = event.data == "1"
-
         end)
 
         hud:registerEventHandler(name .. "set_name", function(element, event)
@@ -199,15 +196,15 @@ local function addscorechallenges(hud)
         end)
     
         hud:registerEventHandler(name .. "highlight", function(element, event)
-            challenge.text:animateToState("highlight")
-            challenge.score:animateToState("highlight")
-            challenge.progressbar.bar:animateToState("highlight")
-        end)
-    
-        hud:registerEventHandler(name .. "un_highlight", function(element, event)
-            challenge.text:animateToState("un_highlight")
-            challenge.score:animateToState("un_highlight")
-            challenge.progressbar.bar:animateToState("un_highlight")
+            if (event.data == "1") then
+                challenge.text:animateToState("highlight")
+                challenge.score:animateToState("highlight")
+                challenge.progressbar.bar:animateToState("highlight")
+            else
+                challenge.text:animateToState("un_highlight")
+                challenge.score:animateToState("un_highlight")
+                challenge.progressbar.bar:animateToState("un_highlight")
+            end
         end)
 
         return challenge
@@ -510,6 +507,11 @@ function addscorehud(parent)
         else
             score:addvalue(value)
         end
+    end)
+
+    score:registerEventHandler("reset_score", function(element, event)
+        score.currentvalue = 0
+        score:setText(Engine.Localize("@SO_SURVIVAL_CREDITS", 0))
     end)
 
     score:setText(Engine.Localize("@SO_SURVIVAL_CREDITS", score.currentvalue))

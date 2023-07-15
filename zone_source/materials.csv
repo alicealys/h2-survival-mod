@@ -55,6 +55,7 @@ material,specialty_scavenger_frontend
 material,specialty_scavenger_upgrade_frontend
 material,specialty_sharp_focus
 material,specialty_specialgrenade
+material,specialty_stalker
 material,specialty_stalker_frontend
 material,specialty_stalker_upgrade_frontend
 material,specialty_steadyaim_frontend
@@ -65,3 +66,13 @@ material,specialty_twoprimaries_upgrade_frontend
 material,specialty_weapon_c4
 material,specialty_weapon_claymore
 material,specialty_weapon_rpg
+
+material,specops_ui_weaponstore
+material,specops_ui_equipmentstore
+material,specops_ui_airsupport
+
+material,headicon_delta_so
+material,headicon_gign_so
+
+material,specops_ui_riotshieldsupport
+material,specops_ui_deltasupport

@@ -1,0 +1,201 @@
+{
+    "baseAsset": "gripmwrm60e4",
+    "internalName": "gripmwrm60e4",
+    "displayName": "WEAPON_GRIP_ATTACHMENT",
+    "type": 1,
+    "weaponType": 0,
+    "weaponClass": 0,
+    "worldModels": [
+        "attach_h1_foregrip_m60_npc",
+        ""
+    ],
+    "viewModels": [
+        "attach_h1_foregrip_m60_vm",
+        ""
+    ],
+    "reticleViewModels": null,
+    "bounceSounds": null,
+    "rollingSounds": null,
+    "stringArray1": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "stringArray2": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "waFields": [
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "IDLE",
+            "code": 1,
+            "value": "_idle _grip_idle"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "EMPTY_IDLE",
+            "code": 1,
+            "value": "_idle _grip_idle"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "FIRE",
+            "code": 1,
+            "value": "_fire _grip_fire"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "LASTSHOT",
+            "code": 1,
+            "value": "_fire _grip_fire"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "RELOAD",
+            "code": 1,
+            "value": "_reload _grip_reload"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "RELOAD_EMPTY",
+            "code": 1,
+            "value": "_reload _grip_reload"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "RAISE",
+            "code": 1,
+            "value": "_pullout _grip_pullout"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "FIRST_RAISE",
+            "code": 1,
+            "value": "_pullout _grip_pullout"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "DROP",
+            "code": 1,
+            "value": "_putaway _grip_putaway"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ALT_RAISE",
+            "code": 1,
+            "value": "_pullout _grip_pullout"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ALT_DROP",
+            "code": 1,
+            "value": "_putaway _grip_putaway"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "QUICK_RAISE",
+            "code": 1,
+            "value": "_pullout _grip_pullout"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "QUICK_DROP",
+            "code": 1,
+            "value": "_putaway _grip_putaway"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "EMPTY_RAISE",
+            "code": 1,
+            "value": "_pullout _grip_pullout"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "EMPTY_DROP",
+            "code": 1,
+            "value": "_putaway _grip_putaway"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "SPRINT_IN",
+            "code": 1,
+            "value": "_sprint _grip_sprint"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "SPRINT_LOOP",
+            "code": 1,
+            "value": "_sprint _grip_sprint"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "SPRINT_OUT",
+            "code": 1,
+            "value": "_sprint _grip_sprint"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_FIRE",
+            "code": 1,
+            "value": "_ads_fire _grip_ads_fire"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_LASTSHOT",
+            "code": 1,
+            "value": "_ads_fire _grip_ads_fire"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "RECOIL_SETTLE",
+            "code": 1,
+            "value": "_settle _grip_settle"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "INSPECTION",
+            "code": 1,
+            "value": "_inspect _grip_inspect"
+        },
+        {
+            "name": "adsViewKickCenterSpeed",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 1700.0
+        },
+        {
+            "name": "hipViewKickCenterSpeed",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 1700.0
+        }
+    ]
+}

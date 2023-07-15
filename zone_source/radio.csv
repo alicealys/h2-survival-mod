@@ -22,3 +22,10 @@ sound,so_hq_sentry_down
 sound,so_hq_sentry_underattack
 sound,so_hq_uav_busy
 sound,so_hq_wave_over_flavor
+sound,so_tf_1_success_jerk
+
+sound,UK_1mc_achieve_airstrike
+sound,UK_1mc_achieve_hellfire
+sound,UK_1mc_deploy_sentry
+sound,UK_1mc_use_airstrike
+sound,UK_1mc_use_hellfire

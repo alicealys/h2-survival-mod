@@ -172,12 +172,12 @@ function addwavesummaryhud(parent)
 
     local fields = {}
     fields.time = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_TIME", "time")
-    fields.wave = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_WAVEBONUS", "wave")
-    fields.kills = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_KILLS", "kills")
-    fields.headshots = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_HEADSHOT", "headshots")
+    fields.wavebonus = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_WAVEBONUS", "wavebonus")
+    fields.kill = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_KILLS", "kill")
+    fields.headshot = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_HEADSHOT", "headshot")
     fields.accuracy = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_ACCURACY", "accuracy", "@SO_SURVIVAL_PERFORMANCE_PERCENT")
     fields.damagetaken = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_DAMAGETAKEN", "damagetaken")
-    fields.wavebonus = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_REWARD", "wavebonus", "@SO_SURVIVAL_CREDITS", true)
+    fields.total = addsummaryfield("@SO_SURVIVAL_PERFORMANCE_REWARD", "total", "@SO_SURVIVAL_CREDITS", true)
 
     summary:registerAnimationState("hide", {
         topAnchor = true,
@@ -193,12 +193,12 @@ function addwavesummaryhud(parent)
 
     local fieldnames = {
         "time",
-        "wave",
-        "kills",
-        "headshots",
+        "wavebonus",
+        "kill",
+        "headshot",
         "accuracy",
         "damagetaken",
-        "wavebonus",
+        "total",
     }
 
     local function rollvalues()

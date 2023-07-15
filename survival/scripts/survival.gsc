@@ -1,9 +1,11 @@
 main()
 {
-    // make helis not go in the same spot
-    replacefunc(vehicle_scripts\_attack_heli::heli_circling_think, ::heli_circling_think);
+    //maps\_so_survival::main();
+
     replacefunc(maps\_utility::musiclength, ::music_length);
+    replacefunc(maps\_utility::is_survival, ::ret_true);
     replacefunc(maps\_load::ammo_cache_think_global, ::nullsub);
+    replacefunc(_id_D2A4::h2_sentry_pickup, ::h2_sentry_pickup);
 
     common_scripts\utility::array_thread(getentarray("ammo_cache", "targetname"), ::delete);
 
@@ -17,13 +19,16 @@ main()
     replacefunc(maps\_gameskill::should_show_cover_warning, ::ret_false);
     replacefunc(maps\_load::_id_B3AD, ::_id_B3AD);
     level.custom_gameskill_func = maps\_gameskill::solo_player_in_special_ops;
+
+    //wait 0.05;
+    replacefunc(maps\_utility::is_specialop, ::ret_true);
 }
 
 init()
 {
-    vehicle_scripts\_littlebird::main( "vehicle_little_bird_armed", undefined, "script_vehicle_littlebird_armed" );
-    vehicle_scripts\_littlebird::main( "vehicle_little_bird_bench", undefined, "script_vehicle_littlebird_bench" );
-    vehicle_scripts\_mi17::main( "vehicle_mi17_woodland_fly_cheap", undefined, "script_vehicle_mi17_woodland_fly_cheap" );
+    //vehicle_scripts\_littlebird::main( "vehicle_little_bird_armed", undefined, "script_vehicle_littlebird_armed" );
+    //vehicle_scripts\_littlebird::main( "vehicle_little_bird_bench", undefined, "script_vehicle_littlebird_bench" );
+    //vehicle_scripts\_mi17::main( "vehicle_mi17_woodland_fly_cheap", undefined, "script_vehicle_mi17_woodland_fly_cheap" );
 }
 
 _id_B3AD()
@@ -49,6 +54,11 @@ _id_B3AD()
 ret_false()
 {
     return false;
+}
+
+ret_true()
+{
+    return true;
 }
 
 nullsub()
@@ -199,4 +209,10 @@ get_csv_name()
 
     level.survival_waves_csv = get_csv_name_internal();
     return level.survival_waves_csv;
+}
+
+h2_sentry_pickup(sentry)
+{
+    sentry setsentrycarrier(level.player);
+    level.player disableweapons();
 }

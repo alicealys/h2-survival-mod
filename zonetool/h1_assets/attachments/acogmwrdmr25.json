@@ -1,0 +1,245 @@
+{
+    "baseAsset": "acogmwrdmr25",
+    "internalName": "acogmwrdmr25",
+    "displayName": "WEAPON_ACOG_ATTACHMENT",
+    "type": 0,
+    "weaponType": 0,
+    "weaponClass": 0,
+    "worldModels": [
+        "attach_h1_scope_acog_npc",
+        ""
+    ],
+    "viewModels": [
+        "attach_h1_scope_acog_vm",
+        ""
+    ],
+    "reticleViewModels": [
+        "reticle_h1_scope_acog",
+        "reticle_h1_acog_transparent",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "bounceSounds": null,
+    "rollingSounds": null,
+    "stringArray1": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "stringArray2": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "waFields": [
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_FIRE",
+            "code": 1,
+            "value": "_ads _acog_ads"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_LASTSHOT",
+            "code": 1,
+            "value": "_ads _acog_ads"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_UP",
+            "code": 1,
+            "value": "_ads _acog_ads"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_DOWN",
+            "code": 1,
+            "value": "_ads _acog_ads"
+        },
+        {
+            "name": "aimAssistRangeAds",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 2000.0
+        },
+        {
+            "name": "adsZoomFov",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 30.0
+        },
+        {
+            "name": "adsZoomInFrac",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.5
+        },
+        {
+            "name": "adsZoomOutFrac",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.4000000059604645
+        },
+        {
+            "name": "adsTransInTime",
+            "type": 9,
+            "index": 0,
+            "code": 3,
+            "value": 300
+        },
+        {
+            "name": "adsSwayPitchScale",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.10000000149011612
+        },
+        {
+            "name": "adsSwayYawScale",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.10000000149011612
+        },
+        {
+            "name": "adsSwayHorizScale",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.019999999552965164
+        },
+        {
+            "name": "adsSwayVertScale",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.019999999552965164
+        },
+        {
+            "name": "adsDofStart",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 0.0
+        },
+        {
+            "name": "adsDofEnd",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 15.0
+        },
+        {
+            "name": "canHoldBreath",
+            "type": 6,
+            "index": 0,
+            "code": 3,
+            "value": false
+        },
+        {
+            "name": "adsHideWeapon",
+            "type": 6,
+            "index": 0,
+            "code": 3,
+            "value": false
+        },
+        {
+            "name": "adsBlurSceneEnabled",
+            "type": 6,
+            "index": 0,
+            "code": 3,
+            "value": false
+        },
+        {
+            "name": "usesSniperScope",
+            "type": 6,
+            "index": 0,
+            "code": 3,
+            "value": false
+        },
+        {
+            "name": "adsDofPhysicalFStop",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 45.0
+        },
+        {
+            "name": "adsDofPhysicalFocusDistance",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 10.0
+        }
+    ]
+}

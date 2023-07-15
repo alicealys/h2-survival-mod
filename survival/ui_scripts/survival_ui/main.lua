@@ -1,5 +1,8 @@
 function frontend()
     require("menus/levelselect")
+    require("menus/lobby")
+    require("menus/personalization")
+    require("menus/stats")
 
     CoD.Background.CampaignRegular = "h1_menu_background_vignette"
     CoD.Background.Campaign = "h1_menu_background_vignette"
@@ -48,7 +51,7 @@ function frontend()
         text = "@MENU_SP_SURVIVAL_MODE_CAPS",
         description = Engine.Localize("@MENU_SP_SURVIVAL_MODE_DESC"),
         callback = function()
-            LUI.FlowManager.RequestAddMenu(nil, "so_survival_mapselect")
+            LUI.FlowManager.RequestAddMenu(nil, "so_survival_lobby")
         end
     })
 
@@ -67,6 +70,7 @@ function ingame()
 
     Engine.SetDvarBool("bg_compassShowEnemies", true)
 
+    require("popups/storemenu")
     require("popups/eog_summary")
     require("popups/specops_ui_weaponstore")
     require("popups/specops_ui_equipmentstore")

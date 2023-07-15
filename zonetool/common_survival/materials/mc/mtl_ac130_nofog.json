@@ -1,0 +1,61 @@
+{
+    "name": "mc/mtl_ac130_nofog",
+    "techniqueSet->name": "m_l_sm_lmpb_r0c0n0sd0_nfwpf",
+    "gameFlags": 80,
+    "sortKey": 2,
+    "renderFlags": 0,
+    "textureAtlasRowCount": 1,
+    "textureAtlasColumnCount": 1,
+    "textureAtlasFrameBlend": 0,
+    "textureAtlasAsArray": 0,
+    "surfaceTypeBits": 4096,
+    "cameraRegion": 0,
+    "materialType": 1,
+    "assetFlags": 0,
+    "constantTable": [
+        {
+            "name": "envMapParms",
+            "nameHash": 1033475292,
+            "literal": [
+                0.03999999910593033,
+                1.0,
+                5.0,
+                1.0
+            ]
+        }
+    ],
+    "textureTable": [
+        {
+            "image": "~xpec_ac130_spc-rgb&xpec_ac13~a85ac591",
+            "semantic": 8,
+            "samplerState": 19,
+            "lastCharacter": 112,
+            "firstCharacter": 115,
+            "typeHash": 887934131
+        },
+        {
+            "image": "xpec_ac130_nml",
+            "semantic": 5,
+            "samplerState": 19,
+            "lastCharacter": 112,
+            "firstCharacter": 110,
+            "typeHash": 1507003663
+        },
+        {
+            "image": "xpec_ac130_col",
+            "semantic": 2,
+            "samplerState": 19,
+            "lastCharacter": 112,
+            "firstCharacter": 99,
+            "typeHash": 2695565377
+        },
+        {
+            "image": "~envbrdflut_ggx_16-rg",
+            "semantic": 15,
+            "samplerState": 226,
+            "lastCharacter": 116,
+            "firstCharacter": 101,
+            "typeHash": 3447584578
+        }
+    ]
+}

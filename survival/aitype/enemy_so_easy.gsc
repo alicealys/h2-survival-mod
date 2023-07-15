@@ -23,7 +23,7 @@ main()
 
     self.weapon = tablelookup(scripts\survival::get_csv_name(), 1, "easy", 5);
 
-    if (issubstr(level.script, "favela"))
+    if (isdefined(level.script) && issubstr(level.script, "favela"))
     {
         switch (codescripts\character::get_random_character(11))
         {
@@ -93,25 +93,20 @@ spawner()
 
 precache()
 {
-    if (issubstr(level.script, "favela"))
-    {
-        _id_C874::precache();
-        _id_B17F::precache();
-        _id_C242::precache();
-        _id_D2AA::precache();
-        _id_AEDD::precache();
-        _id_D303::precache();
-        _id_B90E::precache();
-        _id_B377::precache();
-        _id_BC62::precache();
-        _id_B9C3::precache();
-        _id_A935::precache();
-    }
+    _id_C874::precache();
+    _id_B17F::precache();
+    _id_C242::precache();
+    _id_D2AA::precache();
+    _id_AEDD::precache();
+    _id_D303::precache();
+    _id_B90E::precache();
+    _id_B377::precache();
+    _id_BC62::precache();
+    _id_B9C3::precache();
+    _id_A935::precache();
 
     _id_D2AD::precache();
     _id_CA11::precache();
-    precacheitem(tablelookup(scripts\survival::get_csv_name(), 1, "easy", 5));
-    precacheitem("fraggrenade" );
     precachemodel("body_op_airborne_sniper");
     precachemodel("body_op_airborne_sniper");
     precachemodel("hat_opforce_merc_b");
