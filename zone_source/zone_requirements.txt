@@ -1,35 +1,74 @@
-// zones to dump & copy assets to the zonetool/ folder
-ending
-estate
-contingency
-oilrig
-cliffhanger
-boneyard
+// dump all the zones listed for each folder
+// each folder should be in the h2 root dir
+// the `name -> new_name` format indicates that the folder needs to be renamed
 
-techsets_ending
-techsets_estate
-techsets_oilrig
-techsets_contingency
-techsets_cliffhanger
-techsets_boneyard
+| zonetool_paths_h2
+| +- techsets_common -> a_techsets_common
+| +- techsets_gulag -> a_techsets_gulag
+| +- techsets_oilrig -> a_techsets_oilrig
+| +- af_chase
+| +- airport
+| +- arcadia
+| +- boneyard
+| +- cliffhanger
+| +- common
+| +- contingency
+| +- dcemp
+| +- dc_whitehouse
+| +- ending
+| +- eng_common
+| +- eng_contingency
+| +- eng_estate
+| +- eng_oilrig
+| +- eng_patch_contingency
+| +- eng_roadkill
+| +- estate
+| +- favela
+| +- favela_escape
+| +- gulag
+| +- invasion
+| +- oilrig
+| +- patch_contingency
+| +- roadkill
+| +- techsets_af_chase
+| +- techsets_airport
+| +- techsets_arcadia
+| +- techsets_boneyard
+| +- techsets_cliffhanger
+| +- techsets_contingency
+| +- techsets_dcemp
+| +- techsets_dc_whitehouse
+| +- techsets_ending
+| +- techsets_estate
+| +- techsets_favela
+| +- techsets_favela_escape
+| +- techsets_invasion
+| +- techsets_roadkill
+| zonetool_paths_h1
+| +- patch_common_mp -> a_patch_common_mp
+| +- eng_code_post_gfx_mp
+| +- code_post_gfx_mp
+| +- common_mp
+| +- techsets_common_mp
 
-eng_contingency
-eng_estate
-patch_contingency
-eng_patch_contingency
+// other steps
+execute `dumpmatchingzones h2 mp_vm` on x64-zt on h1
+execute `dumpmatchingzones h2 mp_wm` on x64-zt on h1
+copy `dump/weapon_models` contents into `zonetool/h1_assets`
+
+// other methods to obtain full source
+dump the provided fastfiles
 
 // zones to build
 common_survival
+h1_assets
 mod
 so_survival_estate
 so_survival_favela_escape
+so_survival_mp_crash
+so_survival_mp_vacant
 
-// h1 zones (dump with Joelrau/h1-zonetool@h2)
-
-eng_patch_code_post_gfx_mp
-patch_common_mp
-techsets_common_mp
-common_mp
-// all weapon zones
-mp_wm_*_base*.ff
-mp_vm_*_base*.ff
+// extra
+// dump using x64-zt on h1 (dumpmap h2 mapname)
+mp_vacant
+mp_crash
