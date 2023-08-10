@@ -222,7 +222,7 @@
 "_color" "1.000000 1.000000 0.000000"
 "classname" "script_struct_heli"
 "radius" "256"
-"origin" "-4142 -3731 1093"
+"origin" "-3281 5384 1000"
 "targetname" "drop_path_end_1"
 "spawnflags" "1"
 "angles" "0 60 0"
