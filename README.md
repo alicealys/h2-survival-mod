@@ -34,8 +34,8 @@ Currently these maps are available:
 Download the .zip file for the map you want to install and extract its contents (**a folder called `zone`**) into the survival mod folder:  
 ```
 [mw2cr game path]/mods/survival/
-```
-If done correctly the map should be selectable in the **Game Setup** map selection menu.  
+``` 
+Restart your game, if done correctly the map should be selectable in the **Game Setup** map selection menu.  
 More maps will be released in the future so be sure to check this page or the [discord server](https://discord.gg/dpnRn2tKT9) for updates.  
 
 # Issues
