@@ -2023,11 +2023,3 @@ player_downed_hud_toggle_blinkstate()
 		}
 	}
 }
-
-
-
-
-
-
-
-

@@ -661,10 +661,3 @@ ch_get_wave_inactive(ref)
 
 	return int(tablelookup(CH_TABLE, CH_REF, ref, CH_WAVE_INACTIVE));
 }
-
-
-
-
-
-
-

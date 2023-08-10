@@ -1,0 +1,4 @@
+addpath,zonetool_paths_h2
+addon_map_ents,maps/so_survival_mp_broadcast.mapents
+stringtable,maps/createart/so_survival_mp_broadcast_lightsets_hdr.csv
+stringtable,maps/createart/so_survival_mp_broadcast_lightsets.csv

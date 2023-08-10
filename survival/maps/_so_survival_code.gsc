@@ -1332,9 +1332,3 @@ so_survival_display_entity_error_3D()
 }
 
 // END DEBUG ENTITY PLACEMENTS ----------------------------------------------------
-
-
-
-
-
-

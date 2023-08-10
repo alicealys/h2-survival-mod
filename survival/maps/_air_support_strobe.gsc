@@ -758,11 +758,3 @@ ensure_player_has_weapon_selected()
 		AssertEx(success, "ensure_player_has_weapon_selected() failed, does he have any primary weapons at all?");
 	}	
 }
-
-
-
-
-
-
-
-

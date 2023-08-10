@@ -114,8 +114,10 @@ local function loadmaplist()
 			videobg = Engine.TableLookupByRow(csv, i, cols.videobg) == "1",
 		}
 
-		if (map.id ~= nil) then
-			map.available = game:fastfileexists(map.name)
+		local basemap = map.name:sub(#"so_survival_" + 1, #map.name)
+
+		if (map.id ~= nil and game:fastfileexists(map.name)) then
+			map.available = game:fastfileexists(basemap)
 			map.availablen = map.available and 1 or 0
 			table.insert(maps, map)
 		end

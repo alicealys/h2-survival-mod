@@ -2065,10 +2065,3 @@ so_mission_complete_achivements()
 		}
 	}	
 }
-
-
-
-
-
-
-

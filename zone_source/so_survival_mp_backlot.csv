@@ -1,0 +1,3 @@
+addon_map_ents,maps/so_survival_mp_backlot.mapents
+stringtable,maps/createart/so_survival_mp_backlot_lightsets_hdr.csv
+stringtable,maps/createart/so_survival_mp_backlot_lightsets.csv

@@ -1386,10 +1386,3 @@ destroyElem()
 		
 	self destroy();
 }
-
-
-
-
-
-
-

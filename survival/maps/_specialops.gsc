@@ -3407,9 +3407,3 @@ so_achievement_star_count( achievement_string, count )
 		self maps\_playerdata::set_struct( "challengeState", "ch_overachiever", 2 );
 	}
 }
-
-
-
-
-
-

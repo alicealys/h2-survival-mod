@@ -163,15 +163,6 @@ LUI.MenuBuilder.m_definitions["WeaponInfoHudDef"] = function ()
     return def
 end
 
---[[
-LUI.roots.UIRoot0:registerEventHandler("_gc__", function()
-    collectgarbage()
-    collectgarbage()
-    printmemoryusage()
-
-end)
-LUI.roots.UIRoot0:addElement(LUI.UITimer.new(400, "_gc__"))--]]
-
 local minimapmenu = nil
 do
     local refresh = LUI.sp_hud.ObjectivesFrame.RefreshMinimapObjectives

@@ -3859,10 +3859,3 @@ get_dog_quantity( wave_num )
 	
 	return get_special_ai_type_quantity( wave_num, dog_type );
 }
-
-
-
-
-
-
-

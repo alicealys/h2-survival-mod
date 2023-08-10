@@ -2611,10 +2611,3 @@ can_afford( ent )
 	// called on player
 	return self.survival_credit >= ent.cost;
 }
-
-
-
-
-
-
-

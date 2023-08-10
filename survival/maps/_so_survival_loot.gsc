@@ -324,9 +324,3 @@ get_loot_versions( ref )
 	
 	return versions;
 }
-
-
-
-
-
-

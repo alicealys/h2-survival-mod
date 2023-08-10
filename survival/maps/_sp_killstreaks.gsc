@@ -539,7 +539,6 @@ activate_current_sp_killstreak( regive )
 	ASSERT( IsDefined( streakType ) );
 	
 	// ENHANCEMENT SP splash notify for player getting the killstreak?
-	println( "KILLSTREAK GET" );
 	
 	killstreakInfo = get_sp_killstreak_info( streakType );
 	
@@ -1111,10 +1110,3 @@ getWeightedChanceRoll( possibleValues, chancesForValues )
 
 	return best;
 }
-
-
-
-
-
-
-

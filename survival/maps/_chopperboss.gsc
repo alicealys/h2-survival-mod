@@ -724,10 +724,3 @@ chopper_boss_sentient()
 	self.maxvisibledist = 3072;
 	self.threatbias = 10000;
 }
-
-
-
-
-
-
-

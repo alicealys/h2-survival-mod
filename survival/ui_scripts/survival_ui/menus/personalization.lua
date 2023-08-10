@@ -127,7 +127,7 @@ local function selectionmenu(title, statfield, data, callback)
             showTopRightSmallBar = true
         })
     
-        local currentvalue = mods.stats.get(statfield)
+        local currentvalue = mods.stats.getor(statfield, data[1].value)
         local currentrank = getrank()
 
         for i = 1, #data do
@@ -186,8 +186,11 @@ local function selectionmenu(title, statfield, data, callback)
     end
 end
 
+local viewhandstable = csvtotable(viewhandscsv, viewhandscols)
+local startingpistoltable = getstartingpistoldata()
+
 LUI.MenuBuilder.registerType("so_survival_personalization_viewhands",
-    selectionmenu("@SO_SURVIVAL_MENU_VIEWHANDS_CAPS", "viewhands", csvtotable(viewhandscsv, viewhandscols), 
+    selectionmenu("@SO_SURVIVAL_MENU_VIEWHANDS_CAPS", "viewhands", viewhandstable, 
         function(data)
             mods.stats.set("viewhands", data.value)
             mods.stats.set("viewhands_player", data.viewhandsplayer)
@@ -196,7 +199,7 @@ LUI.MenuBuilder.registerType("so_survival_personalization_viewhands",
 )
 
 LUI.MenuBuilder.registerType("so_survival_personalization_pistol",
-    selectionmenu("@SO_SURVIVAL_MENU_STARTING_PISTOL_CAPS", "starting_pistol", getstartingpistoldata(), 
+    selectionmenu("@SO_SURVIVAL_MENU_STARTING_PISTOL_CAPS", "starting_pistol", startingpistoltable, 
         function(data)
             mods.stats.set("starting_pistol", data.value)
         end
@@ -217,7 +220,7 @@ LUI.MenuBuilder.registerType("so_survival_personalization_main", function(a1)
         desc_text = Engine.Localize("@SO_SURVIVAL_MENU_VIEWHANDS_DESC"),
 		variant = GenericButtonSettings.Variants.Info,
 		button_display_func = function()
-            return getviewhandsname(mods.stats.getor("viewhands", "viewmodel_base_viewhands"))
+            return getviewhandsname(mods.stats.getor("viewhands", viewhandstable[1].value))
 		end
 	})
 
@@ -225,7 +228,7 @@ LUI.MenuBuilder.registerType("so_survival_personalization_main", function(a1)
         desc_text = Engine.Localize("@SO_SURVIVAL_MENU_STARTING_PISTOL_DESC"),
 		variant = GenericButtonSettings.Variants.Info,
 		button_display_func = function()
-			return getstartingpistolname(mods.stats.getor("starting_pistol", "h2_beretta_mp"))
+			return getstartingpistolname(mods.stats.getor("starting_pistol", startingpistoltable[1].value))
 		end
 	})
 

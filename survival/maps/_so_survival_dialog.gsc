@@ -448,9 +448,3 @@ survival_dialog_radio_setup()
 	// 	Your team is already being assigned a UAV.
 	level.scr_radio[ "so_hq_uav_busy" ] = "so_hq_uav_busy";
 }
-
-
-
-
-
-

@@ -15,7 +15,7 @@ main()
 	maps\_so_survival::survival_postload();
 	maps\_so_survival::survival_init();
 
-    level._id_B981._id_B23A = 20; // remotemissile view ang
+    level._id_B981._id_B23A = 30; // remotemissile view ang
 
     enable_portals();
 }

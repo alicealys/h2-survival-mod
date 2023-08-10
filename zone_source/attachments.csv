@@ -1,4 +1,5 @@
-xmodel,,attach_h2_eotech_2_vm
+xmodel,,attach_h1_optics_reticle_holosight_vm
+xmodel,,attach_h1_optics_holosight_npc
 
 attachment,acog
 attachment,eotech

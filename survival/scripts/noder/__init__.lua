@@ -27,27 +27,27 @@ end
 local step = 800
 
 -- radius from map center nodes have to be in
-local radius = 6000
+local radius = 4000
 
 -- offset map corners
-local minsyoffset = 8000
-local minsxoffset = 7000
-local maxsyoffset = -7000
-local maxsxoffset = -2000
+local minsyoffset = 0
+local minsxoffset = 0
+local maxsyoffset = -0
+local maxsxoffset = -0
 
 local nodeshift = vector:new(0, 0, 0)
 
 local badzones = {
-    {
-        origin = vector:new(5550, 424, 0),
-        radius = 600
-    }
+    --{
+        --origin = vector:new(-514, 832, 0),
+        --radius = 500
+    --}
 }
 
 -- start distance
 local startdist = 3000
 
-local height = 1000
+local height = 600
 
 local traceoffset = 5000
 
@@ -63,7 +63,7 @@ end
 
 function heliheight(x, y)
     local origin = vector:new(x, y, traceoffset)
-    local maxheight = 2000
+    local maxheight = 1200
     local pos = game:physicstrace(origin, origin + vector:new(0, 0, -10000)) + vector:new(0, 0, height)
     if (pos.z > maxheight) then
 
@@ -255,9 +255,19 @@ function drawspawns()
 end
 
 function generateuavpath()
-    local center = vector:new(1730, 316, 0)
-    local uavheight = 6500
-    local uavradius = 7000
+    local mins, maxs = getbounds()
+
+    print("mins", mins.x, mins.y)
+    print("maxs", maxs.x, maxs.y)
+
+    local center = vector:new(
+        (mins.x + maxs.x) / 2,
+        (mins.y + maxs.y) / 2,
+        0
+    )
+
+    local uavheight = 2000
+    local uavradius = 3500
 
     local count = 16
     local step = 360 / count
@@ -268,6 +278,10 @@ function generateuavpath()
     
         local x = uavradius * math.cos(angle * math.pi / 180)
         local y = uavradius * math.sin(angle * math.pi / 180)
+
+        local x1 = (uavradius - 700) * math.cos(angle * math.pi / 180)
+        local y1 = (uavradius - 700) * math.sin(angle * math.pi / 180)
+
         local z = uavheight
     
         local nodeorigin = vector:new(
@@ -276,11 +290,18 @@ function generateuavpath()
             z + center.z
         )
         
-        debug:addsquare(nodeorigin, vector:new(1, 1, 0))
-        if (prevnode) then
-            debug:addline(prevnode, nodeorigin, vector:new(1, 0, 0))
+        local actualnodeorigin = vector:new(
+            x1 + center.x,
+            y1 + center.y,
+            z + center.z
+        )
+
+        debug:addsquare(actualnodeorigin, vector:new(1, 1, 0))
+        if (actualprevnode) then
+            debug:addline(actualprevnode, actualnodeorigin, vector:new(1, 0, 0))
         end
 
+        actualprevnode = actualnodeorigin
         prevnode = nodeorigin
 
         local node = ""

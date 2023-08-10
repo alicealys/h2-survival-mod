@@ -361,9 +361,3 @@ initNotifyMessage()
 	self.splashQueue[2] = [];
 	self.splashQueue[3] = [];
 }
-
-
-
-
-
-

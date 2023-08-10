@@ -1199,10 +1199,3 @@ drawFollowers()
 		wait 0.1;
 	}
 }
-
-
-
-
-
-
-

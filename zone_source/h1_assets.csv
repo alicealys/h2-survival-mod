@@ -10,6 +10,9 @@ material,h1_headicon_sas
 
 stringtable,mp/attachoverrides.csv
 
+xmodel,attach_h1_optics_reticle_holosight_vm
+xmodel,attach_h1_optics_holosight_npc
+
 localize,WEAPON_AK47
 localize,WEAPON_AK74U
 localize,WEAPON_BOS14
@@ -139,7 +142,6 @@ weapon,h1_p90_mp
 weapon,h1_pp2000_mp
 weapon,h1_remington700_mp
 weapon,h1_rpd_mp
-weapon,h1_rpg_mp
 weapon,h1_saw_mp
 weapon,h1_skorpion_mp
 weapon,h1_usp_mp

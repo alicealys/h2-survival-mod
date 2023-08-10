@@ -174,7 +174,6 @@ local function addscorechallenges(hud)
         end
 
         hud:registerEventHandler(name .. "unpaused", function(element, event)
-            print("unpaused", isstagger)
             if (isstagger) then
                 local value = tonumber(Engine.GetDvarString("sur_ch_stagger_progress"))
                 setpercentanimate(value)

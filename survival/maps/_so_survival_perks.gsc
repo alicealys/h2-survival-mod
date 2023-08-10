@@ -231,9 +231,3 @@ update_on_take_perk()
 		self flag_clear( "HUD_taking_perk" );
 	}
 }
-
-
-
-
-
-

@@ -33,15 +33,6 @@ local function createdivider(menu, text)
 end
 
 local function startmap(map, name, desc)
-    --Engine.SetDvarBool("cl_disableMapMovies", true)
-    --Engine.SetDvarBool("cl_enableCustomLoadscreen", true)
-
-	--Engine.SetDvarString("cl_loadscreenImage", "loadscreen_" .. map)
-    --Engine.SetDvarString("cl_loadscreenTitle", Engine.LocalizeLong(name))
-    --Engine.SetDvarString("cl_loadscreenDesc", Engine.LocalizeLong(desc))
-    --Engine.SetDvarString("cl_loadscreenObjIcon", "")
-    --Engine.SetDvarString("cl_loadscreenObj", "")
-
     Engine.Exec("map " .. map)
 end
 

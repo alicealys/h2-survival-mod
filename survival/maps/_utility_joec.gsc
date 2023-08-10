@@ -52,10 +52,3 @@ on_player_trig_record_and_notify( trig_noteworthy, flag_all_times_recorded )
 		}
 	}
 }
-
-
-
-
-
-
-

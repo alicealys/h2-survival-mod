@@ -1,4 +1,4 @@
 addon_map_ents,maps/so_survival_mp_crash.mapents
 stringtable,maps/createart/so_survival_mp_crash_lightsets_hdr.csv
 stringtable,maps/createart/so_survival_mp_crash_lightsets.csv
-xmodel,attach_h2_eotech_2_vm
+

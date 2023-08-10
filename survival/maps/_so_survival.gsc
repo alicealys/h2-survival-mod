@@ -2997,9 +2997,3 @@ survival_armory_hint()
 		}
 	}
 }
-
-
-
-
-
-

@@ -8,7 +8,6 @@ main()
     level.default_vision = level.lvl_visionset; // default vision
 	level.wave_table = "sp/so_survival/tier_1.csv"; // enables wave definition override
 	level.loadout_table = "sp/so_survival/tier_1.csv"; // enables player load out override
-    level._id_B981._id_B23A = 20; // remotemissile view ang
 
     level.ac130_orbit_radius = 10000;
     level.ac130_orbit_height = 6000;
@@ -31,6 +30,8 @@ main()
 
 	maps\_so_survival::survival_postload();
 	maps\_so_survival::survival_init();
+
+    level._id_B981._id_B23A = 30; // remotemissile view ang
 
     enable_portals();
     fix_map();

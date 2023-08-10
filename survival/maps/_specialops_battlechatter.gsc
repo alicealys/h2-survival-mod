@@ -632,10 +632,3 @@ is_downed()
 	
 	return false;
 }
-
-
-
-
-
-
-
