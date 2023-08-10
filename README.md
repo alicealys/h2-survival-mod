@@ -24,11 +24,11 @@ Currently these maps are available:
 ## Install extra maps
 ### Map download links
  * **MWR**:
-   * **[Vacant](https://cdn.fed0001.xyz/h2-mod/mp_vacant.zip)**
-   * **[Crash](https://cdn.fed0001.xyz/h2-mod/mp_crash.zip)**
+   * **[Vacant](https://cdn.fed0001.xyz/h2-mod/mp_vacant.zip)** - [alt link](https://drive.google.com/file/d/1qPGNOIlNABt2-D8AbXD4eaNuR6y7j6b1/view?usp=sharing)
+   * **[Crash](https://cdn.fed0001.xyz/h2-mod/mp_crash.zip)** - [alt link](https://drive.google.com/file/d/1ZyFHhmfnD4PrAyUYTK5nd9K5f0MTc3ni/view?usp=sharing)
    * **[Chinatown](https://cdn.fed0001.xyz/h2-mod/mp_carentan.zip)**
-   * **[Broadcast](https://cdn.fed0001.xyz/h2-mod/mp_broadcast.zip)**
-   * **[Backlot](https://cdn.fed0001.xyz/h2-mod/mp_backlot.zip)**
+   * **[Broadcast](https://cdn.fed0001.xyz/h2-mod/mp_broadcast.zip)** - [alt link](https://drive.google.com/file/d/1uMd7IgaxAd3Y7vobJ_QGDaJ_2xRZLBxx/view?usp=sharing)
+   * **[Backlot](https://cdn.fed0001.xyz/h2-mod/mp_backlot.zip)** - [alt link](https://drive.google.com/file/d/141RG3JszGMUpAUXvAkejOPz5j6s5stJW/view?usp=sharing)
 
 **Maps that are not from MW2CR must be downloaded separately (due to their size).**  
 Download the .zip file for the map you want to install and extract its contents (**a folder called `zone`**) into the survival mod folder:  
