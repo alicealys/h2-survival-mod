@@ -12,7 +12,7 @@ main()
     self.health = 100;
     self.grenadeweapon = "";
     self.grenadeammo = 0;
-    self.secondaryweapon = "riotshield_so";
+    self.secondaryweapon = "iw5_riotshield_so";
     self.sidearm = "h2_usp_mp";
 
     if ( isai( self ) )

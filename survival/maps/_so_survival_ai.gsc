@@ -2547,7 +2547,7 @@ damage_factor()
 		}
 		else if( type == "MOD_MELEE" )
 		{
-			if ( isdefined( attacker ) && isplayer( attacker ) && isdefined( weapon ) && IsSubStr( weapon, "riotshield_so" ) )
+			if ( isdefined( attacker ) && isplayer( attacker ) && isdefined( weapon ) && IsSubStr( weapon, "iw5_riotshield_so" ) )
 				damage_heal = self dmg_factor_calc( amount, self.dmg_factor[ "melee_riotshield" ] );
 			else
 				damage_heal = self dmg_factor_calc( amount, self.dmg_factor[ "melee" ] );
@@ -3225,16 +3225,16 @@ AI_drop_riotshield()
 		return;
 	
 	// if riotshield, we drop shield
-	if ( isdefined( self.weaponInfo[ "riotshield_so" ] ) )
+	if ( isdefined( self.weaponInfo[ "iw5_riotshield_so" ] ) )
 	{
-		position = self.weaponInfo[ "riotshield_so" ].position;
+		position = self.weaponInfo[ "iw5_riotshield_so" ].position;
 		
 		if ( isdefined( self.dropriotshield ) && self.dropriotshield && position != "none" )
-			self thread animscripts\shared::DropWeaponWrapper( "riotshield_so", position );
+			self thread animscripts\shared::DropWeaponWrapper( "iw5_riotshield_so", position );
 			
-		self animscripts\shared::detachWeapon( "riotshield_so" );
+		self animscripts\shared::detachWeapon( "iw5_riotshield_so" );
 		
-		self.weaponInfo[ "riotshield_so" ].position = "none";
+		self.weaponInfo[ "iw5_riotshield_so" ].position = "none";
 		self.a.weaponPos[ position ] = "none";
 	}	
 }

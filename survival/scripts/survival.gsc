@@ -1,9 +1,6 @@
 main()
 {
-    //maps\_so_survival::main();
-
     replacefunc(maps\_utility::musiclength, ::music_length);
-    replacefunc(maps\_utility::is_survival, ::ret_true);
     replacefunc(maps\_load::ammo_cache_think_global, ::nullsub);
     replacefunc(_id_D2A4::h2_sentry_pickup, ::h2_sentry_pickup);
 
@@ -20,15 +17,10 @@ main()
     replacefunc(maps\_load::_id_B3AD, ::_id_B3AD);
     level.custom_gameskill_func = maps\_gameskill::solo_player_in_special_ops;
 
-    //wait 0.05;
     replacefunc(maps\_utility::is_specialop, ::ret_true);
-}
-
-init()
-{
-    //vehicle_scripts\_littlebird::main( "vehicle_little_bird_armed", undefined, "script_vehicle_littlebird_armed" );
-    //vehicle_scripts\_littlebird::main( "vehicle_little_bird_bench", undefined, "script_vehicle_littlebird_bench" );
-    //vehicle_scripts\_mi17::main( "vehicle_mi17_woodland_fly_cheap", undefined, "script_vehicle_mi17_woodland_fly_cheap" );
+    replacefunc(_id_D2A4::is_specialop, ::ret_true);
+    replacefunc(maps\_utility::is_survival, ::ret_true);
+    replacefunc(_id_D2A4::is_survival, ::ret_true);
 }
 
 _id_B3AD()

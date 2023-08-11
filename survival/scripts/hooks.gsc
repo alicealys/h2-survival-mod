@@ -7,6 +7,7 @@ main()
     replacefunc(_id_C630::init, ::remotemissile_init);
     replacefunc(maps\_spawner::deathfunctions, ::deathfunctions);
     replacefunc(soundscripts\_snd_common::player_death, ::player_death);
+    replacefunc(_id_D2A4::_id_BCAC, ::_id_BCAC);
 }
 
 player_death()
@@ -430,4 +431,86 @@ spawn_team_axis()
 
     if ( isdefined( self.script_combatmode ) )
         self.combatmode = self.script_combatmode;
+}
+
+_id_BCAC()
+{
+    self endon( "deleted" );
+    self waittill( "death", var_0, var_1, var_2 );
+    level notify( "a_sentry_died" );
+
+    if ( isdefined( var_0 ) && isdefined( level.stat_track_kill_func ) )
+        var_0 [[ level.stat_track_kill_func ]]( self, var_1, var_2 );
+
+    var_3 = 0;
+
+    if ( common_scripts\utility::issp() && self.sentrytype == "sentry_minigun" && isdefined( self.carrier ) )
+        var_3 = 1;
+
+    if ( var_3 )
+    {
+        _id_D2A4::h2_sentry_carry_move_clear_anims();
+        _id_D2A4::h2_sentry_carry_play_anim( "carry_sentry_death" );
+        self hide();
+    }
+
+    if ( !common_scripts\utility::issp() )
+    {
+        _id_D2A4::removefromturretlist();
+        thread _id_D2A4::_id_CFA9();
+    }
+
+    thread _id_D2A4::_id_CDD5();
+    thread _id_D2A4::_id_B4F2();
+    self setmodel( level._id_CD0B[self.sentrytype]._id_BB95 );
+    _id_D2A4::_id_A907();
+
+    if ( common_scripts\utility::issp() )
+        self call [[ level.freeentitysentient_func ]]();
+
+    if ( !common_scripts\utility::issp() && isdefined( var_0 ) && isplayer( var_0 ) )
+    {
+        if ( isdefined( self.owner ) )
+            self.owner thread [[ level.leaderdialogonplayer_func ]]( "destroy_sentry", "sentry_status" );
+
+        var_0 thread [[ level.onxpevent ]]( "kill" );
+    }
+
+    if ( !isdefined( self.carrier ) )
+        _id_D2A4::_id_B149();
+
+    self setsentrycarrier( undefined );
+    self.carrier = undefined;
+    self setcandamage( 1 );
+    self.ignoreme = 1;
+    self makeunusable();
+    self setsentryowner( undefined );
+    self setturretminimapvisible( 0 );
+
+    if ( !var_3 )
+    {
+        self playsound( "sentry_explode" );
+        playfxontag( common_scripts\utility::getfx( "sentry_turret_explode" ), self, "tag_aim" );
+
+        if ( common_scripts\utility::issp() && ( !isdefined( self._id_C99E ) || !self._id_C99E ) )
+            self setcontents( 0 );
+
+        wait 1.5;
+        self playsound( "sentry_explode_smoke" );
+        var_4 = level._id_CD0B[self.sentrytype]._id_D001 * 1000;
+        var_5 = gettime();
+
+        for (;;)
+        {
+            playfxontag( common_scripts\utility::getfx( "sentry_turret_explode_smoke" ), self, "tag_aim" );
+            wait 0.4;
+
+            if ( gettime() - var_5 > var_4 )
+                break;
+        }
+    }
+
+    level._id_AE9A = common_scripts\utility::array_remove( level._id_AE9A, self );
+
+    thread _id_D2A4::_id_AB93();
 }

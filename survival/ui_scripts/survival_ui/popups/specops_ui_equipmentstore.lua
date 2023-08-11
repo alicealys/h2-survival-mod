@@ -64,7 +64,7 @@ local function createequipmentstore()
             }
         end,
         callback = function(entry)
-            if ((entry.name == "rpg" or entry.name == "riotshield") and (not playerhasweapon(entry.name) and not playerhasweapon("none"))) then
+            if ((entry.name == "rpg_survival" or entry.name == "iw5_riotshield_so") and (not playerhasweapon(entry.name) and not playerhasweapon("none"))) then
                 selecteditem = entry.name
                 LUI.FlowManager.RequestPopupMenu(nil, "specops_ui_equipmentstore_confirm")
             else

@@ -1683,7 +1683,7 @@
     "knifeAttachTagLeft": false,
     "knifeAlwaysAttached": false,
     "meleeOverrideValues": false,
-    "sharedAmmo": false,
+    "sharedAmmo": true,
     "lockonSupported": false,
     "requireLockonToFire": false,
     "isAirburstWeapon": false,

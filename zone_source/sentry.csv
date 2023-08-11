@@ -2,8 +2,8 @@ material,dpad_killstreak_sentry_gun_static_frontend
 scriptfile,53924
 xmodel,sentry_gun_destroyed
 weapon,sentry_minigun_enemy
-weapon,sentry_minigun
-weapon,sentry_gun
+weapon,sentry_minigun_so
+weapon,sentry_gun_so
 xmodel,sentry_gun
 xmodel,sentry_minigun
 xmodel,sentry_minigun_obj

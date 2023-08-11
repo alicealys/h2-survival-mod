@@ -12,7 +12,7 @@ main()
     self.health = 3600;
     self.grenadeweapon = "fraggrenade";
     self.grenadeammo = 0;
-    self.secondaryweapon = "riotshield_so";
+    self.secondaryweapon = "iw5_riotshield_so";
     self.sidearm = "h2_beretta_mp";
 
     if (isai(self))
