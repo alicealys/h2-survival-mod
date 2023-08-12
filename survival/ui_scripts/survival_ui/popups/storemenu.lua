@@ -15,7 +15,7 @@ storemenu.new = function(title, data)
         local contentlist = popup:getFirstDescendentById("generic_selectionList_content_id")
         local spacing = contentlist:getAnimationStateInC("default").spacing
 
-        local leveltextstring = Engine.Localize("SO_SURVIVAL_ARMORY_LOCKED_LV", tonumber(game:sharedget("survival_rank")) + 1)
+        local leveltextstring = Engine.Localize("SO_SURVIVAL_ARMORY_LOCKED_LV", tonumber(game:sharedget("survival_rank")))
         local _, _, textwidth = GetTextDimensions(leveltextstring, CoD.TextSettings.Font24.Font, CoD.TextSettings.Font24.Height)
 
         local levelimage = LUI.UIImage.new({

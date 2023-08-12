@@ -2852,6 +2852,8 @@ juggernaut_abandon_shield()
 	// turn regular AI into juggernaut again
 	self thread maps\_juggernaut::subclass_juggernaut();	// restore regular juggernaut settings
 	
+	self.a.array["crouch_2_stand"] = level.scr_anim["crouch_2_stand"];
+
 	// End existing manage_ai() and damage_factor() threads
 	self notify( "new_jug_behavior" );
 	

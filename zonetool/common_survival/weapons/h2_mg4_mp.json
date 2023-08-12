@@ -1786,7 +1786,7 @@
     "dualMagReloadSupported": false,
     "reloadStopsAlt": false,
     "alwaysShatterGlassOnImpact": false,
-    "oldWeapon": false,
+    "oldWeapon": true,
     "hasCounterSilencer": false,
     "disableVariableAutosimRate": false,
     "cloakedWeapon": false,

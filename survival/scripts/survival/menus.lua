@@ -144,13 +144,7 @@ player:onnotify("menuresponse", function(menu, response, extra)
         local armory = armorytypes[menu]
 
         if (armory == "weaponupgrade" and extra ~= nil) then
-            local primaries = player:getweaponslistprimaries()
-            for i = 1, #primaries do
-                if (stripattachments(primaries[i]) == extra) then
-                    player.selected_weapon = primaries[i]
-                    break
-                end
-            end
+            player.selected_weapon = game:sharedget("selected_weapon")
         end
 
         if (cangive(armory, response) == 0) then

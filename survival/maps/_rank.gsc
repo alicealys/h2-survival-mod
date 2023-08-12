@@ -57,7 +57,7 @@ xp_player_init()
 		self.summary["rankxp"] = self maps\_playerdata::get("experience");
 		self.summary["rank"] = self getRankForXp( self.summary["rankxp"]);
 		sharedset("survival_rank_icon", getrankinfoicon(self.summary["rank"]));
-		sharedset("survival_rank", self.summary["rank"]);
+		sharedset("survival_rank", self.summary["rank"] + 1);
 	}
 	
 	// update at the start of the game
@@ -452,7 +452,7 @@ updateRank()
 
 	self.summary[ "rank" ] = newRankId;
 	sharedset("survival_rank_icon", getrankinfoicon(self.summary["rank"]));
-	sharedset("survival_rank", self.summary["rank"]);
+	sharedset("survival_rank", self.summary["rank"] + 1);
 
 	//self xpbar_update();
 

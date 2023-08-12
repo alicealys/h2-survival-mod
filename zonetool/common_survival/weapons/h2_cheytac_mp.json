@@ -1798,7 +1798,7 @@
     "hasCounterSilencer": false,
     "disableVariableAutosimRate": false,
     "cloakedWeapon": false,
-    "adsHideWeapon": true,
+    "adsHideWeapon": false,
     "adsHideHands": false,
     "adsBlurSceneEnabled": true,
     "usesSniperScope": true,

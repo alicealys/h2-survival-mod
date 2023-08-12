@@ -11,8 +11,6 @@ main()
     level.ac130_orbit_radius = 3500;
     level.ac130_orbit_height = 4000;
 
-    executecommand("r_tonemaphighlightrange 16");
-
 	maps\_so_survival::survival_preload();
     maps\mp\mp_backlot::main();
     maps\_load::main();

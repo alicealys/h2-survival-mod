@@ -6,6 +6,7 @@ main()
     maps\_loadout_code::loadout_complete();
     animscripts\dog\dog_init::initdoganimations();
     maps\_playerdata::init();
+    maps\_so_survival_anim_h2mod::main();
 
     level.laststand_type = 2;
 	level.laststand_player_func = maps\_laststand::player_laststand_proc;

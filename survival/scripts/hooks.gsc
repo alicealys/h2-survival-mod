@@ -8,6 +8,7 @@ main()
     replacefunc(maps\_spawner::deathfunctions, ::deathfunctions);
     replacefunc(soundscripts\_snd_common::player_death, ::player_death);
     replacefunc(_id_D2A4::_id_BCAC, ::_id_BCAC);
+    replacefunc(animscripts\battlechatter::playbattlechatter, ::playbattlechatter);
 }
 
 player_death()
@@ -513,4 +514,68 @@ _id_BCAC()
     level._id_AE9A = common_scripts\utility::array_remove( level._id_AE9A, self );
 
     thread _id_D2A4::_id_AB93();
+}
+
+playbattlechatter()
+{
+    if ( !isalive( self ) )
+        return;
+
+    if ( !animscripts\battlechatter::bcsenabled() )
+        return;
+
+    //if ( _func_1FB() )
+        //return;
+
+    if ( self._animactive > 0 )
+        return;
+
+    if ( isdefined( self.isspeaking ) && self.isspeaking )
+        return;
+
+    if ( self.team == "allies" && isdefined( anim.scripteddialoguestarttime ) )
+    {
+        if ( anim.scripteddialoguestarttime + anim.scripteddialoguebuffertime > gettime() )
+            return;
+    }
+
+    if ( animscripts\battlechatter::friendlyfire_warning() )
+        return;
+
+    if ( !isdefined( self.battlechatter ) || !self.battlechatter )
+        return;
+
+    if ( self.team == "allies" && getdvarint( "bcs_forceEnglish", 0 ) )
+        return;
+
+    if ( anim.isteamspeaking[self.team] )
+        return;
+
+    self endon( "death" );
+    var_0 = animscripts\battlechatter::gethighestpriorityevent();
+
+    if ( !isdefined( var_0 ) )
+        return;
+
+    switch ( var_0 )
+    {
+        case "custom":
+            thread animscripts\battlechatter::playcustomevent();
+            break;
+        case "response":
+            thread animscripts\battlechatter::playresponseevent();
+            break;
+        case "order":
+            thread animscripts\battlechatter::playorderevent();
+            break;
+        case "threat":
+            thread animscripts\battlechatter::playthreatevent();
+            break;
+        case "reaction":
+            thread animscripts\battlechatter::playreactionevent();
+            break;
+        case "inform":
+            thread animscripts\battlechatter::playinformevent();
+            break;
+    }
 }
