@@ -492,9 +492,9 @@ chopper_boss_get_best_location_and_target( ignore_current_loc )
 	}
 	
 	// Add sentry guns
-	if ( isdefined( level.placed_sentry ) )
+	if ( isdefined( level._id_AE9A ) )
 	{
-		foreach( sentry in level.placed_sentry )
+		foreach( sentry in level._id_AE9A )
 		{
 			if ( !IsDefined( sentry.ignoreme ) || sentry.ignoreme == false )
 			{

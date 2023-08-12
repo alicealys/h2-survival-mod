@@ -99,6 +99,27 @@ fix_map()
     col4 clonebrushmodeltoscriptmodel(brush); 
     col5 clonebrushmodeltoscriptmodel(brush); 
     col6 clonebrushmodeltoscriptmodel(brush);
+
+    add_doors();
+}
+
+add_doors()
+{
+    brush = getent("pf0_auto7014", "targetname");
+
+    door1 = spawn("script_model", (3763.51, 446.056, 1043.13));
+    door1 setmodel("h1_me_door_wood_painted");
+    door1.angles = (0, 0, 0);
+
+    doorcol1 = spawn("script_model", (3705, 446.056, 1043.13));
+    doorcol1 clonebrushmodeltoscriptmodel(brush);
+    
+    door2 = spawn("script_model", (3508.37, 164.903, 1019.63));
+    door2 setmodel("h1_me_door_wood_painted");
+    door2.angles = (0, -90, 0);
+
+    doorcol2 = spawn("script_model", (3508.37, 164.903, 1019.63));
+    doorcol2 clonebrushmodeltoscriptmodel(brush);
 }
 
 delete_spawners()

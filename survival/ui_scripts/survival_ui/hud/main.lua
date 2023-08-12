@@ -2,6 +2,7 @@ require("hud/score")
 require("hud/wavesummary")
 require("hud/perks")
 require("hud/laststand")
+require("common/xp")
 
 local actionslotdef = LUI.MenuBuilder.m_definitions["actionSlotDef"]
 LUI.MenuBuilder.m_definitions["actionSlotDef"] = function()
@@ -260,3 +261,7 @@ LUI.MenuBuilder.m_definitions["CompassHudDef"] = function()
     })
     return compass
 end
+
+LUI.onmenuopen("sp_pause_menu", function(menu)
+    addplayerprogression(menu, 400, true, 815, 540)
+end)

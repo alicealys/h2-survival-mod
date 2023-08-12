@@ -4,11 +4,11 @@
     "szDisplayName": "WEAPON_RPD",
     "szOverlayName": "",
     "gunModel": [
-        "wpn_h1_lmg_rpd_vm_camo",
+        "h1_viewmodel_rpd",
         ""
     ],
     "worldModel": [
-        "wpn_h1_lmg_rpd_npc_camo",
+        "h1_weapon_rpd",
         ""
     ],
     "reticleViewModels": null,

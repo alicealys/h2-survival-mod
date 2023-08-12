@@ -1,6 +1,7 @@
 require,common
-addpath,zonetool_paths_h1
+
 addpath,zonetool_paths_h2
+addpath,zonetool_paths_h1
 
 weapon,killstreak_sentry_sp
 weapon,killstreak_sentry_gl_sp

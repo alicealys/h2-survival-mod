@@ -343,10 +343,10 @@ kill_sentry_on_contact()
 	if ( isdefined( self.ridingvehicle ) )
 		self waittill( "jumpedout" );
 	
-	if ( !isdefined( level.placed_sentry ) )
+	if ( !isdefined( level._id_AE9A ) )
 		return;
 	
-	foreach( sentry in level.placed_sentry )
+	foreach( sentry in level._id_AE9A )
 	{
 		if ( !isdefined( sentry ) || !isAlive( sentry ) )
 			continue;
@@ -2255,7 +2255,7 @@ dog_detonate_c4_near_sentry()
 		}
 		
 		// Early out if there are not sentries to worry about
-		if ( !IsDefined( level.placed_sentry ) || !level.placed_sentry.size )
+		if ( !IsDefined( level._id_AE9A ) || !level._id_AE9A.size )
 			continue;
 		
 		// Early out if the dog has moved recently
@@ -2264,7 +2264,7 @@ dog_detonate_c4_near_sentry()
 		
 		// See if the dog is near a sentry
 		close_to_sentry = false;
-		foreach ( sentry in level.placed_sentry )
+		foreach ( sentry in level._id_AE9A )
 		{
 			if ( IsDefined( sentry.carrier ) )
 				continue;

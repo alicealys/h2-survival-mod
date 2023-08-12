@@ -1,3 +1,5 @@
+require("common/xp")
+
 local csv = "sp/survival_maps.csv"
 local cols = {
 	id = 0,
@@ -158,59 +160,6 @@ local function startmap(id)
 	local data = getsurvivalmapatid(id)
    	Engine.SetDvarBool("cl_disableMapMovies", true)
     Engine.Exec("map " .. data.name)
-end
-
-local rankcsv = "sp/ranktable.csv"
-local rankcols = {
-	rank = 0,
-	name = 1,
-	xpmin = 2,
-	xpcount = 3,
-	namestr = 4,
-	namestrfull = 5,
-	icon = 6,
-	xpmax = 7,
-}
-
-function getrankforxp(xp)
-	local rowcount = Engine.TableGetRowCount(rankcsv)
-	for i = 2, rowcount do
-		local rank = tonumber(Engine.TableLookupByRow(rankcsv, i, rankcols.rank))
-		local xpmin = tonumber(Engine.TableLookupByRow(rankcsv, i, rankcols.xpmin))
-		local xpmax = tonumber(Engine.TableLookupByRow(rankcsv, i, rankcols.xpmax))
-		local icon = Engine.TableLookupByRow(rankcsv, i, rankcols.icon)
-
-		if (xpmin ~= nil or xpcount ~= nil) then
-			if (xp >= xpmin and xp < xpmax or (i == rowcount - 1)) then
-				return (rank + 1), icon, (i == rowcount - 1)
-			end
-		end
-	end
-
-	return 0, "", false
-end
-
-function getrankinfo(r)
-	local rowcount = Engine.TableGetRowCount(rankcsv)
-	for i = 2, rowcount do
-		local rank = tonumber(Engine.TableLookupByRow(rankcsv, i, rankcols.rank))
-		if (rank == r) then
-			local t = {}
-			for k, v in pairs(rankcols) do
-				t[k] = Engine.TableLookupByRow(rankcsv, i, v)
-			end
-			return t
-		end
-	end
-	return {}
-end
-
-function getxp()
-	return mods.stats.getor("experience", 0)
-end
-
-function getrank()
-	return getrankforxp(getxp())
 end
 
 local function addplayer(menu)

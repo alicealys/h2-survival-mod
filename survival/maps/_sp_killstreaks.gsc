@@ -498,6 +498,8 @@ get_sp_killstreak_info( streakType )
 // actually give a killstreak to a player for use
 give_sp_killstreak( streakType, regive )
 {
+	setomnvar( "ui_updateactionslot", 1 );
+
 	ASSERT( IsDefined( streakType ) );
 	
 	/* make sure player doesn't have this killstreak already
@@ -673,7 +675,7 @@ sp_killstreak_use_waiter()
 		{
 			wait 0.05; // wait for self.sentry_placement_failed is updated
 			
-			if ( isdefined( self.sentry_placement_failed ) && self.sentry_placement_failed )
+			if ( isdefined( self._id_C6BD ) && self._id_C6BD )
 			{
 				// sentry placement failed, regive sentry
 				self give_sp_killstreak( killstreakType, true );

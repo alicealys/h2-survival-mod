@@ -256,6 +256,26 @@ function addscorehud(parent)
 
     parent:addElement(hud)
 
+    local enemynum = LUI.UIText.new({
+        leftAnchor = true,
+        topAnchor = true,
+        height = 25,
+        top = 240,
+        left = 40,
+        alpha = 0,
+        font = RegisterFont("fonts/bank.ttf", 30)
+    })
+
+    enemynum:setTextStyle(CoD.TextStyle.Shadowed)
+
+    enemynum:registerAnimationState("show", {
+        alpha = 1,
+    })
+
+    enemynum:registerAnimationState("hide", {
+        alpha = 0,
+    })
+
     local wavenum = LUI.UIText.new({
         leftAnchor = true,
         topAnchor = true,
@@ -277,7 +297,21 @@ function addscorehud(parent)
         wavenum:setText(Engine.Localize("@SO_SURVIVAL_WAVE_TIME", event.data))
     end)
 
+    enemynum:registerEventHandler("set_enemy_num", function (element, event)
+        if (event.data == "disable") then
+            enemynum:animateToState("hide")
+        else
+            if (event.data == "1") then
+                enemynum:setText(Engine.Localize("@SO_SURVIVAL_ENEMY_LEFT", event.data))
+            else
+                enemynum:setText(Engine.Localize("@SO_SURVIVAL_ENEMIES_LEFT", event.data))
+            end
+            enemynum:animateToState("show")
+        end
+    end)
+
     hud:addElement(wavenum)
+    hud:addElement(enemynum)
 
     local scoresplash = LUI.UIText.new({
         leftAnchor = true,

@@ -2574,25 +2574,23 @@ enemy_remaining_HUD()
 	}
 }*/
 
-enemy_remaining_HUD()
+enemy_remaining_hud()
 {
-	self endon( "death" );
+	self endon("death");
 	
-	self surHUD_disable( "enemy" );
-	self _setplayerdata_single( "surHUD_enemy", 0 );
+	luinotify("set_enemy_num", "disable");
 	
-	while ( 1 )
+	while (true)
 	{
-		level waittill_either( "axis_spawned", "axis_died" );
-		// update wave # on player HUD
-		if ( !flag( "aggressive_mode" ) )
+		level waittill_either("axis_spawned", "axis_died");
+
+		if (!flag("aggressive_mode"))
 		{
-			self surHUD_disable( "enemy" );
+			luinotify("set_enemy_num", "disable");
 		}
 		else
 		{
-			self surHUD_enable( "enemy" );
-			self _setplayerdata_single( "surHUD_enemy", level.enemy_remaining );
+			luinotify("set_enemy_num", level.enemy_remaining);
 		}
 	}
 }

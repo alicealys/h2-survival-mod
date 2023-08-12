@@ -829,11 +829,11 @@ cycle_sentry_pip()
 	{
 		self waittill( "pip_cycle" );
 
-		if ( isdefined( level.placed_sentry ) && level.placed_sentry.size )
+		if ( isdefined( level._id_AE9A ) && level._id_AE9A.size )
 		{
 			assertex( isdefined( self.pip ), "Player's PIP is not initialized before cycling PIP" );
 
-			if ( self.pip_sentry_id > level.placed_sentry.size - 1 )
+			if ( self.pip_sentry_id > level._id_AE9A.size - 1 )
 				self.pip_sentry_id = 0;
 
 			self pip_patch_into( self.pip_sentry_id );
@@ -858,7 +858,7 @@ death_pip_disable( sentry )
 // patch into a different sentry camera via id
 pip_patch_into( id )
 {
-	sentry = level.placed_sentry[ id ];
+	sentry = level._id_AE9A[ id ];
 
 	if ( !isdefined( sentry ) )
 		return;
@@ -913,9 +913,9 @@ get_total_sentries()
 {
 	total_sentries = 0;
 
-	if ( isdefined( level.placed_sentry ) && level.placed_sentry.size )
+	if ( isdefined( level._id_AE9A ) && level._id_AE9A.size )
 	{
-		total_sentries += level.placed_sentry.size;
+		total_sentries += level._id_AE9A.size;
 	}
 
 	foreach( player in level.players )
@@ -938,7 +938,7 @@ has_sentry()
 	if ( self maps\_sp_killstreaks::has_killstreak( "sentry_gl" ) )
 		return true;
 
-	foreach( sentry in level.placed_sentry )
+	foreach( sentry in level._id_AE9A )
 	{
 		// using .attacker since .owner can change due to who picked it up last, attacker does not change
 		// and is true ownership of the sentry, as credits sentry earned goto the true owner.
@@ -2427,6 +2427,7 @@ give_friendlies_monitor_use( ally_type )
 		dpad_icon = "specops_ui_riotshieldsupport";
 
 	// set dpad right
+	setomnvar( "ui_updateactionslot", 1 );
 	self setweaponhudiconoverride( "actionslot4", dpad_icon );
 	self notifyonplayercommand( "friendly_support_called", "+actionslot 4" );
 
@@ -2451,6 +2452,7 @@ give_airstrike( ref )
 	self thread maps\_air_support_strobe::enable_strobes_for_player();
 	self thread sticky_strobe();
 	self thread disable_strobe_for_player();
+	setomnvar( "ui_updateactionslot", 1 );
 }
 
 sticky_strobe()
