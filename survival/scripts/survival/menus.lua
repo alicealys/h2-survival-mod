@@ -96,21 +96,30 @@ level:onnotify("player_fired_remote_missile", function()
     end
 end)
 
+local function splitstring(input, sep)
+    if (sep == nil) then
+        sep = "%s"
+    end
+
+    local t = {}
+    for str in string.gmatch(input, "([^" .. sep .. "]+)") do
+        table.insert(t, str)
+    end
+
+    return t
+end
+
 local function stripattachments(name)
-    if (name == nil) then
+    if (name == nil or name == "") then
         return name
     end
 
-    local newname = ""
-    for i = 1, #name do
-        if (name:sub(i, i + 2) == "_mp") then
-            return newname .. "_mp"
-        end
-
-        newname = newname .. name:sub(i, i)
+    local split = splitstring(name, "_")
+    if (#split < 3) then
+        return name
     end
 
-    return newname
+    return string.format("%s_%s_%s", split[1], split[2], split[3])
 end
 
 player:onnotify("menuresponse", function(menu, response, extra)
@@ -144,7 +153,18 @@ player:onnotify("menuresponse", function(menu, response, extra)
         local armory = armorytypes[menu]
 
         if (armory == "weaponupgrade" and extra ~= nil) then
-            player.selected_weapon = game:sharedget("selected_weapon")
+            player.selected_weapon = nil
+            local primaries = player:getweaponslistprimaries()
+            for i = 1, #primaries do
+                if (stripattachments(primaries[i]) == extra) then
+                    player.selected_weapon = primaries[i]
+                    break
+                end
+            end
+
+            if (player.selected_weapon == nil) then
+                return
+            end
         end
 
         if (cangive(armory, response) == 0) then

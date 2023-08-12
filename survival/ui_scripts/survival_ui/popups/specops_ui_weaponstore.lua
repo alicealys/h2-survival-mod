@@ -231,7 +231,6 @@ local function createweaponclassstore(title, targetclass)
             }
         end,
         upgrade = function(entry)
-            game:sharedset("selected_weapon", entry.name)
             LUI.FlowManager.RequestAddMenu(nil, "specops_ui_upgradestore", nil, nil, nil, {
                 weapon = entry.name,
                 text = entry.text
