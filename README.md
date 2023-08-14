@@ -44,6 +44,7 @@ Avoid creating issues to ask for support, use the appropriate discord channels i
 
 ## Showcase
 
+<img src="assets/github/survival_main.png?raw=true" />
 <img src="assets/github/survival_menu.png?raw=true" />
 <img src="assets/github/survival_loadscreen.png?raw=true" />
 <img src="assets/github/survival_ingame.png?raw=true" />
