@@ -219,7 +219,7 @@ function addplayerprogression(menu, width, disableanimation, left, top)
     ranknametext:setText(Engine.Localize(rankinfo.namestrfull))
 
     local progressbar = createprogressbar(10, -10, width - 20)
-    progressbar.setprogress(currentxp / xpmax, disableanimation)
+    progressbar.setprogress((currentxp - rankinfo.xpmin) / (xpmax - rankinfo.xpmin), disableanimation)
 
     rankleft:setText(rankprevvalue)
     rankright:setText(ranknextvalue)

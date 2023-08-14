@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_bos14_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "5.56 x 45 mm nato",
+    "szAmmoName": "aprast_mp",
     "szClipName": "aprast_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/ak47_flash_view",

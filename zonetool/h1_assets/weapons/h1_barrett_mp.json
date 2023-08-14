@@ -927,7 +927,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".50 bmg",
+    "szAmmoName": "barrett_mp",
     "szClipName": "barrett_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/rifleflash",

@@ -3,9 +3,9 @@ init()
     level._playerdata = spawnstruct();
     level._playerdata.default_values = [];
     level._playerdata.default_values["experience"] = 0;
-    level._playerdata.default_values["viewhands"] = "viewmodel_base_viewhands";
+    level._playerdata.default_values["viewhands"] = "viewhands_us_army";
     level._playerdata.default_values["viewhands_player"] = "viewhands_player_us_army";
-    level._playerdata.default_values["starting_pistol"] = "h2_beretta_mp";
+    level._playerdata.default_values["starting_pistol"] = "h1_beretta_mp";
     level._playerdata.default_values["custom_soundtrack"] = "";
 
     level._playerdata.struct_default_values["career"] = [];

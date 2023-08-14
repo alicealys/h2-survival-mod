@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_g3_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 51 mm nato",
+    "szAmmoName": "g3_mp",
     "szClipName": "g3_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/mp5_flash_view",

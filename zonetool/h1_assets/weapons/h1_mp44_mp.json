@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_mp44_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "7.92 x 33 mm",
+    "szAmmoName": "mp44_mp",
     "szClipName": "mp44_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/heavy_view",

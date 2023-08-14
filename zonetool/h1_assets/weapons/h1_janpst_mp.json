@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".357 magnum",
+    "szAmmoName": "janpst_mp",
     "szClipName": "janpst_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/beretta_flash_view",

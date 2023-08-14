@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "5.7 x 28 mm",
+    "szAmmoName": "p90_mp",
     "szClipName": "p90_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/mp5_flash_view",

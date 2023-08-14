@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_shotgun_m1014_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "12 gauge",
+    "szAmmoName": "m1014_mp",
     "szClipName": "m1014_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/shotgunflash_view",

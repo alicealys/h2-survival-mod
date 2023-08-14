@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_m14_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 51 mm nato",
+    "szAmmoName": "m14_mp",
     "szClipName": "m14_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/rifle_flash_view",

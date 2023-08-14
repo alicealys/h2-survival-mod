@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_lmg_mk8_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 51 mm nato (belt)",
+    "szAmmoName": "junlmg_mp",
     "szClipName": "junlmg_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/saw_flash_view",

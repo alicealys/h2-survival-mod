@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "9 x 19 mm luger",
+    "szAmmoName": "febsmg_mp",
     "szClipName": "febsmg_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/uzi_flash_view",

@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_lmg_m249_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "5.56 x 45 mm nato (belt)",
+    "szAmmoName": "saw_mp",
     "szClipName": "saw_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/saw_flash_view",

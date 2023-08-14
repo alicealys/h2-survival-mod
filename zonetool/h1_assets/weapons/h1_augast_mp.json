@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_cq300_base_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 39 mm",
+    "szAmmoName": "augast_mp",
     "szClipName": "augast_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/ak47_flash_view",

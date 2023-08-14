@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".357 magnum",
+    "szAmmoName": "deserteagle_mp",
     "szClipName": "deserteagle_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/pistolflash_view",

@@ -4,17 +4,17 @@ function frontend()
     require("menus/personalization")
     require("menus/stats")
 
-    CoD.Background.CampaignRegular = "h1_menu_background_vignette"
-    CoD.Background.Campaign = "h1_menu_background_vignette"
-    CoD.Background.CampaignHardened = "h1_menu_background_vignette"
-    CoD.Background.CampaignVeteran = "h1_menu_background_vignette"
+    CoD.Background.CampaignRegular = "survival_menu_bg"
+    CoD.Background.Campaign = "survival_menu_bg"
+    CoD.Background.CampaignHardened = "survival_menu_bg"
+    CoD.Background.CampaignVeteran = "survival_menu_bg"
     CoD.Music.MainSPMusic = "mus_so_main_menu"
 
     for i = 1, #CoD.DifficultyList do
         CoD.DifficultyList[i].video = CoD.Background.CampaignRegular
     end
 
-    PersistentBackground.ChangeBackground(nil, "h1_menu_background_vignette")
+    PersistentBackground.ChangeBackground(nil, "survival_menu_bg")
 
     LUI.LevelSelect.IsAllLevelCompleted = function()
         return false

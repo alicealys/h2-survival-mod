@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_m4a1_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "5.56 x 45 mm nato",
+    "szAmmoName": "m4_mp",
     "szClipName": "m4_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/mp16_flash_view",

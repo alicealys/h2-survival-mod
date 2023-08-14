@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".32 acp",
+    "szAmmoName": "skorpion_mp",
     "szClipName": "skorpion_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/uzi_flash_view",

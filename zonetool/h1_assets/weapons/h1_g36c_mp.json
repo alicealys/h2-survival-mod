@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_asl_g36_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "5.56 x 45 mm nato",
+    "szAmmoName": "g36c_mp",
     "szClipName": "g36c_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/g36_flash_view",

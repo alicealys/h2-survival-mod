@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "12 gauge",
+    "szAmmoName": "striker_mp",
     "szClipName": "striker_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/shotgunflash_view",

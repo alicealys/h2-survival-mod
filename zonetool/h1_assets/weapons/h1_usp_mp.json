@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".45 acp",
+    "szAmmoName": "usp_mp",
     "szClipName": "usp_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/usp_flash_view",

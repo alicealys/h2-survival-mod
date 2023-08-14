@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".357 magnum",
+    "szAmmoName": "coltanaconda_mp",
     "szClipName": "coltanaconda_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/pistolflash_view",

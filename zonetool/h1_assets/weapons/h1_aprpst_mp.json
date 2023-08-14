@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "9 x 19 mm luger",
+    "szAmmoName": "aprpst_mp",
     "szClipName": "aprpst_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/beretta_flash_view",

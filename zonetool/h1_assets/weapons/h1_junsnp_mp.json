@@ -927,7 +927,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 51 mm nato",
+    "szAmmoName": "junsnp_mp",
     "szClipName": "junsnp_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/rifle_flash_view",

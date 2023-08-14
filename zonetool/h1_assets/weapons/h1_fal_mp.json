@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 39 mm",
+    "szAmmoName": "fal_mp",
     "szClipName": "fal_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/ak47_flash_view",

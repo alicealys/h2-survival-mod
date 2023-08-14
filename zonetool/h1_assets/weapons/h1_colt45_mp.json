@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": ".45 acp",
+    "szAmmoName": "colt45_mp",
     "szClipName": "colt45_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/pistolflash_view",

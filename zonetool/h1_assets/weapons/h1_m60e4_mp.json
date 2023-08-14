@@ -862,7 +862,7 @@
     ],
     "szModeName": "wpn_h1_lmg_m60_lobby",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 51 mm nato (belt)",
+    "szAmmoName": "m60e4_mp",
     "szClipName": "m60e4_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/m60_flash_view",

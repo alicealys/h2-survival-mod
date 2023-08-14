@@ -862,7 +862,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "5.45 x 39 mm",
+    "szAmmoName": "ak74u_mp",
     "szClipName": "ak74u_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/uzi_flash_view",

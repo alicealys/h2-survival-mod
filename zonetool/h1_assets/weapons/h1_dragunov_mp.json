@@ -927,7 +927,7 @@
     ],
     "szModeName": "",
     "szAltWeaponName": "",
-    "szAmmoName": "7.62 x 54 mm r",
+    "szAmmoName": "dragunov_mp",
     "szClipName": "dragunov_mp",
     "szSharedAmmoCapName": "",
     "viewFlashEffect": "fx/muzzleflashes/rifle_flash_view",

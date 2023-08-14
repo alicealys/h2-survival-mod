@@ -171,7 +171,7 @@
 		}
 		itemDef
 		{
-			rect 248.667 111.628 3 3 1 2
+			rect 280 111.628 3 3 1 2
 			decoration
 			visible 1
 			style 1
