@@ -1,4 +1,7 @@
-# h2-survival-mod
+# H2 Survival Mod
+<p align="center">
+  <img src="assets/github/banner.png?raw=true" />
+</p>
 
 MW3 Survival mod for H2 (MW2CR), requires [h2-mod](https://github.com/fedddddd/h2-mod#download)
 
