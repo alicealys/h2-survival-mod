@@ -18,4 +18,6 @@ main()
 	maps\_so_survival::survival_init();
 
     level._id_B981._id_B23A = 30; // remotemissile view ang
+
+    level.player lightset("mp_backlot");
 }
