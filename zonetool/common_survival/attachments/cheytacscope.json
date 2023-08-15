@@ -1,16 +1,16 @@
 {
     "baseAsset": "defaultattachment",
-    "internalName": "m14scope",
+    "internalName": "cheytacscope",
     "displayName": "",
     "type": 0,
     "weaponType": 0,
     "weaponClass": 0,
     "worldModels": [
-        "attach_h2_m14ebr_scope_npc",
+        "attach_h2_cheytac_scope_npc",
         ""
     ],
     "viewModels": [
-        "attach_h2_m14ebr_scope_vm",
+        "attach_h2_cheytac_scope_vm",
         ""
     ],
     "reticleViewModels": null,
