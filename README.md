@@ -25,7 +25,7 @@ Currently these maps are available:
 * Launch the game and press on the **MODS** button and load `SURVIVAL`, enjoy
 
 ## Updating the mod
-To update the mod delete your current mod folder and re-download it, this process will **NOT** reset your stats.
+To update the mod simply replace the current mod folder with the new one, this process will **NOT** reset your stats.
 
 ## Install extra maps
 ### Map download links
