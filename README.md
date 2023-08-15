@@ -24,6 +24,9 @@ Currently these maps are available:
   __**Do NOT download the repository as ZIP, that won't work, make sure you download the LATEST RELEASE**__
 * Launch the game and press on the **MODS** button and load `SURVIVAL`, enjoy
 
+## Updating the mod
+To update the mod delete your current mod folder and re-download it, this process will **NOT** reset your stats.
+
 ## Install extra maps
 ### Map download links
  * **MWR**:
@@ -45,7 +48,7 @@ More maps will be released in the future so be sure to check this page or the [d
 Please report any issues or bugs [here](https://github.com/fedddddd/h2-survival-mod/issues) or on the [discord server](https://discord.gg/dpnRn2tKT9).  
 Avoid creating issues to ask for support, use the appropriate discord channels instead.
 
-## Showcase
+# Showcase
 
 <img src="assets/github/survival_main.png?raw=true" />
 <img src="assets/github/survival_menu.png?raw=true" />
