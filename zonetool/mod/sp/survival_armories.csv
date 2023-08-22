@@ -12,7 +12,7 @@ a0,b1,c2,d3,e4,f5,g6,h7,acog eotech m320 reflex,j9,k10,l11,m12
 10,h1_augsmg_mp,weapon,1500,WEAPON_PKPSD9,PERKS_MPISTOL_BURST,,24,acog reflex,0 12,1,machinepistol,
 11,h2_tmp_mp,weapon,2000,WEAPON_TMP,PERKS_MPISTOL_FULLAUTO,,36,eotech reflex,0 12,1,machinepistol,
 12,h2_pp2000_mp,weapon,2000,WEAPON_PP2000,PERKS_MPISTOL_FULLAUTO,,42,reflex,0 12,1,machinepistol,
-13,h2_mp5k_mp,weapon,2000,WEAPON_MP5K,PERKS_SMG,,0,acog eotech reflex,0 12,1,smg,
+13,h2_mp5k_mp,weapon,2000,WEAPON_MP5K,PERKS_SMG,,0,eotech reflex,0 12,1,smg,
 14,h1_mp5_mp,weapon,2000,WEAPON_MP5H1,PERKS_SMG,,5,acog reflex,0 12,1,smg,
 15,h1_skorpion_mp,weapon,2000,WEAPON_SKORPION,PERKS_SMG,,10,acog reflex,0 12,1,smg,
 16,h1_febsmg_mp,weapon,2000,WEAPON_MAC10,PERKS_SMG,,15,acog reflex,0 12,1,smg,

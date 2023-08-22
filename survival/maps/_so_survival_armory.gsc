@@ -394,6 +394,7 @@ armory_use_monitor()
 	worldIcon.y = self.origin[1];
 	worldIcon.z = self.origin[2];
 	worldIcon.alpha = 0.75;
+	worldIcon.hidewheninmenu = true;
 	worldIcon SetShader( self.icon, 12, 12 );
 	worldIcon SetWaypoint( true, true, false );
 	self.crateWorldIcon = worldIcon;

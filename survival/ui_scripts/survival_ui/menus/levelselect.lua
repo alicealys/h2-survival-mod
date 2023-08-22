@@ -32,10 +32,6 @@ local function createdivider(menu, text)
 	menu.list:addElement(element)
 end
 
-local function startmap(map, name, desc)
-    Engine.Exec("map " .. map)
-end
-
 LUI.MenuBuilder.registerType("so_survival_mapselect", function(a1)
 	local menu = LUI.MenuTemplate.new(a1, {
 		menu_title = Engine.ToUpperCase(Engine.Localize("@MENU_MAPS")),

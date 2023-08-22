@@ -159,6 +159,8 @@ end
 local function startmap(id)
 	local data = getsurvivalmapatid(id)
    	Engine.SetDvarBool("cl_disableMapMovies", true)
+	Engine.SetDvarInt("g_gameskill", 1)
+    Engine.Exec("difficultyMedium")
     Engine.Exec("map " .. data.name)
 end
 

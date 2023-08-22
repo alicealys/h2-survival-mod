@@ -298,7 +298,7 @@ function addscorehud(parent)
     end)
 
     enemynum:registerEventHandler("set_enemy_num", function (element, event)
-        if (event.data == "disable") then
+        if (event.data == "disable" or tonumber(event.data) == 0) then
             enemynum:animateToState("hide")
         else
             if (event.data == "1") then
