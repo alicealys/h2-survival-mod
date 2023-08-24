@@ -98,6 +98,11 @@ notify_score()
 
 add_score(increment)
 {
+    if (!isdefined(increment))
+    {
+        return;
+    }
+
     if (!isdefined(self.survival_credit))
     {
         self.survival_credit = 0;
@@ -110,6 +115,5 @@ add_score(increment)
 
 give_xp(type, value)
 {
-    self add_score(value);
     self maps\_rank::updateplayerscore(type, value);
 }

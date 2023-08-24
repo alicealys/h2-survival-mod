@@ -116,8 +116,8 @@ local function hud_()
     local menucontainer = LUI.UIElement.new({
         leftAnchor = true,
         topAnchor = true,
-        width = 1280,
-        height = 720
+        rightAnchor = true,
+        bottomAnchor = true
     })
     
     menucontainer:registerAnimationState("hud_on", {

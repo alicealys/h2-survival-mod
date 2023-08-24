@@ -550,7 +550,9 @@ give_player_weapon( slot )
 		weapon_class = weaponclass( weapon );
 		assert( isdefined( weapon_class ) );
 		if ( weapon_class == "pistol" )
-			level.coop_incap_weapon = weapon;
+		{
+			level.coop_incap_weapon = "h1_beretta_mp";
+		}
 		
 		if ( ammo == "max" )
 		{
@@ -2137,9 +2139,27 @@ survival_credits()
 	}
 }
 
+
 update_from_xp()
 {
+	self endon( "death" );
 
+	while( 1 )
+	{
+		self.old_xp = self.summary[ "rankxp" ];
+		self.old_credits = self.survival_credit;	// must be shared with update_from_credits()
+		
+		self waittill( "xp_updated", xp_type );
+		
+		if ( !isdefined( xp_type ) )
+			continue;
+
+		increment = self.summary[ "rankxp" ] - self.old_xp;
+
+		// "xp_update" didn't update credits
+
+		maps\_so_survival_h2mod::add_score(increment);
+	}
 }
 
 update_from_credits()
