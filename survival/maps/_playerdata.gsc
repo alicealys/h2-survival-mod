@@ -59,7 +59,7 @@ get_struct(struct, field)
 
     if (isdefined(default_value))
     {
-        value = statsgetstructor(struct, field);
+        value = statsget(struct, field);
         if (typeof(value) != typeof(default_value))
         {
             return default_value;
@@ -68,7 +68,7 @@ get_struct(struct, field)
         return value;
     }
 
-    return statsgetstruct(struct, field);
+    return statsget(struct, field);
 }
 
 set(key, value)
@@ -106,7 +106,7 @@ set_struct(struct, field, value)
         return;
     }
 
-    statssetstruct(struct, field, value);
+    statsset(struct, field, value);
 }
 
 set_best_wave(map, wave)

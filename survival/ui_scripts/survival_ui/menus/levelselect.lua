@@ -177,7 +177,7 @@ LUI.MenuBuilder.registerType("so_survival_mapselect", function(a1)
 	menu:addElement(previewcontainer)
 
 	local getbestwave = function(name)
-		return mods.stats.getstructor("best_wave", name, 0)
+		return mods.stats.getor("best_wave", name, 0)
 	end
 
     local lastsection = nil
