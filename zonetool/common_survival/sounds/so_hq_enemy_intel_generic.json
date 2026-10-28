@@ -1,0 +1,2502 @@
+{
+    "aliasName": "so_hq_enemy_intel_generic",
+    "count": 12,
+    "head": [
+        {
+            "aliasName": "so_hq_enemy_intel_generic_01",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 1517,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_01"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_02",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 1966,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_02"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_03",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 2389,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_03"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_04",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 2374,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_04"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_05",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 3139,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_05"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_06",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 3030,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_06"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_07",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 2003,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_07"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_08",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 1733,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_08"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_09",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 4365,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_09"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_10",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 3027,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_10"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_11",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 1758,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_11"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        },
+        {
+            "aliasName": "so_hq_enemy_intel_generic_12",
+            "secondaryAliasName": null,
+            "chainAliasName": null,
+            "subtitle": null,
+            "mixerGroup": null,
+            "soundfile": {
+                "type": 2,
+                "totalMsec": 4036,
+                "isLocalized": true,
+                "isStreamed": true,
+                "fileIndex": 0,
+                "raw": {
+                    "dir": "battlechatter",
+                    "name": "so_hq_enemy_intel_generic_12"
+                },
+                "exists": true
+            },
+            "flags": 2097562,
+            "priority": 18,
+            "dspBus": "voices_critical",
+            "volMod": "voices_dialog_radio",
+            "volMin": 0.5,
+            "volMax": 0.5,
+            "pitchMin": 1,
+            "pitchMax": 1,
+            "distMin": 120,
+            "distMax": 600,
+            "velocityMin": 0,
+            "probability": 1,
+            "sequence": 1,
+            "startDelay": 0,
+            "masterPriority": 100,
+            "masterPercentage": 0.20000000298023224,
+            "slavePercentage": 1,
+            "playbackPercentage": 100,
+            "lfePercentage": 0,
+            "centerPercentage": 0,
+            "poly": 1,
+            "polyGlobal": 174,
+            "polyEntityType": 0,
+            "polyGlobalType": 0,
+            "reverbWetMixOverride": 0,
+            "smartPanDistance2d": 0,
+            "smartPanDistance3d": 0,
+            "smartPanAttenuation3d": 1,
+            "stereo3dAngle": 0,
+            "stereo3dStart": 0,
+            "stereo3dEnd": 0,
+            "sndContext": null,
+            "sndCurve": "$default",
+            "lpfCurve": "$default",
+            "hpfCurve": "$defaultHpf",
+            "reverbSendCurve": "$default",
+            "speakerMap": {
+                "channelMaps": [
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 1,
+                                "speaker": 5
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 2,
+                        "speakers": [
+                            {
+                                "levels0": 1,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 1,
+                                "numLevels": 2,
+                                "speaker": 1
+                            }
+                        ]
+                    },
+                    {
+                        "speakerCount": 6,
+                        "speakers": [
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 0
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 1
+                            },
+                            {
+                                "levels0": 0.5,
+                                "levels1": 0.5,
+                                "numLevels": 2,
+                                "speaker": 2
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 3
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 4
+                            },
+                            {
+                                "levels0": 0,
+                                "levels1": 0,
+                                "numLevels": 2,
+                                "speaker": 5
+                            }
+                        ]
+                    }
+                ],
+                "isDefault": false,
+                "name": "radio"
+            },
+            "allowDoppler": 0,
+            "dopplerPreset": null,
+            "unknown": {
+                "pad": [
+                    {
+                        "bytes": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "subtype": null
+                    },
+                    null,
+                    null
+                ],
+                "u1": 4,
+                "u2": 0.0010000000474974513
+            },
+            "envelopMin": 0,
+            "envelopMax": 0,
+            "envelopPercentage": 0,
+            "reverbMultiplier": 0
+        }
+    ]
+}

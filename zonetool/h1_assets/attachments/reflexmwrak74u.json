@@ -1,0 +1,154 @@
+{
+    "baseAsset": "reflexmwrak74u",
+    "internalName": "reflexmwrak74u",
+    "displayName": "WEAPON_REFLEX_ATTACHMENT",
+    "type": 0,
+    "weaponType": 0,
+    "weaponClass": 0,
+    "worldModels": [
+        "attach_h1_optic_reflex_npc",
+        ""
+    ],
+    "viewModels": [
+        "attach_h1_optic_reflex_vm",
+        ""
+    ],
+    "reticleViewModels": [
+        "reticle_h1_optic_reflex",
+        "reticle_h1_reflex_transparent",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "bounceSounds": null,
+    "rollingSounds": null,
+    "stringArray1": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "stringArray2": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "waFields": [
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_UP",
+            "code": 1,
+            "value": "_ads _reflex_ads"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_DOWN",
+            "code": 1,
+            "value": "_ads _reflex_ads"
+        },
+        {
+            "name": "hipSpreadStandMin",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 3.0
+        },
+        {
+            "name": "hipSpreadDuckedMin",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 2.5
+        },
+        {
+            "name": "hipSpreadProneMin",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 2.0
+        },
+        {
+            "name": "hipSpreadStandMax",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 7.0
+        },
+        {
+            "name": "hipSpreadDuckedMax",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 6.0
+        },
+        {
+            "name": "hipSpreadProneMax",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 5.0
+        }
+    ]
+}

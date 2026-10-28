@@ -1,0 +1,11 @@
+xmodel,body_work_civ_male_c
+xmodel,body_work_civ_male_b
+xmodel,body_work_civ_male_a_bomb
+xmodel,body_work_civ_male_b_bomb
+xmodel,body_work_civ_male_c_bomb
+xmodel,head_spetsnaz_assault_vlad_facemask
+xmodel,h2_weapon_c4
+xmodel,mp_body_fso_vest_d_dirty
+fx,fx/misc/power_tower_light_red_blink
+fx,vfx/lights/aircraft_light_red_blink
+sound,semtex_warning_so

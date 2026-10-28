@@ -1,0 +1,4684 @@
+{
+"classname" "info_player_start_so"
+"angles" "0 130 0"
+"origin" "-82 -2946 -146"
+}
+{
+31241 "1"
+"targetname" "remotemissile_uav"
+"origin" "0 0 0"
+"angles" "0 0 0"
+"team" "allies"
+"spawnflags" "2"
+"vehicletype" "ucav"
+"model" "vehicle_ucav"
+"classname" "script_vehicle_ucav"
+"script_specialops" "1"
+}
+{
+"classname" "script_struct"
+"targetname" "uav_focus_point"
+"origin" "532 1243 500"
+"angles" "0 0 0"
+}
+{
+"angles" "0 90 0"
+"origin" "8532 1243 5500"
+"targetname" "vnode_remotemissile_uav_start"
+"target" "path_auto_1"
+"speed" "40"
+"lookahead" "3"
+"spawnflags" "1"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 112.5 0"
+"origin" "7923.036260090294 4304.467458920719 5500"
+"targetname" "path_auto_1"
+"target" "path_auto_2"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 135 0"
+"origin" "6188.85424949238 6899.8542494923795 5500"
+"targetname" "path_auto_2"
+"target" "path_auto_3"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 157.5 0"
+"origin" "3593.467458920719 8634.036260090294 5500"
+"targetname" "path_auto_3"
+"target" "path_auto_4"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 180 0"
+"origin" "532.0000000000005 9243 5500"
+"targetname" "path_auto_4"
+"target" "path_auto_5"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 202.5 0"
+"origin" "-2529.467458920718 8634.036260090294 5500"
+"targetname" "path_auto_5"
+"target" "path_auto_6"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 225 0"
+"origin" "-5124.8542494923795 6899.85424949238 5500"
+"targetname" "path_auto_6"
+"target" "path_auto_7"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 247.5 0"
+"origin" "-6859.036260090294 4304.467458920719 5500"
+"targetname" "path_auto_7"
+"target" "path_auto_8"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 270 0"
+"origin" "-7468 1243.000000000001 5500"
+"targetname" "path_auto_8"
+"target" "path_auto_9"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 292.5 0"
+"origin" "-6859.036260090295 -1818.4674589207139 5500"
+"targetname" "path_auto_9"
+"target" "path_auto_10"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 315 0"
+"origin" "-5124.854249492381 -4413.8542494923795 5500"
+"targetname" "path_auto_10"
+"target" "path_auto_11"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 337.5 0"
+"origin" "-2529.467458920716 -6148.0362600902945 5500"
+"targetname" "path_auto_11"
+"target" "path_auto_12"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 0 0"
+"origin" "531.9999999999985 -6757 5500"
+"targetname" "path_auto_12"
+"target" "path_auto_13"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 22.5 0"
+"origin" "3593.46745892072 -6148.036260090293 5500"
+"targetname" "path_auto_13"
+"target" "path_auto_14"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 45 0"
+"origin" "6188.854249492379 -4413.854249492381 5500"
+"targetname" "path_auto_14"
+"target" "path_auto_15"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"angles" "0 67.5 0"
+"origin" "7923.0362600902945 -1818.4674589207166 5500"
+"targetname" "path_auto_15"
+"target" "vnode_remotemissile_uav_start"
+"classname" "info_vehicle_node_rotate"
+}
+{
+"targetname" "jug_land_zone"
+"origin" "-29 -1881 1200"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_land_zone"
+"origin" "3258 78 1200"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_land_zone"
+"origin" "-2263 1892 510"
+"classname" "script_origin"
+}
+{
+"targetname" "jug_drop_chopper"
+"spawnflags" "2"
+"origin" "-6693.6 -4244.4 44"
+"angles" "0 31 0"
+"export" "448"
+"model" "vehicle_mi17_woodland_fly_cheap"
+"vehicletype" "mi17"
+"script_team" "axis"
+"classname" "script_vehicle_mi17_woodland_fly_cheap"
+"animation" "bh_fastrope_loop"
+"script_specialops" "1"
+}
+{
+"script_specialops" "1"
+"classname" "actor_ally_so_delta"
+"model" "body_us_army_assault_b"
+"export" "190"
+"origin" "0 0 0"
+"spawnflags" "5"
+"targetname" "friendly_support_delta"
+"angles" "0 0 0"
+}
+{
+"script_specialops" "1"
+"classname" "actor_ally_so_riotshield"
+"model" "body_us_army_assault_b"
+"export" "190"
+"origin" "0 0 0"
+"spawnflags" "5"
+"targetname" "friendly_support_riotshield"
+"angles" "0 0 0"
+}
+{
+"targetname" "ally_drop_chopper"
+"spawnflags" "2"
+"origin" "2625.5 7874.8 320"
+"angles" "0 264 0"
+"model" "vehicle_blackhawk"
+"vehicletype" "blackhawk"
+"script_team" "allies"
+"classname" "script_vehicle_blackhawk_low"
+}
+{
+"targetname" "drop_path_start"
+"_color" "1.000000 1.000000 0.000000"
+"classname" "script_struct_heli"
+"radius" "256"
+"origin" "-2717 8179 1043"
+"target" "drop_path_drop_1"
+"spawnflags" "1"
+"angles" "0 60 0"
+}
+{
+"_color" "1.000000 0.000000 0.000000"
+"script_unload" "both"
+"angles" "0 116 0"
+"target" "drop_path_end_1"
+"targetname" "drop_path_drop_1"
+"origin" "517 1443 737"
+"radius" "256"
+"classname" "script_struct_heli"
+}
+{
+"_color" "1.000000 1.000000 0.000000"
+"classname" "script_struct_heli"
+"radius" "256"
+"origin" "-2717 8179 1043"
+"targetname" "drop_path_end_1"
+"spawnflags" "1"
+"angles" "0 60 0"
+}
+{
+"targetname" "drop_path_start"
+"_color" "1.000000 1.000000 0.000000"
+"classname" "script_struct_heli"
+"radius" "256"
+"origin" "3400 -5365 1000"
+"target" "drop_path_drop_2"
+"spawnflags" "1"
+"angles" "0 60 0"
+}
+{
+"_color" "1.000000 0.000000 0.000000"
+"script_unload" "both"
+"angles" "0 116 0"
+"target" "drop_path_end_2"
+"targetname" "drop_path_drop_2"
+"origin" "3540 85 1050"
+"radius" "256"
+"classname" "script_struct_heli"
+}
+{
+"_color" "1.000000 1.000000 0.000000"
+"classname" "script_struct_heli"
+"radius" "256"
+"origin" "3400 -5365 1000"
+"targetname" "drop_path_end_2"
+"spawnflags" "1"
+"angles" "0 60 0"
+}
+{
+"targetname" "drop_path_start"
+"_color" "1.000000 1.000000 0.000000"
+"classname" "script_struct_heli"
+"radius" "256"
+"origin" "-3796 -3522 1000"
+"target" "drop_path_drop_3"
+"spawnflags" "1"
+"angles" "0 60 0"
+}
+{
+"_color" "1.000000 0.000000 0.000000"
+"script_unload" "both"
+"angles" "0 116 0"
+"target" "drop_path_end_3"
+"targetname" "drop_path_drop_3"
+"origin" "-10 -1700 1000"
+"radius" "256"
+"classname" "script_struct_heli"
+}
+{
+"_color" "1.000000 1.000000 0.000000"
+"classname" "script_struct_heli"
+"radius" "256"
+"origin" "-3796 -3522 1000"
+"targetname" "drop_path_end_3"
+"spawnflags" "1"
+"angles" "0 60 0"
+}
+{
+"classname" "script_vehicle_littlebird_armed"
+"vehicletype" "littlebird"
+"model" "vehicle_little_bird_armed"
+"export" "15"
+"spawnflags" "2"
+"targetname" "airdrop_littlebird"
+"script_team" "allies"
+"origin" "-26058 -18586.5 -2149.5"
+}
+{
+"classname" "script_vehicle_littlebird_armed"
+"vehicletype" "littlebird"
+"model" "vehicle_little_bird_armed"
+"export" "16"
+"spawnflags" "2"
+"script_team" "axis"
+"targetname" "chopper"
+"origin" "-25530 -18938.5 -2157.5"
+}
+{
+"origin" "0 0 0"
+"script_stopnode" "1"
+"targetname" "airdrop_origin"
+"classname" "script_origin"
+}
+{
+"origin" "-1452.3 4696.4 1000"
+"angles" "0 0 0"
+"model" "vehicle_little_bird_armed"
+"targetname" "little_bird_target"
+"classname" "script_origin"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_easy"
+"angles" "0 0 0"
+"targetname" "easy_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_regular"
+"angles" "0 0 0"
+"targetname" "regular_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_hardened"
+"angles" "0 0 0"
+"targetname" "hardened_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_veteran"
+"angles" "0 0 0"
+"targetname" "veteran_spawner"
+"script_specialops" "1"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "7"
+"classname" "actor_enemy_so_elite"
+"angles" "0 0 0"
+"targetname" "elite_spawner"
+"script_specialops" "1"
+}
+{
+"script_startingposition" "2"
+"origin" "0 0 0"
+"spawnflags" "7"
+"model" "body_riot_op_airborne"
+"animation" "h2_museum_wolverines_attacker"
+"classname" "actor_enemy_juggernaut_so_survival"
+"angles" "0 0 0"
+"targetname" "jug_regular"
+"script_specialops" "1"
+}
+{
+"script_startingposition" "2"
+"origin" "0 0 0"
+"spawnflags" "7"
+"model" "body_riot_op_airborne"
+"animation" "h2_museum_wolverines_attacker"
+"classname" "actor_enemy_juggernaut_riotshield"
+"angles" "0 0 0"
+"targetname" "jug_riotshield"
+"script_specialops" "1"
+}
+{
+"script_startingposition" "2"
+"origin" "0 0 0"
+"spawnflags" "7"
+"model" "body_riot_op_airborne"
+"animation" "h2_museum_wolverines_attacker"
+"classname" "actor_enemy_juggernaut_explosive"
+"angles" "0 0 0"
+"targetname" "jug_explosive"
+"script_specialops" "1"
+}
+{
+"classname" "actor_enemy_dog"
+"model" "german_sheperd_dog"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"spawnflags" "1"
+"targetname" "dog_spawner"
+"animation" "german_shepherd_attackidle"
+"script_specialops" "1"
+}
+{
+"classname" "actor_enemy_so_martyrdom"
+"model" "body_work_civ_male_a_bomb"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"spawnflags" "1"
+"targetname" "martyrdom_spawner"
+"script_specialops" "1"
+}
+{
+"classname" "script_model"
+"origin" "757.66156 -2939.068115 -126.591339"
+"angles" "0 145 0"
+"model" "com_laptop_open"
+"targetname" "armory_weapon_open_laptop"
+}
+{
+"classname" "script_model"
+"origin" "757.66156 -2939.068115 -126.591339"
+"angles" "0 145 0"
+"model" "com_laptop_close"
+"targetname" "armory_weapon_closed_laptop"
+"target" "armory_weapon_open_laptop"
+}
+{
+"classname" "script_brushmodel"
+"origin" "0 0 0"
+"model" "*10"
+"targetname" "airdrop_collision"
+}
+{
+"classname" "script_model"
+"origin" "757.661560 -2939.068115 -156.591339"
+"angles" "0 55 0"
+"model" "com_plasticcase_green_big"
+"targetname" "armory_weapon"
+"target" "armory_weapon_closed_laptop"
+}
+{
+"classname" "script_model"
+"origin" "4273.583008 327.046875 -89.875"
+"angles" "0 106 0"
+"model" "com_laptop_open"
+"targetname" "armory_airsupport_open_laptop"
+}
+{
+"classname" "script_model"
+"origin" "4273.583008 327.046875 -89.875"
+"angles" "0 106 0"
+"model" "com_laptop_close"
+"targetname" "armory_airsupport_closed_laptop"
+"target" "armory_airsupport_open_laptop"
+}
+{
+"classname" "script_model"
+"origin" "4273.583008 327.046875 -119.875000"
+"angles" "0 16 0"
+"model" "com_plasticcase_green_big"
+"targetname" "armory_airsupport"
+"target" "armory_airsupport_closed_laptop"
+}
+{
+"classname" "script_model"
+"origin" "-2532.180176 4397.997559 -114.38975500000001"
+"angles" "0 -38 0"
+"model" "com_laptop_open"
+"targetname" "armory_equipment_open_laptop"
+}
+{
+"classname" "script_model"
+"origin" "-2532.180176 4397.997559 -114.38975500000001"
+"angles" "0 -38 0"
+"model" "com_laptop_close"
+"targetname" "armory_equipment_closed_laptop"
+"target" "armory_equipment_open_laptop"
+}
+{
+"classname" "script_model"
+"origin" "-2532.180176 4397.997559 -144.389755"
+"angles" "0 -128 0"
+"model" "com_plasticcase_green_big"
+"targetname" "armory_equipment"
+"target" "armory_equipment_closed_laptop"
+}
+{
+"radius" "24"
+"origin" "1226.911255 -3532.387207 -244.442322"
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"angles" "0 90 0"
+"target" "me0_auto1060"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-4656.000000 -1008.000000 1114.868164"
+"script_linkname" "_hnode_1"
+"script_linkto" "_hnode_2 _hnode_6 _hnode_7 _hnode_8"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-4656.000000 792.000000 1006.595703"
+"script_linkname" "_hnode_2"
+"script_linkto" "_hnode_3 _hnode_7 _hnode_8 _hnode_9"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-4656.000000 2592.000000 1000.000000"
+"script_linkname" "_hnode_3"
+"script_linkto" "_hnode_4 _hnode_8 _hnode_9 _hnode_10"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-4656.000000 4392.000000 1361.975586"
+"script_linkname" "_hnode_4"
+"script_linkto" "_hnode_5 _hnode_9 _hnode_10 _hnode_11"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-4656.000000 6192.000000 1915.575195"
+"script_linkname" "_hnode_5"
+"script_linkto" "_hnode_10 _hnode_11 _hnode_12"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 -2808.000000 1160.033203"
+"script_linkname" "_hnode_6"
+"script_linkto" "_hnode_7 _hnode_13 _hnode_14"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 -1008.000000 1323.422852"
+"script_linkname" "_hnode_7"
+"script_linkto" "_hnode_8 _hnode_13 _hnode_14 _hnode_15"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 792.000000 1000.000000"
+"script_linkname" "_hnode_8"
+"script_linkto" "_hnode_9 _hnode_14 _hnode_15 _hnode_16"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 2592.000000 1000.000000"
+"script_linkname" "_hnode_9"
+"script_linkto" "_hnode_10 _hnode_15 _hnode_16 _hnode_17"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 4392.000000 1000.000000"
+"script_linkname" "_hnode_10"
+"script_linkto" "_hnode_11 _hnode_16 _hnode_17 _hnode_18"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 6192.000000 1000.000000"
+"script_linkname" "_hnode_11"
+"script_linkto" "_hnode_12 _hnode_17 _hnode_18 _hnode_19"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-2856.000000 7992.000000 1448.828125"
+"script_linkname" "_hnode_12"
+"script_linkto" "_hnode_18 _hnode_19 _hnode_20"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 -2808.000000 1000.000000"
+"script_linkname" "_hnode_13"
+"script_linkto" "_hnode_14 _hnode_21 _hnode_22 _hnode_23"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 -1008.000000 1191.153320"
+"script_linkname" "_hnode_14"
+"script_linkto" "_hnode_15 _hnode_22 _hnode_23 _hnode_24"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 792.000000 1000.000000"
+"script_linkname" "_hnode_15"
+"script_linkto" "_hnode_16 _hnode_23 _hnode_24 _hnode_25"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 2592.000000 1000.000000"
+"script_linkname" "_hnode_16"
+"script_linkto" "_hnode_17 _hnode_24 _hnode_25 _hnode_26"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 4392.000000 1000.000000"
+"script_linkname" "_hnode_17"
+"script_linkto" "_hnode_18 _hnode_25 _hnode_26 _hnode_27"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 6192.000000 1299.833984"
+"script_linkname" "_hnode_18"
+"script_linkto" "_hnode_19 _hnode_26 _hnode_27 _hnode_28"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 7992.000000 1000.000000"
+"script_linkname" "_hnode_19"
+"script_linkto" "_hnode_20 _hnode_27 _hnode_28 _hnode_29"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-1056.000000 9792.000000 1000.000000"
+"script_linkname" "_hnode_20"
+"script_linkto" "_hnode_28 _hnode_29"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 -4608.000000 1000.000000"
+"script_linkname" "_hnode_21"
+"script_linkto" "_hnode_22 _hnode_30 _hnode_31"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 -2808.000000 1000.000000"
+"script_linkname" "_hnode_22"
+"script_linkto" "_hnode_23 _hnode_30 _hnode_31 _hnode_32"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 -1008.000000 1000.000000"
+"script_linkname" "_hnode_23"
+"script_linkto" "_hnode_24 _hnode_31 _hnode_32 _hnode_33"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 792.000000 1065.785156"
+"script_linkname" "_hnode_24"
+"script_linkto" "_hnode_25 _hnode_32 _hnode_33 _hnode_34"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 2592.000000 1056.328125"
+"script_linkname" "_hnode_25"
+"script_linkto" "_hnode_26 _hnode_33 _hnode_34 _hnode_35"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 4392.000000 1000.000000"
+"script_linkname" "_hnode_26"
+"script_linkto" "_hnode_27 _hnode_34 _hnode_35 _hnode_36"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 6192.000000 1000.000000"
+"script_linkname" "_hnode_27"
+"script_linkto" "_hnode_28 _hnode_35 _hnode_36 _hnode_37"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 7992.000000 1000.000000"
+"script_linkname" "_hnode_28"
+"script_linkto" "_hnode_29 _hnode_36 _hnode_37 _hnode_38"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "744.000000 9792.000000 1389.273438"
+"script_linkname" "_hnode_29"
+"script_linkto" "_hnode_37 _hnode_38"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 -4608.000000 1000.000000"
+"script_linkname" "_hnode_30"
+"script_linkto" "_hnode_31 _hnode_39"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 -2808.000000 1000.000000"
+"script_linkname" "_hnode_31"
+"script_linkto" "_hnode_32 _hnode_39 _hnode_40"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 -1008.000000 1000.000000"
+"script_linkname" "_hnode_32"
+"script_linkto" "_hnode_33 _hnode_39 _hnode_40 _hnode_41"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 792.000000 1000.000000"
+"script_linkname" "_hnode_33"
+"script_linkto" "_hnode_34 _hnode_40 _hnode_41 _hnode_42"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 2592.000000 1008.912109"
+"script_linkname" "_hnode_34"
+"script_linkto" "_hnode_35 _hnode_41 _hnode_42 _hnode_43"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 4392.000000 1471.528320"
+"script_linkname" "_hnode_35"
+"script_linkto" "_hnode_36 _hnode_42 _hnode_43 _hnode_44"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 6192.000000 1000.000000"
+"script_linkname" "_hnode_36"
+"script_linkto" "_hnode_37 _hnode_43 _hnode_44 _hnode_45"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 7992.000000 1000.000000"
+"script_linkname" "_hnode_37"
+"script_linkto" "_hnode_38 _hnode_44 _hnode_45 _hnode_46"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2544.000000 9792.000000 1000.000000"
+"script_linkname" "_hnode_38"
+"script_linkto" "_hnode_45 _hnode_46"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 -2808.000000 1000.000000"
+"script_linkname" "_hnode_39"
+"script_linkto" "_hnode_40 _hnode_47 _hnode_48"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 -1008.000000 1000.000000"
+"script_linkname" "_hnode_40"
+"script_linkto" "_hnode_41 _hnode_47 _hnode_48 _hnode_49"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 792.000000 1000.000000"
+"script_linkname" "_hnode_41"
+"script_linkto" "_hnode_42 _hnode_48 _hnode_49 _hnode_50"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 2592.000000 1000.000000"
+"script_linkname" "_hnode_42"
+"script_linkto" "_hnode_43 _hnode_49 _hnode_50 _hnode_51"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 4392.000000 1000.000000"
+"script_linkname" "_hnode_43"
+"script_linkto" "_hnode_44 _hnode_50 _hnode_51 _hnode_52"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 6192.000000 1000.000000"
+"script_linkname" "_hnode_44"
+"script_linkto" "_hnode_45 _hnode_51 _hnode_52 _hnode_53"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 7992.000000 1000.000000"
+"script_linkname" "_hnode_45"
+"script_linkto" "_hnode_46 _hnode_52 _hnode_53 _hnode_54"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "4344.000000 9792.000000 1000.000000"
+"script_linkname" "_hnode_46"
+"script_linkto" "_hnode_53 _hnode_54"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 -2808.000000 1217.967773"
+"script_linkname" "_hnode_47"
+"script_linkto" "_hnode_48 _hnode_55"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 -1008.000000 1000.000000"
+"script_linkname" "_hnode_48"
+"script_linkto" "_hnode_49 _hnode_55 _hnode_56"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 792.000000 1000.000000"
+"script_linkname" "_hnode_49"
+"script_linkto" "_hnode_50 _hnode_55 _hnode_56 _hnode_57"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 2592.000000 1000.000000"
+"script_linkname" "_hnode_50"
+"script_linkto" "_hnode_51 _hnode_56 _hnode_57 _hnode_58"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 4392.000000 1000.000000"
+"script_linkname" "_hnode_51"
+"script_linkto" "_hnode_52 _hnode_57 _hnode_58 _hnode_59"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 6192.000000 1000.000000"
+"script_linkname" "_hnode_52"
+"script_linkto" "_hnode_53 _hnode_58 _hnode_59 _hnode_60"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 7992.000000 1000.000000"
+"script_linkname" "_hnode_53"
+"script_linkto" "_hnode_54 _hnode_59 _hnode_60"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "6144.000000 9792.000000 1000.000000"
+"script_linkname" "_hnode_54"
+"script_linkto" "_hnode_60"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "7944.000000 -1008.000000 1000.000000"
+"script_linkname" "_hnode_55"
+"script_linkto" "_hnode_56"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "7944.000000 792.000000 1000.000000"
+"script_linkname" "_hnode_56"
+"script_linkto" "_hnode_55 _hnode_57"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "7944.000000 2592.000000 1000.000000"
+"script_linkname" "_hnode_57"
+"script_linkto" "_hnode_58"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "7944.000000 4392.000000 1000.000000"
+"script_linkname" "_hnode_58"
+"script_linkto" "_hnode_57 _hnode_59"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "7944.000000 6192.000000 1000.000000"
+"script_linkname" "_hnode_59"
+"script_linkto" "_hnode_60"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "7944.000000 7992.000000 1000.000000"
+"script_linkname" "_hnode_60"
+"script_linkto" "_hnode_54 _hnode_59"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "15024.000000 3072.000000 1000.000000"
+"targetname" "chopper_boss_path_start"
+"script_linkto" "_hnode_57"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2023.999390 16072.000000 1000.000000"
+"targetname" "chopper_boss_path_start"
+"script_linkto" "_hnode_38"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "-10976.000000 3071.998779 1000.000000"
+"targetname" "chopper_boss_path_start"
+"script_linkto" "_hnode_3"
+"script_stopnode" "1"
+}
+{
+"script_specialops" "1"
+"script_noteworthy" "so_chopper_boss_path_struct"
+"classname" "script_struct_heli"
+"radius" "1800"
+"origin" "2024.000122 -9928.000000 1000.000000"
+"targetname" "chopper_boss_path_start"
+"script_linkto" "_hnode_30"
+"script_stopnode" "1"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_1"
+"origin" "800.799316 -3313.993164 -147.831482"
+"angles" "0 122.665497 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_1"
+"origin" "783.527832 -3287.054443 -146.956024"
+"angles" "0 122.665497 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_1"
+"origin" "756.589111 -3304.325928 -146.860733"
+"angles" "0 122.665497 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_1"
+"origin" "810.466614 -3269.782959 -147.051331"
+"angles" "0 122.665497 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_2"
+"origin" "974.059998 -2764.543701 -136.043640"
+"angles" "0 126.164642 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_2"
+"origin" "955.176575 -2738.709229 -142.642548"
+"angles" "0 126.164642 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_2"
+"origin" "929.342163 -2757.592773 -144.935394"
+"angles" "0 126.164642 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_2"
+"origin" "981.010925 -2719.825928 -140.149872"
+"angles" "0 126.164642 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_3"
+"origin" "555.412048 -2703.652344 -154.262909"
+"angles" "0 148.841248 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_3"
+"origin" "528.028442 -2687.095215 -154.097015"
+"angles" "0 148.841248 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_3"
+"origin" "511.471313 -2714.478760 -154.902283"
+"angles" "0 148.841248 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_3"
+"origin" "544.585632 -2659.711670 -151.433105"
+"angles" "0 148.841248 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_4"
+"origin" "274.339813 -2418.464600 -169.181046"
+"angles" "0 115.869286 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_4"
+"origin" "260.377594 -2389.671143 -168.524017"
+"angles" "0 115.869286 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_4"
+"origin" "231.584259 -2403.633545 -169.217102"
+"angles" "0 115.869286 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_4"
+"origin" "289.170929 -2375.708984 -166.820892"
+"angles" "0 115.869286 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_5"
+"origin" "419.837891 -1814.814819 -168.141663"
+"angles" "0 41.312199 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_5"
+"origin" "443.873840 -1793.689697 -169.222412"
+"angles" "0 41.312199 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_5"
+"origin" "422.748688 -1769.653687 -166.903534"
+"angles" "0 41.312199 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_5"
+"origin" "464.999023 -1817.725586 -166.662979"
+"angles" "0 41.312199 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_6"
+"origin" "-444.009491 -1985.976807 -144.167923"
+"angles" "0 33.506500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_6"
+"origin" "-417.327148 -1968.311768 -146.016891"
+"angles" "0 33.506500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_6"
+"origin" "-434.992157 -1941.629395 -147.452789"
+"angles" "0 33.506500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_6"
+"origin" "-399.662140 -1994.994141 -145.369080"
+"angles" "0 33.506500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_7"
+"origin" "-145.133789 -204.171906 52.431736"
+"angles" "0 -39.502758 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_7"
+"origin" "-120.442780 -224.527603 45.149315"
+"angles" "0 -39.502758 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_7"
+"origin" "-100.087097 -199.836594 41.950897"
+"angles" "0 -39.502758 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_7"
+"origin" "-140.798477 -249.218597 45.662239"
+"angles" "0 -39.502758 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_8"
+"origin" "322.957458 -66.893372 16.125000"
+"angles" "0 74.015030 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_8"
+"origin" "331.769775 -36.130684 16.125000"
+"angles" "0 74.015030 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_8"
+"origin" "301.007080 -27.318359 16.125000"
+"angles" "0 74.015030 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_8"
+"origin" "362.532471 -44.943012 16.125000"
+"angles" "0 74.015030 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_9"
+"origin" "611.085999 -345.860870 8.124997"
+"angles" "0 -18.239258 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_9"
+"origin" "641.478271 -355.876404 8.125000"
+"angles" "0 -18.239258 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_9"
+"origin" "651.493774 -325.484161 8.125000"
+"angles" "0 -18.239258 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_9"
+"origin" "631.462708 -386.268677 8.125000"
+"angles" "0 -18.239258 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_10"
+"origin" "1070.137329 -1531.223511 -259.975555"
+"angles" "0 116.138321 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_10"
+"origin" "1056.040039 -1502.496094 -258.353516"
+"angles" "0 116.138321 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_10"
+"origin" "1027.312622 -1516.593262 -259.954620"
+"angles" "0 116.138321 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_10"
+"origin" "1084.767578 -1488.398804 -254.261368"
+"angles" "0 116.138321 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_11"
+"origin" "2432.241943 -200.883087 -72.121887"
+"angles" "0 58.807926 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_11"
+"origin" "2448.814941 -173.509140 -72.492638"
+"angles" "0 58.807926 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_11"
+"origin" "2421.441162 -156.936066 -73.090569"
+"angles" "0 58.807926 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_11"
+"origin" "2476.188965 -190.082214 -74.053802"
+"angles" "0 58.807926 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_12"
+"origin" "4046.019043 206.736786 -119.948250"
+"angles" "0 -104.706413 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_12"
+"origin" "4037.895264 175.785126 -120.000000"
+"angles" "0 -104.706413 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_12"
+"origin" "4068.846924 167.661407 -119.842110"
+"angles" "0 -104.706413 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_12"
+"origin" "4006.943604 183.908859 -120.000000"
+"angles" "0 -104.706413 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_13"
+"origin" "823.866150 2241.099121 53.356365"
+"angles" "0 24.287985 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_13"
+"origin" "853.033813 2254.261475 50.465897"
+"angles" "0 24.287985 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_13"
+"origin" "839.871460 2283.429199 54.653809"
+"angles" "0 24.287985 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_13"
+"origin" "866.196167 2225.093750 45.061142"
+"angles" "0 24.287985 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_14"
+"origin" "1852.556641 3182.824463 23.055887"
+"angles" "0 -117.087906 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_14"
+"origin" "1837.985229 3154.334473 20.096008"
+"angles" "0 -117.087906 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_14"
+"origin" "1866.475098 3139.763184 21.401237"
+"angles" "0 -117.087906 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_14"
+"origin" "1809.495361 3168.906006 21.710472"
+"angles" "0 -117.087906 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_15"
+"origin" "2112.232178 2621.054932 -25.759321"
+"angles" "0 -82.702995 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_15"
+"origin" "2116.296631 2589.314209 -29.083611"
+"angles" "0 -82.702995 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_15"
+"origin" "2148.037354 2593.378418 -26.571922"
+"angles" "0 -82.702995 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_15"
+"origin" "2084.555664 2585.249756 -31.595337"
+"angles" "0 -82.702995 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_16"
+"origin" "1774.183960 1987.705322 -25.881357"
+"angles" "0 -100.938583 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_16"
+"origin" "1768.111694 1956.286743 -23.292202"
+"angles" "0 -100.938583 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_16"
+"origin" "1799.530396 1950.214478 -23.413822"
+"angles" "0 -100.938583 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_16"
+"origin" "1736.693115 1962.358887 -24.075958"
+"angles" "0 -100.938583 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_17"
+"origin" "2179.245117 1768.568604 -143.064346"
+"angles" "0 -119.981636 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_17"
+"origin" "2163.253906 1740.850708 -142.657013"
+"angles" "0 -119.981636 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_17"
+"origin" "2190.971924 1724.859497 -148.067749"
+"angles" "0 -119.981636 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_17"
+"origin" "2135.536133 1756.841797 -135.874298"
+"angles" "0 -119.981636 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_18"
+"origin" "2330.157715 989.305664 -128.737137"
+"angles" "0 -148.781662 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_18"
+"origin" "2302.791260 972.720032 -127.990204"
+"angles" "0 -148.781662 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_18"
+"origin" "2319.376953 945.353699 -127.968925"
+"angles" "0 -148.781662 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_18"
+"origin" "2286.205811 1000.086365 -128.241974"
+"angles" "0 -148.781662 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_19"
+"origin" "2478.347900 205.287689 -108.942474"
+"angles" "0 169.969650 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_19"
+"origin" "2446.836914 210.861115 -106.371353"
+"angles" "0 169.969650 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_19"
+"origin" "2441.263672 179.350220 -101.955353"
+"angles" "0 169.969650 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_19"
+"origin" "2452.410400 242.372025 -111.359398"
+"angles" "0 169.969650 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_20"
+"origin" "293.140320 1276.542725 143.623856"
+"angles" "0 -54.845425 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_20"
+"origin" "311.565430 1250.379517 141.685272"
+"angles" "0 -54.845425 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_20"
+"origin" "337.728668 1268.804565 131.637054"
+"angles" "0 -54.845425 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_20"
+"origin" "285.402161 1231.954346 148.000000"
+"angles" "0 -54.845425 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_21"
+"origin" "895.882874 1862.005371 134.576279"
+"angles" "0 -145.148422 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_21"
+"origin" "869.622559 1843.718872 133.860443"
+"angles" "0 -145.148422 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_21"
+"origin" "887.909058 1817.458618 133.819931"
+"angles" "0 -145.148422 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_21"
+"origin" "851.336060 1869.979248 134.302734"
+"angles" "0 -145.148422 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_22"
+"origin" "-118.914261 2155.068115 -39.038017"
+"angles" "0 -20.998779 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_22"
+"origin" "-89.039444 2143.601074 -33.459820"
+"angles" "0 -20.998779 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_22"
+"origin" "-77.572311 2173.475830 -39.102600"
+"angles" "0 -20.998779 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_22"
+"origin" "-100.506577 2113.726074 -32.511528"
+"angles" "0 -20.998779 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_23"
+"origin" "-223.521530 2742.674072 18.872044"
+"angles" "0 -85.798820 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_23"
+"origin" "-221.177246 2710.760010 16.838928"
+"angles" "0 -85.798820 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_23"
+"origin" "-189.263245 2713.104248 15.440086"
+"angles" "0 -85.798820 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_23"
+"origin" "-253.091278 2708.415771 16.326904"
+"angles" "0 -85.798820 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_24"
+"origin" "-329.722961 3280.374268 -225.331512"
+"angles" "0 -145.821335 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_24"
+"origin" "-356.196228 3262.397461 -228.808929"
+"angles" "0 -145.821335 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_24"
+"origin" "-338.219421 3235.924072 -227.258942"
+"angles" "0 -145.821335 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_24"
+"origin" "-374.173035 3288.870850 -228.316864"
+"angles" "0 -145.821335 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_25"
+"origin" "-840.419128 4001.531006 -261.094360"
+"angles" "0 -119.645660 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_25"
+"origin" "-856.247437 3973.719727 -265.529816"
+"angles" "0 -119.645660 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_25"
+"origin" "-828.436218 3957.891357 -257.638153"
+"angles" "0 -119.645660 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_25"
+"origin" "-884.058655 3989.548096 -268.189941"
+"angles" "0 -119.645660 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_26"
+"origin" "-398.284241 3611.511719 -248.921082"
+"angles" "0 -160.423111 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_26"
+"origin" "-428.434418 3600.789551 -248.722992"
+"angles" "0 -160.423111 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_26"
+"origin" "-417.712128 3570.639160 -248.099609"
+"angles" "0 -160.423111 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_26"
+"origin" "-439.156708 3630.939697 -249.875748"
+"angles" "0 -160.423111 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_27"
+"origin" "-385.814331 4050.518311 -301.091125"
+"angles" "0 -167.690414 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_27"
+"origin" "-417.078644 4043.696045 -295.277679"
+"angles" "0 -167.690414 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_27"
+"origin" "-410.256439 4012.431885 -291.449036"
+"angles" "0 -167.690414 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_27"
+"origin" "-423.900848 4074.960449 -299.152832"
+"angles" "0 -167.690414 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_28"
+"origin" "-388.223267 4475.599609 -359.839600"
+"angles" "0 -134.045563 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_28"
+"origin" "-410.470642 4452.598633 -357.615265"
+"angles" "0 -134.045563 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_28"
+"origin" "-387.469452 4430.351074 -357.519196"
+"angles" "0 -134.045563 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_28"
+"origin" "-433.471832 4474.845703 -355.688690"
+"angles" "0 -134.045563 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_29"
+"origin" "-976.052307 4609.683594 -236.691238"
+"angles" "0 -145.148346 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_29"
+"origin" "-1002.312622 4591.396973 -238.448990"
+"angles" "0 -145.148346 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_29"
+"origin" "-984.026062 4565.136719 -243.341003"
+"angles" "0 -145.148346 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_29"
+"origin" "-1020.599121 4617.657227 -236.258667"
+"angles" "0 -145.148346 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_35"
+"origin" "-2119.037109 4809.561523 -223.074509"
+"angles" "0 -33.312435 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_35"
+"origin" "-2092.295166 4791.986816 -224.175415"
+"angles" "0 -33.312435 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_35"
+"origin" "-2074.720459 4818.729004 -229.540771"
+"angles" "0 -33.312435 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_35"
+"origin" "-2109.869629 4765.245117 -218.358643"
+"angles" "0 -33.312435 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_36"
+"origin" "-2203.395020 4408.880371 -161.619171"
+"angles" "0 -57.469288 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_36"
+"origin" "-2186.187012 4381.900879 -163.663849"
+"angles" "0 -57.469288 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_36"
+"origin" "-2159.207764 4399.108887 -164.925110"
+"angles" "0 -57.469288 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_36"
+"origin" "-2213.166260 4364.692871 -163.808105"
+"angles" "0 -57.469288 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_37"
+"origin" "-1587.860962 4759.364258 -258.878326"
+"angles" "0 -54.979855 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_37"
+"origin" "-1569.497314 4733.157715 -263.405487"
+"angles" "0 -54.979855 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_37"
+"origin" "-1543.290894 4751.521484 -262.493317"
+"angles" "0 -54.979855 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_37"
+"origin" "-1595.703735 4714.793945 -264.595917"
+"angles" "0 -54.979855 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_38"
+"origin" "-1521.666504 4437.764648 -276.640137"
+"angles" "0 -52.153622 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_38"
+"origin" "-1502.032959 4412.495605 -270.756592"
+"angles" "0 -52.153622 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_38"
+"origin" "-1476.763916 4432.128906 -272.389099"
+"angles" "0 -52.153622 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_38"
+"origin" "-1527.302124 4392.862305 -269.497467"
+"angles" "0 -52.153622 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_39"
+"origin" "-1142.101196 4186.270020 -192.310928"
+"angles" "0 -123.413383 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_39"
+"origin" "-1159.722778 4159.559082 -189.999451"
+"angles" "0 -123.413383 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_39"
+"origin" "-1133.011841 4141.937500 -193.018280"
+"angles" "0 -123.413383 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_39"
+"origin" "-1186.433838 4177.180664 -187.168320"
+"angles" "0 -123.413383 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_40"
+"origin" "-2508.539062 4021.823975 -207.634857"
+"angles" "0 -57.133026 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_40"
+"origin" "-2491.172852 3994.946045 -212.091309"
+"angles" "0 -57.133026 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_40"
+"origin" "-2464.295166 4012.312256 -204.668381"
+"angles" "0 -57.133026 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_40"
+"origin" "-2518.050781 3977.580078 -217.713654"
+"angles" "0 -57.133026 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_41"
+"origin" "-2262.915039 4080.697510 -181.915283"
+"angles" "0 -19.450737 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_41"
+"origin" "-2232.741455 4070.041748 -185.626938"
+"angles" "0 -19.450737 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_41"
+"origin" "-2222.085449 4100.215332 -183.273499"
+"angles" "0 -19.450737 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_41"
+"origin" "-2243.397217 4039.867920 -187.980438"
+"angles" "0 -19.450737 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_42"
+"origin" "-2414.741211 3880.933350 -227.650452"
+"angles" "0 -33.446888 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_42"
+"origin" "-2388.040527 3863.296143 -229.697327"
+"angles" "0 -33.446888 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_42"
+"origin" "-2370.403320 3889.996826 -220.589218"
+"angles" "0 -33.446888 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_42"
+"origin" "-2405.677734 3836.595459 -238.393463"
+"angles" "0 -33.446888 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_43"
+"origin" "-2546.180420 3567.360596 -352.868469"
+"angles" "0 -37.753357 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_43"
+"origin" "-2520.879395 3547.768066 -355.858582"
+"angles" "0 -37.753357 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_43"
+"origin" "-2501.287109 3573.069092 -341.732239"
+"angles" "0 -37.753357 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_43"
+"origin" "-2540.471924 3522.467285 -369.984924"
+"angles" "0 -37.753357 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_44"
+"origin" "-2729.220703 3330.418945 -445.190735"
+"angles" "0 -9.087882 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_44"
+"origin" "-2697.622314 3325.364502 -448.218567"
+"angles" "0 -9.087882 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_44"
+"origin" "-2692.568115 3356.962891 -443.551575"
+"angles" "0 -9.087882 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_44"
+"origin" "-2702.676758 3293.766357 -452.089813"
+"angles" "0 -9.087882 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_45"
+"origin" "-2731.020752 2979.109619 -455.978119"
+"angles" "0 14.261799 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_45"
+"origin" "-2700.007080 2986.992920 -452.362274"
+"angles" "0 14.261799 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_45"
+"origin" "-2707.890381 3018.006592 -456.258453"
+"angles" "0 14.261799 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_45"
+"origin" "-2692.123779 2955.979248 -446.732330"
+"angles" "0 14.261799 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_46"
+"origin" "-2546.203613 2753.483643 -385.875946"
+"angles" "0 -85.125031 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_46"
+"origin" "-2543.484131 2721.599365 -380.081665"
+"angles" "0 -85.125031 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_46"
+"origin" "-2511.599854 2724.318848 -374.551117"
+"angles" "0 -85.125031 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_46"
+"origin" "-2575.368408 2718.879883 -385.732544"
+"angles" "0 -85.125031 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_47"
+"origin" "-2489.483398 2456.607910 -334.557800"
+"angles" "0 -79.136345 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_47"
+"origin" "-2483.452393 2425.181396 -326.871796"
+"angles" "0 -79.136345 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_47"
+"origin" "-2452.025879 2431.212402 -323.706573"
+"angles" "0 -79.136345 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_47"
+"origin" "-2514.878906 2419.150391 -331.006195"
+"angles" "0 -79.136345 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_48"
+"origin" "-2434.964355 2125.397949 -271.229187"
+"angles" "0 -86.807549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_48"
+"origin" "-2433.182373 2093.447510 -270.102417"
+"angles" "0 -86.807549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_48"
+"origin" "-2401.231934 2095.229736 -266.116730"
+"angles" "0 -86.807549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_48"
+"origin" "-2465.132568 2091.665527 -276.665283"
+"angles" "0 -86.807549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_49"
+"origin" "-2453.193604 1812.699097 -270.816345"
+"angles" "0 -90.912292 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_49"
+"origin" "-2453.703125 1780.703125 -268.747040"
+"angles" "0 -90.912292 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_49"
+"origin" "-2421.707275 1780.193604 -262.825897"
+"angles" "0 -90.912292 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_49"
+"origin" "-2485.698975 1781.212646 -277.327362"
+"angles" "0 -90.912292 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_50"
+"origin" "-2493.181396 1486.707886 -259.578613"
+"angles" "0 -75.502831 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_50"
+"origin" "-2485.170654 1455.726807 -259.589050"
+"angles" "0 -75.502831 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_50"
+"origin" "-2454.189697 1463.737427 -256.066956"
+"angles" "0 -75.502831 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_50"
+"origin" "-2516.151855 1447.716187 -263.111176"
+"angles" "0 -75.502831 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_51"
+"origin" "-2463.464111 1251.480469 -266.299438"
+"angles" "0 -73.416801 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_51"
+"origin" "-2454.331055 1220.811523 -268.897247"
+"angles" "0 -73.416801 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_51"
+"origin" "-2423.662109 1229.944458 -266.505615"
+"angles" "0 -73.416801 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_51"
+"origin" "-2485.000000 1211.678467 -273.410522"
+"angles" "0 -73.416801 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_52"
+"origin" "-2342.359131 947.338013 -302.243744"
+"angles" "0 11.772022 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_52"
+"origin" "-2311.032227 953.866577 -292.034607"
+"angles" "0 11.772022 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_52"
+"origin" "-2317.560791 985.193542 -290.787354"
+"angles" "0 11.772022 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_52"
+"origin" "-2304.503662 922.539612 -291.831146"
+"angles" "0 11.772022 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_53"
+"origin" "-2014.478149 1128.295166 -266.792816"
+"angles" "0 41.581535 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_53"
+"origin" "-1990.541748 1149.533081 -266.850708"
+"angles" "0 41.581535 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_53"
+"origin" "-2011.779663 1173.469482 -268.931427"
+"angles" "0 41.581535 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_53"
+"origin" "-1969.303833 1125.596680 -267.890015"
+"angles" "0 41.581535 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_54"
+"origin" "-2005.696777 1510.246460 -240.122864"
+"angles" "0 38.217056 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_54"
+"origin" "-1980.555298 1530.042969 -238.776947"
+"angles" "0 38.217056 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_54"
+"origin" "-2000.351807 1555.184570 -238.726974"
+"angles" "0 38.217056 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_54"
+"origin" "-1960.758667 1504.901489 -239.665771"
+"angles" "0 38.217056 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_55"
+"origin" "-1719.591675 2225.001709 -219.560699"
+"angles" "0 -1.147578 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_55"
+"origin" "-1687.598145 2224.360840 -218.770721"
+"angles" "0 -1.147578 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_55"
+"origin" "-1686.957153 2256.354492 -218.212540"
+"angles" "0 -1.147578 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_55"
+"origin" "-1688.239014 2192.367188 -219.328888"
+"angles" "0 -1.147578 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_56"
+"origin" "-1472.570068 2503.109619 -196.354111"
+"angles" "0 5.110230 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_56"
+"origin" "-1440.697266 2505.959961 -190.291214"
+"angles" "0 5.110230 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_56"
+"origin" "-1443.547607 2537.832764 -188.091766"
+"angles" "0 5.110230 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_56"
+"origin" "-1437.846924 2474.087158 -193.477707"
+"angles" "0 5.110230 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_57"
+"origin" "-1368.896118 3120.671143 -145.579269"
+"angles" "0 -40.041431 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_57"
+"origin" "-1344.397583 3100.084229 -144.159973"
+"angles" "0 -40.041431 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_57"
+"origin" "-1323.810669 3124.582764 -149.934357"
+"angles" "0 -40.041431 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_57"
+"origin" "-1364.984497 3075.585693 -139.050385"
+"angles" "0 -40.041431 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_58"
+"origin" "-1528.096436 328.687744 -31.869740"
+"angles" "0 17.356768 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_58"
+"origin" "-1497.553589 338.234009 -26.620411"
+"angles" "0 17.356768 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_58"
+"origin" "-1507.099854 368.776917 -25.163246"
+"angles" "0 17.356768 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_58"
+"origin" "-1488.007324 307.691101 -28.655724"
+"angles" "0 17.356768 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_59"
+"origin" "-1379.842773 673.613037 -30.698124"
+"angles" "0 -11.376065 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_59"
+"origin" "-1348.471436 667.301086 -27.913109"
+"angles" "0 -11.376065 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_59"
+"origin" "-1342.159546 698.672424 -32.913204"
+"angles" "0 -11.376065 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_59"
+"origin" "-1354.783325 635.929810 -22.913025"
+"angles" "0 -11.376065 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_60"
+"origin" "-990.924072 900.647644 -56.555149"
+"angles" "0 -27.122004 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_60"
+"origin" "-962.442871 886.059265 -49.916950"
+"angles" "0 -27.122004 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_60"
+"origin" "-947.854492 914.540466 -49.264164"
+"angles" "0 -27.122004 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_60"
+"origin" "-977.031250 857.578064 -48.617256"
+"angles" "0 -27.122004 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_61"
+"origin" "-382.194275 1658.769775 12.693645"
+"angles" "0 -15.346250 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_61"
+"origin" "-351.335266 1650.300903 17.149853"
+"angles" "0 -15.346250 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_61"
+"origin" "-342.866425 1681.159912 12.477234"
+"angles" "0 -15.346250 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_61"
+"origin" "-359.804108 1619.441895 16.037449"
+"angles" "0 -15.346250 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_62"
+"origin" "-76.591675 1497.205688 133.367493"
+"angles" "0 -50.875175 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_62"
+"origin" "-56.399292 1472.380981 139.763000"
+"angles" "0 -50.875175 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_62"
+"origin" "-31.574551 1492.573364 143.407349"
+"angles" "0 -50.875175 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_62"
+"origin" "-81.224030 1452.188599 133.583923"
+"angles" "0 -50.875175 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_63"
+"origin" "-1086.783081 248.169540 1.354676"
+"angles" "0 47.906185 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_63"
+"origin" "-1065.332031 271.915070 -5.212975"
+"angles" "0 47.906185 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_63"
+"origin" "-1089.077515 293.366180 -10.943497"
+"angles" "0 47.906185 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_63"
+"origin" "-1041.586426 250.463989 -0.032860"
+"angles" "0 47.906185 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_64"
+"origin" "-641.903442 160.307755 20.302528"
+"angles" "0 -57.469631 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_64"
+"origin" "-624.695557 133.328339 26.380497"
+"angles" "0 -57.469631 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_64"
+"origin" "-597.716125 150.536240 31.880722"
+"angles" "0 -57.469631 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_64"
+"origin" "-651.674988 116.120453 20.964012"
+"angles" "0 -57.469631 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_65"
+"origin" "-424.430267 607.030518 74.020561"
+"angles" "0 53.019848 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_65"
+"origin" "-405.181030 632.593506 80.986977"
+"angles" "0 53.019848 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_65"
+"origin" "-430.744049 651.842773 77.767258"
+"angles" "0 53.019848 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_65"
+"origin" "-379.618042 613.344299 83.039146"
+"angles" "0 53.019848 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_66"
+"origin" "-604.994202 -394.991394 76.526268"
+"angles" "0 20.653524 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_66"
+"origin" "-575.050842 -383.704498 70.705627"
+"angles" "0 20.653524 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_66"
+"origin" "-586.337769 -353.761108 77.160889"
+"angles" "0 20.653524 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_66"
+"origin" "-563.763916 -413.647858 65.500404"
+"angles" "0 20.653524 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_67"
+"origin" "-342.338654 -553.793701 -7.668078"
+"angles" "0 16.818266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_67"
+"origin" "-311.707367 -544.534912 -11.519764"
+"angles" "0 16.818266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_67"
+"origin" "-320.966156 -513.903625 -2.102558"
+"angles" "0 16.818266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_67"
+"origin" "-302.448608 -575.166199 -19.464603"
+"angles" "0 16.818266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_68"
+"origin" "-257.437775 -1298.957520 -139.551025"
+"angles" "0 -2.426755 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_68"
+"origin" "-225.466476 -1300.312500 -133.976273"
+"angles" "0 -2.426755 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_68"
+"origin" "-224.111526 -1268.341187 -138.463623"
+"angles" "0 -2.426755 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_68"
+"origin" "-226.821426 -1332.283813 -131.127197"
+"angles" "0 -2.426755 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_69"
+"origin" "112.305855 -1091.052490 -162.921890"
+"angles" "0 73.139290 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_69"
+"origin" "121.587326 -1060.428101 -153.594849"
+"angles" "0 73.139290 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_69"
+"origin" "90.962921 -1051.146606 -151.964401"
+"angles" "0 73.139290 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_69"
+"origin" "152.211731 -1069.709595 -154.593765"
+"angles" "0 73.139290 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_70"
+"origin" "1293.749634 -956.911743 -71.103592"
+"angles" "0 127.711128 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_70"
+"origin" "1274.175903 -931.596375 -59.365459"
+"angles" "0 127.711128 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_70"
+"origin" "1248.860474 -951.170166 -62.097973"
+"angles" "0 127.711128 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_70"
+"origin" "1299.491211 -912.022583 -57.155209"
+"angles" "0 127.711128 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_71"
+"origin" "1445.333130 -757.667053 -36.006237"
+"angles" "0 131.411804 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_71"
+"origin" "1424.166260 -733.667847 -32.222225"
+"angles" "0 131.411804 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_71"
+"origin" "1400.166992 -754.834778 -32.401379"
+"angles" "0 131.411804 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_71"
+"origin" "1448.165405 -712.500916 -32.644062"
+"angles" "0 131.411804 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_72"
+"origin" "2448.840576 -862.792480 -240.204025"
+"angles" "0 43.733223 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_72"
+"origin" "2471.962646 -840.670837 -232.717850"
+"angles" "0 43.733223 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_72"
+"origin" "2449.841064 -817.548706 -230.552261"
+"angles" "0 43.733223 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_72"
+"origin" "2494.084473 -863.792969 -237.974762"
+"angles" "0 43.733223 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_73"
+"origin" "1693.398926 -1138.995117 -269.698242"
+"angles" "0 -165.470459 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_73"
+"origin" "1662.422363 -1147.023193 -271.787842"
+"angles" "0 -165.470459 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_73"
+"origin" "1670.450439 -1177.999878 -270.528748"
+"angles" "0 -165.470459 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_73"
+"origin" "1654.394165 -1116.046631 -273.046906"
+"angles" "0 -165.470459 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_74"
+"origin" "3595.793701 -998.975159 -120.078812"
+"angles" "0 123.538643 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_74"
+"origin" "3578.113770 -972.302734 -117.578506"
+"angles" "0 123.538643 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_74"
+"origin" "3551.441406 -989.982727 -121.701256"
+"angles" "0 123.538643 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_74"
+"origin" "3604.786133 -954.622742 -113.455757"
+"angles" "0 123.538643 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_75"
+"origin" "3839.318604 -684.566528 -71.487198"
+"angles" "0 147.762955 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_75"
+"origin" "3812.251465 -667.497009 -74.121780"
+"angles" "0 147.762955 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_75"
+"origin" "3795.181885 -694.564148 -73.309387"
+"angles" "0 147.762955 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_75"
+"origin" "3829.321045 -640.429810 -74.934189"
+"angles" "0 147.762955 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_76"
+"origin" "4475.582031 -466.877533 -86.080330"
+"angles" "0 110.147896 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_76"
+"origin" "4464.559570 -436.835724 -91.739731"
+"angles" "0 110.147896 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_76"
+"origin" "4434.518066 -447.857941 -90.285080"
+"angles" "0 110.147896 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_76"
+"origin" "4494.601562 -425.813477 -92.760185"
+"angles" "0 110.147896 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_77"
+"origin" "5151.466309 340.337708 -125.643005"
+"angles" "0 148.704865 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_77"
+"origin" "5124.122070 356.959991 -126.306770"
+"angles" "0 148.704865 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_77"
+"origin" "5107.500000 329.615906 -127.006142"
+"angles" "0 148.704865 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_77"
+"origin" "5140.744629 384.304077 -125.607391"
+"angles" "0 148.704865 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_78"
+"origin" "5120.724121 945.163574 -133.088638"
+"angles" "0 162.297379 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_78"
+"origin" "5090.239258 954.894043 -132.019272"
+"angles" "0 162.297379 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_78"
+"origin" "5080.508789 924.409302 -130.618011"
+"angles" "0 162.297379 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_78"
+"origin" "5099.969727 985.378723 -134.009659"
+"angles" "0 162.297379 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_79"
+"origin" "5600.124023 1269.546387 -144.084198"
+"angles" "0 150.319809 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_79"
+"origin" "5572.322266 1285.391479 -148.112152"
+"angles" "0 150.319809 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_79"
+"origin" "5556.477051 1257.589722 -143.699036"
+"angles" "0 150.319809 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_79"
+"origin" "5588.167480 1313.193115 -152.525238"
+"angles" "0 150.319809 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_80"
+"origin" "5625.324707 1653.064941 -152.321320"
+"angles" "0 165.258102 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_80"
+"origin" "5594.377930 1661.207764 -149.803467"
+"angles" "0 165.258102 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_80"
+"origin" "5586.235352 1630.261230 -150.083847"
+"angles" "0 165.258102 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_80"
+"origin" "5602.520996 1692.154419 -149.654861"
+"angles" "0 165.258102 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_81"
+"origin" "5226.005371 2085.015381 -143.221481"
+"angles" "0 165.527267 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_81"
+"origin" "5195.020996 2093.012695 -143.362762"
+"angles" "0 165.527267 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_81"
+"origin" "5187.023438 2062.028320 -143.405731"
+"angles" "0 165.527267 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_81"
+"origin" "5203.018066 2123.997314 -144.648315"
+"angles" "0 165.527267 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_82"
+"origin" "4906.871094 2370.203613 -165.786926"
+"angles" "0 179.725449 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_82"
+"origin" "4874.871582 2370.356934 -164.341370"
+"angles" "0 179.725449 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_82"
+"origin" "4874.718262 2338.357422 -162.613449"
+"angles" "0 179.725449 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_82"
+"origin" "4875.024902 2402.356689 -166.069305"
+"angles" "0 179.725449 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_83"
+"origin" "4278.697266 3132.883545 -175.269089"
+"angles" "0 -133.440903 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_83"
+"origin" "4256.693848 3109.648926 -177.014145"
+"angles" "0 -133.440903 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_83"
+"origin" "4279.928711 3087.645508 -180.317551"
+"angles" "0 -133.440903 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_83"
+"origin" "4233.458984 3131.652344 -174.217712"
+"angles" "0 -133.440903 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_84"
+"origin" "3858.106689 2808.328125 -139.662277"
+"angles" "0 -135.594162 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_84"
+"origin" "3835.245850 2785.936523 -140.768036"
+"angles" "0 -135.594162 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_84"
+"origin" "3857.637451 2763.075684 -141.788422"
+"angles" "0 -135.594162 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_84"
+"origin" "3812.854248 2808.797363 -139.785522"
+"angles" "0 -135.594162 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_85"
+"origin" "4023.320312 2203.832520 -151.177948"
+"angles" "0 -105.515549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_85"
+"origin" "4014.760254 2172.998779 -150.416275"
+"angles" "0 -105.515549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_85"
+"origin" "4045.594238 2164.438721 -148.638214"
+"angles" "0 -105.515549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_85"
+"origin" "3983.926514 2181.558594 -152.121750"
+"angles" "0 -105.515549 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_86"
+"origin" "3638.314453 1943.992554 -146.796616"
+"angles" "0 -154.098663 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_86"
+"origin" "3609.529053 1930.014282 -145.625381"
+"angles" "0 -154.098663 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_86"
+"origin" "3623.507324 1901.228760 -151.326355"
+"angles" "0 -154.098663 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_86"
+"origin" "3595.550537 1958.799805 -141.789276"
+"angles" "0 -154.098663 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_87"
+"origin" "3222.198242 2381.259521 -134.381180"
+"angles" "0 -152.147186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_87"
+"origin" "3193.905518 2366.309082 -133.556396"
+"angles" "0 -152.147186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_87"
+"origin" "3208.855957 2338.016357 -129.505585"
+"angles" "0 -152.147186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_87"
+"origin" "3178.955078 2394.601807 -136.215607"
+"angles" "0 -152.147186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_88"
+"origin" "2694.214111 2349.041016 -107.224144"
+"angles" "0 -120.924744 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_88"
+"origin" "2677.769043 2321.590088 -109.673653"
+"angles" "0 -120.924744 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_88"
+"origin" "2705.219971 2305.144775 -117.759865"
+"angles" "0 -120.924744 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_88"
+"origin" "2650.317871 2338.035156 -102.274002"
+"angles" "0 -120.924744 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_89"
+"origin" "2432.883301 2363.094238 -59.076252"
+"angles" "0 -129.806961 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_89"
+"origin" "2412.396729 2338.511719 -64.719177"
+"angles" "0 -129.806961 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_89"
+"origin" "2436.979492 2318.025146 -73.379333"
+"angles" "0 -129.806961 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_89"
+"origin" "2387.814209 2358.998047 -55.854839"
+"angles" "0 -129.806961 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_90"
+"origin" "3406.872559 155.036163 -125.455109"
+"angles" "0 -160.759781 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_90"
+"origin" "3376.659912 144.491226 -125.239624"
+"angles" "0 -160.759781 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_90"
+"origin" "3387.204834 114.278572 -126.170654"
+"angles" "0 -160.759781 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_90"
+"origin" "3366.114990 174.703873 -124.061356"
+"angles" "0 -160.759781 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_91"
+"origin" "3076.119385 -206.078278 -127.234741"
+"angles" "0 143.524353 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_91"
+"origin" "3050.387939 -187.054886 -127.546486"
+"angles" "0 143.524353 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_91"
+"origin" "3031.364502 -212.786392 -127.429489"
+"angles" "0 143.524353 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_91"
+"origin" "3069.411377 -161.323380 -127.572464"
+"angles" "0 143.524353 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_92"
+"origin" "1328.077881 770.663452 8.125001"
+"angles" "0 -166.681305 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_92"
+"origin" "1296.938599 763.291687 8.000000"
+"angles" "0 -166.681305 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_92"
+"origin" "1304.310303 732.152405 8.000000"
+"angles" "0 -166.681305 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_92"
+"origin" "1289.566772 794.431030 8.000000"
+"angles" "0 -166.681305 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_93"
+"origin" "1920.580078 829.217407 -86.856720"
+"angles" "0 -158.337402 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_93"
+"origin" "1890.840088 817.404907 -81.822807"
+"angles" "0 -158.337402 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_93"
+"origin" "1902.652588 787.664978 -81.034805"
+"angles" "0 -158.337402 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_93"
+"origin" "1879.027588 847.144897 -82.073746"
+"angles" "0 -158.337402 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_94"
+"origin" "4669.583496 3030.947510 -174.241165"
+"angles" "0 -155.309113 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_94"
+"origin" "4640.509277 3017.580322 -176.893036"
+"angles" "0 -155.309113 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_94"
+"origin" "4653.876465 2988.506104 -177.167358"
+"angles" "0 -155.309113 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_94"
+"origin" "4627.142090 3046.654785 -175.151291"
+"angles" "0 -155.309113 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_95"
+"origin" "4372.076660 2741.772217 -172.373749"
+"angles" "0 -137.477310 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_95"
+"origin" "4348.492188 2720.144043 -166.488007"
+"angles" "0 -137.477310 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_95"
+"origin" "4370.120605 2696.559570 -165.525970"
+"angles" "0 -137.477310 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_95"
+"origin" "4326.864258 2743.728271 -167.450073"
+"angles" "0 -137.477310 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_96"
+"origin" "4543.542480 2326.528809 -145.471008"
+"angles" "0 -142.322266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_96"
+"origin" "4518.215820 2306.969727 -141.999390"
+"angles" "0 -142.322266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_96"
+"origin" "4537.774902 2281.643066 -141.190720"
+"angles" "0 -142.322266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_96"
+"origin" "4498.656738 2332.296631 -142.808075"
+"angles" "0 -142.322266 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_97"
+"origin" "4434.295898 1693.068970 -136.545135"
+"angles" "0 -136.333466 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_97"
+"origin" "4411.147949 1670.974243 -137.377625"
+"angles" "0 -136.333466 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_97"
+"origin" "4433.242676 1647.826416 -142.282867"
+"angles" "0 -136.333466 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_97"
+"origin" "4389.053223 1694.122070 -132.472397"
+"angles" "0 -136.333466 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_98"
+"origin" "4232.009766 1064.434570 -149.485718"
+"angles" "0 -153.963562 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_98"
+"origin" "4203.257324 1050.388428 -149.418015"
+"angles" "0 -153.963562 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_98"
+"origin" "4217.303223 1021.635925 -141.702118"
+"angles" "0 -153.963562 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_98"
+"origin" "4189.210938 1079.140869 -155.170990"
+"angles" "0 -153.963562 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_99"
+"origin" "-1943.902466 3599.956543 -307.074402"
+"angles" "0 -54.913746 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_99"
+"origin" "-1925.508545 3573.771240 -314.397247"
+"angles" "0 -54.913746 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_99"
+"origin" "-1899.323364 3592.165283 -314.164703"
+"angles" "0 -54.913746 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_99"
+"origin" "-1951.693726 3555.377441 -315.441101"
+"angles" "0 -54.913746 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_100"
+"origin" "-2197.382568 3011.009521 -337.283234"
+"angles" "0 -32.842468 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_100"
+"origin" "-2170.497314 2993.655029 -330.715729"
+"angles" "0 -32.842468 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_100"
+"origin" "-2153.142578 3020.540283 -333.671478"
+"angles" "0 -32.842468 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_100"
+"origin" "-2187.851807 2966.769531 -327.759888"
+"angles" "0 -32.842468 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_101"
+"origin" "-1848.915283 2712.590820 -256.528748"
+"angles" "0 -11.982651 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_101"
+"origin" "-1817.612549 2705.947021 -256.706207"
+"angles" "0 -11.982651 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_101"
+"origin" "-1810.968872 2737.249756 -254.195175"
+"angles" "0 -11.982651 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_101"
+"origin" "-1824.256226 2674.644287 -259.217224"
+"angles" "0 -11.982651 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_102"
+"origin" "-959.310242 2039.598022 -168.343582"
+"angles" "0 19.441467 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_102"
+"origin" "-929.134827 2050.249023 -163.956421"
+"angles" "0 19.441467 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_102"
+"origin" "-939.785828 2080.424561 -163.209137"
+"angles" "0 19.441467 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_102"
+"origin" "-918.483826 2020.073608 -166.692596"
+"angles" "0 19.441467 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_103"
+"origin" "-510.603973 2164.084961 -92.285095"
+"angles" "0 -3.975613 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_103"
+"origin" "-478.680969 2161.866455 -87.776558"
+"angles" "0 -3.975613 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_103"
+"origin" "-476.462341 2193.789307 -91.246910"
+"angles" "0 -3.975613 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_103"
+"origin" "-480.899597 2129.943359 -90.198112"
+"angles" "0 -3.975613 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_104"
+"origin" "-956.620911 518.372742 -36.528217"
+"angles" "0 -1.418438 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_104"
+"origin" "-924.630737 517.580627 -41.910793"
+"angles" "0 -1.418438 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_104"
+"origin" "-923.838623 549.570801 -37.094463"
+"angles" "0 -1.418438 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_104"
+"origin" "-925.422852 485.590424 -47.017185"
+"angles" "0 -1.418438 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_105"
+"origin" "-336.834991 972.788208 101.311539"
+"angles" "0 -5.725186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_105"
+"origin" "-304.994629 969.596008 111.287201"
+"angles" "0 -5.725186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_105"
+"origin" "-301.802399 1001.436340 112.292267"
+"angles" "0 -5.725186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_105"
+"origin" "-308.186829 937.755615 112.365524"
+"angles" "0 -5.725186 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_106"
+"origin" "-619.255493 -2354.689941 -179.373077"
+"angles" "0 53.624352 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_106"
+"origin" "-600.277039 -2328.925293 -175.024048"
+"angles" "0 53.624352 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_106"
+"origin" "-626.041687 -2309.946777 -174.704330"
+"angles" "0 53.624352 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_106"
+"origin" "-574.512390 -2347.903809 -175.354889"
+"angles" "0 53.624352 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_107"
+"origin" "750.278564 -2529.689453 -160.342590"
+"angles" "0 148.099197 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_107"
+"origin" "723.111694 -2512.779053 -164.430099"
+"angles" "0 148.099197 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_107"
+"origin" "706.201294 -2539.945801 -165.108200"
+"angles" "0 148.099197 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_107"
+"origin" "740.022095 -2485.612305 -160.983032"
+"angles" "0 148.099197 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_108"
+"origin" "3424.178955 866.700684 -157.543182"
+"angles" "0 -175.295212 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_108"
+"origin" "3392.286865 864.075989 -159.965149"
+"angles" "0 -175.295212 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_108"
+"origin" "3394.911377 832.183838 -158.814758"
+"angles" "0 -175.295212 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_108"
+"origin" "3389.662109 895.968140 -161.189896"
+"angles" "0 -175.295212 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_109"
+"origin" "2865.391113 557.620972 -139.875305"
+"angles" "0 -176.506409 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_109"
+"origin" "2833.450684 555.670959 -137.883606"
+"angles" "0 -176.506409 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_109"
+"origin" "2835.400635 523.730469 -129.775177"
+"angles" "0 -176.506409 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_109"
+"origin" "2831.500488 587.611511 -145.992035"
+"angles" "0 -176.506409 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_110"
+"origin" "2476.341797 530.395203 -119.726196"
+"angles" "0 -170.113876 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_110"
+"origin" "2444.816895 524.901123 -121.737946"
+"angles" "0 -170.113876 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_110"
+"origin" "2450.311035 493.376282 -120.860954"
+"angles" "0 -170.113876 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_110"
+"origin" "2439.322754 556.425903 -121.943321"
+"angles" "0 -170.113876 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_111"
+"origin" "3485.507812 3093.738770 -145.895508"
+"angles" "0 -110.562500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_111"
+"origin" "3474.268555 3063.777588 -146.721680"
+"angles" "0 -110.562500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_111"
+"origin" "3504.229736 3052.538086 -151.142365"
+"angles" "0 -110.562500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_111"
+"origin" "3444.307129 3075.016846 -142.300995"
+"angles" "0 -110.562500 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_112"
+"origin" "4075.583252 3395.356201 -159.696655"
+"angles" "0 -128.461655 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_112"
+"origin" "4055.679443 3370.299316 -159.095306"
+"angles" "0 -128.461655 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_112"
+"origin" "4080.736328 3350.395752 -159.940430"
+"angles" "0 -128.461655 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_112"
+"origin" "4030.622803 3390.203125 -159.063568"
+"angles" "0 -128.461655 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_113"
+"origin" "1304.869873 2895.238770 29.031107"
+"angles" "0 -73.014877 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_113"
+"origin" "1314.217773 2864.634521 25.847855"
+"angles" "0 -73.014877 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_113"
+"origin" "1344.822021 2873.982422 25.563278"
+"angles" "0 -73.014877 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_113"
+"origin" "1283.613647 2855.286621 25.906967"
+"angles" "0 -73.014877 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_114"
+"origin" "1145.905273 2707.321045 16.239506"
+"angles" "0 -39.235462 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_114"
+"origin" "1170.690918 2687.080811 12.367447"
+"angles" "0 -39.235462 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_114"
+"origin" "1190.931274 2711.866455 13.399780"
+"angles" "0 -39.235462 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_114"
+"origin" "1150.450684 2662.295166 11.538857"
+"angles" "0 -39.235462 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_115"
+"origin" "1487.406372 2425.151123 -23.983807"
+"angles" "0 -81.156738 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_115"
+"origin" "1492.325806 2393.531494 -28.086063"
+"angles" "0 -81.156738 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_115"
+"origin" "1523.945435 2398.450928 -29.921299"
+"angles" "0 -81.156738 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_115"
+"origin" "1460.706177 2388.612061 -25.254375"
+"angles" "0 -81.156738 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "leader"
+"target" "spawn_auto_116"
+"origin" "907.744019 872.190002 46.611271"
+"angles" "0 176.158997 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_116"
+"origin" "875.815918 874.333618 53.438770"
+"angles" "0 176.158997 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_116"
+"origin" "873.672302 842.405518 50.414551"
+"angles" "0 176.158997 0"
+"radius" "24"
+}
+{
+"classname" "script_struct"
+"script_noteworthy" "follower"
+"targetname" "spawn_auto_116"
+"origin" "877.959534 906.261719 57.215927"
+"angles" "0 176.158997 0"
+"radius" "24"
+}

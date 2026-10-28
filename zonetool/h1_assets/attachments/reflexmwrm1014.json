@@ -1,0 +1,133 @@
+{
+    "baseAsset": "reflexmwrm1014",
+    "internalName": "reflexmwrm1014",
+    "displayName": "WEAPON_REFLEX_ATTACHMENT",
+    "type": 0,
+    "weaponType": 0,
+    "weaponClass": 0,
+    "worldModels": [
+        "attach_h1_optic_reflex_npc",
+        ""
+    ],
+    "viewModels": [
+        "attach_h1_optic_reflex_vm",
+        ""
+    ],
+    "reticleViewModels": [
+        "reticle_h1_optic_reflex",
+        "reticle_h1_reflex_transparent",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "bounceSounds": null,
+    "rollingSounds": null,
+    "stringArray1": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "stringArray2": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "waFields": [
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_UP",
+            "code": 1,
+            "value": "_ads _reflex_ads"
+        },
+        {
+            "name": "szXAnims",
+            "type": 12,
+            "anim": "ADS_DOWN",
+            "code": 1,
+            "value": "_ads _reflex_ads"
+        },
+        {
+            "name": "posRotRate",
+            "type": 7,
+            "index": 0,
+            "code": 3,
+            "value": 8.0
+        },
+        {
+            "name": "stateTimers.raiseTime",
+            "type": 9,
+            "index": 0,
+            "code": 3,
+            "value": 600
+        },
+        {
+            "name": "stateTimers.emptyDropTime",
+            "type": 9,
+            "index": 0,
+            "code": 3,
+            "value": 400
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+name,h1_viewmodel_rpd
+base,wpn_h1_lmg_rpd_vm_camo
+attachment,attach_h1_bipod_rpd_patch_vm
+attachment,attach_h1_foregrip_default_rpd_vm

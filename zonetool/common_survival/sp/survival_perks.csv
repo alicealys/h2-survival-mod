@@ -1,0 +1,7 @@
+a0,b1,c2,d3,e4,f5,g6
+0,specialty_longersprint,Extreme Conditioning,Longer sprint duration,specialty_longersprint,0,1
+1,specialty_fastreload,Sleight of Hand,Faster reload,specialty_fastreload,0,1
+2,specialty_quickdraw,Quickdraw,Faster aiming,specialty_quickdraw,0,1
+3,specialty_detectexplosive,Sitrep,Detect enemy equipments,specialty_bombsquad,0,0
+4,specialty_bulletaccuracy,Steady Aim,Increased hipfire accuracy,specialty_steadyaim,5,1
+5,specialty_stalker,Stalker,Move faster while aiming,specialty_stalker,0,1

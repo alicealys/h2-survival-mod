@@ -1,0 +1,65 @@
+{
+    "name": "m/mtl_ret_h1_holosight",
+    "techniqueSet->name": "m_reflexsight_cso_hss",
+    "gameFlags": 0,
+    "sortKey": 37,
+    "renderFlags": 0,
+    "textureAtlasRowCount": 1,
+    "textureAtlasColumnCount": 1,
+    "textureAtlasFrameBlend": 0,
+    "textureAtlasAsArray": 0,
+    "surfaceTypeBits": 0,
+    "cameraRegion": 5,
+    "materialType": 1,
+    "assetFlags": 0,
+    "constantTable": [
+        {
+            "name": "detailScale",
+            "nameHash": 148072969,
+            "literal": [
+                10.0,
+                10.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "hdrColorParm",
+            "nameHash": 3379990750,
+            "literal": [
+                10.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "sceneLumParm",
+            "nameHash": 3719717047,
+            "literal": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "textureTable": [
+        {
+            "image": "ret_h1_holographic",
+            "semantic": 2,
+            "samplerState": 243,
+            "lastCharacter": 112,
+            "firstCharacter": 99,
+            "typeHash": 2695565377
+        },
+        {
+            "image": "h1_og_weapon_red_cross_background",
+            "semantic": 2,
+            "samplerState": 19,
+            "lastCharacter": 112,
+            "firstCharacter": 100,
+            "typeHash": 3948059469
+        }
+    ]
+}

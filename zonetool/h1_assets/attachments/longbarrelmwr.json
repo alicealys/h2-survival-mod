@@ -1,0 +1,47 @@
+{
+    "baseAsset": "longbarrelmwr",
+    "internalName": "longbarrelmwr",
+    "displayName": "WEAPON_ATTACHMENT_LONGRANGE",
+    "type": 3,
+    "weaponType": 0,
+    "weaponClass": 0,
+    "worldModels": [
+        "",
+        ""
+    ],
+    "viewModels": [
+        "",
+        ""
+    ],
+    "reticleViewModels": null,
+    "bounceSounds": null,
+    "rollingSounds": null,
+    "stringArray1": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "stringArray2": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "waFields": [
+        {
+            "name": "maxDamageRange",
+            "type": 7,
+            "index": 0,
+            "code": 5,
+            "value": 1.25
+        },
+        {
+            "name": "minDamageRange",
+            "type": 7,
+            "index": 0,
+            "code": 5,
+            "value": 1.25
+        }
+    ]
+}
